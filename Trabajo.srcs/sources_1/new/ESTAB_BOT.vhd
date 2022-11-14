@@ -42,7 +42,7 @@ architecture Behavioral of ESTAB_BOT is
             RST_N: in std_logic     --renincio asincrono con valor a '0'
         );
     end component;
-    
+
     signal SYNCHRNZR_2_EDGEDTCTR : std_logic;
 
 begin
@@ -58,8 +58,8 @@ begin
             RST_N => RST_N                      --renincio asincrono con valor a '0'
 
         );
-        
-        FLANCO: EDGEDTCTR
+
+    FLANCO: EDGEDTCTR
         port map (
 
             SYNC_IN => SYNCHRNZR_2_EDGEDTCTR,   --entrada sincrona
