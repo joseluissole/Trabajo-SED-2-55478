@@ -50,7 +50,7 @@ architecture Behavioral of ESTAB_BOT_TB is
         );
     end component;
     
-    constant N_CICLOS : positive := 50; --numero de ciclo del antirrebote
+    constant N_CICLOS : positive := 75; --numero de ciclo del antirrebote
 
     constant N_PRUEBAS : integer := 5; --numero de pruebas
 
@@ -101,7 +101,7 @@ begin
             BOT_IN <= '0';
 
             --espera hasta que cambie el pulso
-            wait until BOT_OUT <= '1' for 100 * CLK_PERIOD;
+            wait until BOT_OUT <= '1' for 100 * N_CICLOS * CLK_PERIOD;
             wait for DELAY;
             assert BOT_OUT = '1'
             report "[ERROR]: no ha cambiado el pulso"
@@ -128,7 +128,7 @@ begin
             end loop;
 
             --espera hasta que cambie el pulso
-            wait until BOT_OUT <= '1' for 100 * CLK_PERIOD;
+            wait until BOT_OUT <= '1' for 100 * N_CICLOS * CLK_PERIOD;
             wait for DELAY;
             assert BOT_OUT = '1'
             report "[ERROR]: no ha cambiado el pulso"
