@@ -23,9 +23,9 @@ architecture Behavioral of DBNCR_TB is
         );
 
     end component;
-    
+
     constant N_PRUEBAS : integer := 5;  --numero de pruebas
-    
+
     constant N_CICLOS : positive := 20; --numero de ciclos
 
     signal CLK : std_logic := '0';      --reloj
@@ -38,7 +38,7 @@ architecture Behavioral of DBNCR_TB is
     constant DELAY : time := 0.1*CLK_PERIOD;    --retraso
 
 begin
-    
+
     PR_DBN : DBNCR generic map(
             N_CICLOS => N_CICLOS --numero ciclos espera a validar senal
         )
@@ -51,22 +51,22 @@ begin
             CE => CLK,       --habilitacion de chip a '1'
             RST_N => RST_N  --renincio asincrono con valor a '0'
         );
-    
-    
+
+
     CLK <= not CLK after 0.5*CLK_PERIOD;
     RST_N <= '0' after 0.25*CLK_PERIOD, '1' after 1.75*CLK_PERIOD;
-    
+
     PRUEBA_DBNCR: process
     begin
         wait until RST_N = '0';
         wait until RST_N = '1';
-        
+
         wait until CLK = '1';
         wait for DELAY;
-        
-         for i in 1 to N_PRUEBAS loop
-         
-          
+
+        for i in 1 to N_PRUEBAS loop
+
+
             --espera a estar durante el reloj a 1
             wait for 10 * CLK_PERIOD;
             wait until CLK = '1';
@@ -75,15 +75,15 @@ begin
 
             --simulo rebotes aritficiales
             for j in 1 to N_PRUEBAS loop
-            PRE_D <= '1';
+                PRE_D <= '1';
 
-            --espera un ciclo de reloj
-            wait for CLK_PERIOD;
+                --espera un ciclo de reloj
+                wait for CLK_PERIOD;
 
-            PRE_D <= '0';
-            
-            --espera un ciclo de reloj
-            wait for CLK_PERIOD;
+                PRE_D <= '0';
+
+                --espera un ciclo de reloj
+                wait for CLK_PERIOD;
             end loop;
 
             --espera hasta que cambie el pulso
@@ -94,16 +94,16 @@ begin
             severity FAILURE;
 
         end loop;
-        
+
         --espera para finalizar
-         wait for 100 * CLK_PERIOD;
+        wait for 100 * CLK_PERIOD;
 
         --forzar finalizacion de la simulacion
         assert FALSE
         report "[SUCCESS]: Simulacion correcta"
         severity FAILURE;
 
-    
+
     end process;
 
 

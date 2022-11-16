@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1668443786">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1668625110">
   <File Type="PA-TCL" Name="ESTAB_BOT.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="ESTAB_BOT_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ESTAB_BOT_reports.tcl"/>
   <File Type="RDS-RDS" Name="ESTAB_BOT.vds"/>
   <File Type="RDS-UTIL" Name="ESTAB_BOT_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ESTAB_BOT_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="ESTAB_BOT.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ESTAB_BOT_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ESTAB_BOT_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/EDGEDTCTR.vhd">
@@ -22,6 +25,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/ESTAB_BOT.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DBNCR.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -51,7 +61,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
