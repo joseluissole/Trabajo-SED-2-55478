@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/sedx/Trabajo/Trabajo.runs/synth_1/ESTAB_BOT.tcl"
+  variable script "C:/sedx/Trabajo/Trabajo.runs/synth_1/BOTONERA.tcl"
   variable category "vivado_synth"
 }
 
@@ -88,8 +88,9 @@ OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   C:/sedx/Trabajo/Trabajo.srcs/sources_1/new/DBNCR.vhd
   C:/sedx/Trabajo/Trabajo.srcs/sources_1/new/EDGEDTCTR.vhd
-  C:/sedx/Trabajo/Trabajo.srcs/sources_1/new/SYNCHRNZR.vhd
   C:/sedx/Trabajo/Trabajo.srcs/sources_1/new/ESTAB_BOT.vhd
+  C:/sedx/Trabajo/Trabajo.srcs/sources_1/new/SYNCHRNZR.vhd
+  C:/sedx/Trabajo/Trabajo.srcs/sources_1/new/BOTONERA.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -107,7 +108,7 @@ set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top ESTAB_BOT -part xc7k70tfbv676-1
+synth_design -top BOTONERA -part xc7k70tfbv676-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -117,10 +118,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef ESTAB_BOT.dcp
+write_checkpoint -force -noxdef BOTONERA.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file ESTAB_BOT_utilization_synth.rpt -pb ESTAB_BOT_utilization_synth.pb"
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file BOTONERA_utilization_synth.rpt -pb BOTONERA_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

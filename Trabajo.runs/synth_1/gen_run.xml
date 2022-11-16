@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1668625985">
-  <File Type="PA-TCL" Name="ESTAB_BOT.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="ESTAB_BOT_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="ESTAB_BOT_reports.tcl"/>
-  <File Type="RDS-RDS" Name="ESTAB_BOT.vds"/>
-  <File Type="RDS-UTIL" Name="ESTAB_BOT_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="ESTAB_BOT_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="ESTAB_BOT.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ESTAB_BOT_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="ESTAB_BOT_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1668629431">
+  <File Type="PA-TCL" Name="BOTONERA.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="BOTONERA_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="BOTONERA_reports.tcl"/>
+  <File Type="RDS-RDS" Name="BOTONERA.vds"/>
+  <File Type="RDS-UTIL" Name="BOTONERA_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="BOTONERA_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="BOTONERA.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="BOTONERA_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="BOTONERA_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/DBNCR.vhd">
@@ -23,13 +23,19 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/ESTAB_BOT.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/SYNCHRNZR.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ESTAB_BOT.vhd">
+    <File Path="$PSRCDIR/sources_1/new/BOTONERA.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -37,7 +43,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ESTAB_BOT"/>
+      <Option Name="TopModule" Val="BOTONERA"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
