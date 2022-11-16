@@ -100,9 +100,33 @@ begin
             severity FAILURE;
 
         end loop;
+        
+         for i in 1 to N_PRUEBAS loop
+            --espera a estar durante el reloj a 1
+            wait for 5 * CLK_PERIOD;
+            wait until CLK = '1';
+            wait for DELAY;
+
+            BOT_IN <= '1';
+
+            --espera un ciclo de reloj
+            wait for 10*CLK_PERIOD;
+
+            BOT_IN <= '0';
+
+            --espera hasta que cambie el pulso
+            wait until BOT_OUT <= '1' for 100 * CLK_PERIOD;
+            wait for DELAY;
+            assert BOT_OUT = '1'
+            report "[ERROR]: no ha cambiado el pulso"
+            severity FAILURE;
+
+        end loop;
+        
+        --ahora con pulsos mas largos
 
         --margen para acabar
-        wait for 10 * CLK_PERIOD;
+        wait for 100 * CLK_PERIOD;
 
         --forzar finalizacion de la simulacion
         assert FALSE

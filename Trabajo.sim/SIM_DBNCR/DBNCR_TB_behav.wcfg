@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DBNCR_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="DBNCR_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3,075,995 ps"></ZoomStartTime>
+      <ZoomEndTime time="3,076,002 ps"></ZoomEndTime>
+      <Cursor1Time time="3,076,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/DBNCR_TB/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DBNCR_TB/RST_N" type="logic">
+      <obj_property name="ElementShortName">RST_N</obj_property>
+      <obj_property name="ObjectShortName">RST_N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DBNCR_TB/PRE_D" type="logic">
+      <obj_property name="ElementShortName">PRE_D</obj_property>
+      <obj_property name="ObjectShortName">PRE_D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DBNCR_TB/POST_D" type="logic">
+      <obj_property name="ElementShortName">POST_D</obj_property>
+      <obj_property name="ObjectShortName">POST_D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DBNCR_TB/N_PRUEBAS" type="other">
+      <obj_property name="ElementShortName">N_PRUEBAS</obj_property>
+      <obj_property name="ObjectShortName">N_PRUEBAS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DBNCR_TB/N_CICLOS" type="other">
+      <obj_property name="ElementShortName">N_CICLOS</obj_property>
+      <obj_property name="ObjectShortName">N_CICLOS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DBNCR_TB/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DBNCR_TB/DELAY" type="other">
+      <obj_property name="ElementShortName">DELAY</obj_property>
+      <obj_property name="ObjectShortName">DELAY</obj_property>
+   </wvobject>
+</wave_config>

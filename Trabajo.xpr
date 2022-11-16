@@ -48,7 +48,7 @@
     <Option Name="SimulatorGccVersionRiviera" Val="6.2.0"/>
     <Option Name="SimulatorGccVersionActiveHdl" Val="6.2.0"/>
     <Option Name="BoardPart" Val=""/>
-    <Option Name="ActiveSimSet" Val="ESTAB_BOTON_V1"/>
+    <Option Name="ActiveSimSet" Val="SIM_DBNCR"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
@@ -60,7 +60,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="6"/>
+    <Option Name="WTXSimLaunchSim" Val="16"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -108,6 +108,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/DBNCR.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="ESTAB_BOT"/>
@@ -127,6 +134,7 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
+      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="ESTAB_BOT"/>
@@ -149,9 +157,15 @@
       </Config>
     </FileSet>
     <FileSet Name="ESTAB_BOTON_V1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/ESTAB_BOTON_V1" RelGenDir="$PGENDIR/ESTAB_BOTON_V1">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/ESTAB_BOTON_V1/new/ESTAB_BOT_TB.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSIMDIR/ESTAB_BOTON_V1/ESTAB_BOT_TB_behav.wcfg">
+        <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -168,6 +182,38 @@
         <Option Name="PamSignalDriverFile" Val="xil_bypass_driver"/>
         <Option Name="PamPseudoTop" Val="pseudo_tb"/>
         <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PSIMDIR/ESTAB_BOTON_V1/ESTAB_BOT_TB_behav.wcfg"/>
+        <Option Name="xsim.simulate.runtime" Val="100ms"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="SIM_DBNCR" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/SIM_DBNCR" RelGenDir="$PGENDIR/SIM_DBNCR">
+      <File Path="$PSRCDIR/SIM_DBNCR/new/DBNCR_TB.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSIMDIR/SIM_DBNCR/DBNCR_TB_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="DBNCR_TB"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SelectedSimModel" Val="rtl"/>
+        <Option Name="PamDesignTestbench" Val=""/>
+        <Option Name="PamDutBypassFile" Val="xil_dut_bypass"/>
+        <Option Name="PamSignalDriverFile" Val="xil_bypass_driver"/>
+        <Option Name="PamPseudoTop" Val="pseudo_tb"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PSIMDIR/SIM_DBNCR/DBNCR_TB_behav.wcfg"/>
+        <Option Name="xsim.simulate.runtime" Val="100ms"/>
+        <Option Name="NLNetlistMode" Val="funcsim"/>
       </Config>
     </FileSet>
   </FileSets>
