@@ -86,6 +86,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
+  C:/sedx/Trabajo/Trabajo.srcs/sources_1/new/DBNCR.vhd
   C:/sedx/Trabajo/Trabajo.srcs/sources_1/new/EDGEDTCTR.vhd
   C:/sedx/Trabajo/Trabajo.srcs/sources_1/new/SYNCHRNZR.vhd
   C:/sedx/Trabajo/Trabajo.srcs/sources_1/new/ESTAB_BOT.vhd
