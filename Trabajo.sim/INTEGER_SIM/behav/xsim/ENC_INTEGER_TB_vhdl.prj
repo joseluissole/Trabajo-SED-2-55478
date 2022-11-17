@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Trabajo.srcs/sources_1/new/ENC_INTEGER.vhd" \
+"../../../../Trabajo.srcs/INTEGER_SIM/new/ENC_INTEGER_TB.vhd" \
+
+# Do not sort compile order
+nosort

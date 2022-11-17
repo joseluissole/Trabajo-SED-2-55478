@@ -6,7 +6,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity BOTONERA is
 
     generic(
-        NUM_PISOS : positive := 4;       --numero de pisod del ascensor, incluye el bajo
+        NUM_PISOS : positive := 4;       --numero de pisos del ascensor, incluye el bajo
         NUM_CICLOS : positive := 32     --numero de ciclos a dejar para evitar el rebote
     );
 
