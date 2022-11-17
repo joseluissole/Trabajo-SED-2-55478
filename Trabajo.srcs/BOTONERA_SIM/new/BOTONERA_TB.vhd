@@ -26,17 +26,17 @@ architecture Behavioral of BOTONERA_TB is
 
     end component;
 
-    constant N_PRUEBAS : integer := 4;      --numero de pruebas a realizar
-    constant N_REBOTES : integer := 5;  --numero de rebotes
+    constant N_PRUEBAS : integer := 5;      --numero de pruebas a realizar
+    constant N_REBOTES : integer := 4;  --numero de rebotes
 
-    constant N_PISOS : positive := 6;       --numero de pisos
-    constant N_CICLOS : positive := 70;     --numero de ciclos antirrebote
-    
+    constant N_PISOS : positive := 4;       --numero de pisos
+    constant N_CICLOS : positive := 70;     --numero de ciclos antirrebote a esperar para validar la senal
+
     constant CLK_PERIOD : time := 10 ns;        --periodo de reloj
     constant DELAY : time := 0.1 * CLK_PERIOD;  --retraso estandar
 
-    signal BOT_IN : std_logic_vector (N_PISOS -1 downto 0) := (others => '0');  --entrada de piso
-    signal BOT_OUT : std_logic_vector (N_PISOS -1 downto 0);                    --salida de piso
+    signal BOT_IN : std_logic_vector (N_PISOS -1 downto 0) := (others => '0');  --entradas de piso
+    signal BOT_OUT : std_logic_vector (N_PISOS -1 downto 0);                    --salidas de piso
 
     signal CLK : std_logic := '0';      --reloj
     signal RST_N : std_logic := '1';    --reset
@@ -92,8 +92,33 @@ begin
 
             end loop;
         end loop;
-        
-        
+
+        --espera a estar entre pulsos de reloj
+        wait until CLK = '1';
+        wait for DELAY;
+
+        --prueba pulsar todos los botones de vez
+        for i in 1 to N_REBOTES loop
+            BOT_IN <= (others => '1');
+            wait for CLK_PERIOD;
+            BOT_IN <= (others => '0');
+            wait for CLK_PERIOD;
+
+        end loop;
+
+        --espera hasta que alguno de los botones haya cambiado
+        wait until BOT_OUT (0) = '1' for 100 * N_CICLOS * CLK_PERIOD;
+        wait for DELAY;
+
+        --comprueba si han cambiado todos
+        for i in BOT_OUT'reverse_range loop
+            assert BOT_OUT (i) = '1'
+            report "[ERROR]: no ha cambiado el pulso simultane del boton " & integer'image(i) & " ."
+            severity FAILURE;
+
+        end loop;
+
+
 
         wait for 100 * CLK_PERIOD;
 
