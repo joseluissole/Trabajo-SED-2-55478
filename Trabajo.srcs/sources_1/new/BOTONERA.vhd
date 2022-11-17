@@ -40,7 +40,8 @@ architecture Behavioral of BOTONERA is
 
 begin
 
-BOTONES_ASCENSOR: for i in BOT_IN'range generate
+--generacion de botones de 0 a n-1
+BOTONES_ASCENSOR: for i in BOT_IN'reverse_range generate
     BOTON_i: ESTAB_BOT generic map (
             NUM_CICLOS => NUM_CICLOS
             )

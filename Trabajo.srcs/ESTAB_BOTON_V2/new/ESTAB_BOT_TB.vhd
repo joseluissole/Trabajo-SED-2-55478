@@ -50,9 +50,10 @@ architecture Behavioral of ESTAB_BOT_TB is
         );
     end component;
     
+     constant N_PRUEBAS : integer := 5; --numero de pruebas
+    
+    
     constant N_CICLOS : positive := 75; --numero de ciclo del antirrebote
-
-    constant N_PRUEBAS : integer := 5; --numero de pruebas
 
     constant CLK_PERIOD : time := 10 ns;        --periodo de reloj
     constant DELAY : time := 0.1 * CLK_PERIOD;    --retraso estandar
