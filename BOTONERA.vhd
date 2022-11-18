@@ -49,7 +49,7 @@ BOTONES_ASCENSOR: for i in BOT_IN'reverse_range generate
             BOT_IN => BOT_IN(i),
             BOT_OUT => BOT_OUT(i),
             CLK => CLK,
-            CE => CLK,
+            CE => CE,
             RST_N => RST_N
         );
 
