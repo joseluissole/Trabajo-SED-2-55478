@@ -21,7 +21,7 @@ begin
     --bucle for para detectar el boton pulsado
     process(BOT_IN)
     begin
-        for i in BOT_IN'reverse_range loop
+        for i in BOT_IN'range loop      --prevalece el piso menor
             if BOT_IN(i) = '1' then
                 PISO <= i;
             
