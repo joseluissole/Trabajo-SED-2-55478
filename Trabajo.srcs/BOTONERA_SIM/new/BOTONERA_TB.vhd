@@ -89,6 +89,8 @@ begin
                 assert BOT_OUT(i) = '1'
                 report "[ERROR]: no ha cambiado el pulso del boton " & integer'image(i) & ". en prueba  " & integer'image(j) & "."
                 severity FAILURE;
+                
+                wait for 10 * CLK_PERIOD;
 
             end loop;
         end loop;

@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1668714951">
-  <File Type="PA-TCL" Name="ENC_INTEGER.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="ENC_INTEGER_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="ENC_INTEGER_reports.tcl"/>
-  <File Type="RDS-RDS" Name="ENC_INTEGER.vds"/>
-  <File Type="RDS-UTIL" Name="ENC_INTEGER_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="ENC_INTEGER_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="ENC_INTEGER.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ENC_INTEGER_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="ENC_INTEGER_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1668806500">
+  <File Type="PA-TCL" Name="BOTON2NATURAL.tcl"/>
+  <File Type="REPORTS-TCL" Name="BOTON2NATURAL_reports.tcl"/>
+  <File Type="RDS-RDS" Name="BOTON2NATURAL.vds"/>
+  <File Type="RDS-UTIL" Name="BOTON2NATURAL_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="BOTON2NATURAL_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="BOTON2NATURAL.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/ENC_INTEGER.vhd">
+    <File Path="$PSRCDIR/sources_1/new/BOTONERA.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -19,42 +16,43 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/DBNCR.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/EDGEDTCTR.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ENC_INTEGER.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/ESTAB_BOT.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/SYNCHRNZR.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/BOTONERA.vhd">
+    <File Path="$PSRCDIR/sources_1/new/BOTON2NATURAL.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ENC_INTEGER"/>
+      <Option Name="TopModule" Val="BOTON2NATURAL"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

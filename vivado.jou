@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Nov 19 18:51:07 2022
+# Process ID: 1896
+# Current directory: C:/Users/UPM/Desktop/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2188 C:\Users\UPM\Desktop\Trabajo-SED-2-55478-Convertir_Integer\Trabajo-SED-2-55478-Convertir_Integer\Trabajo-SED-2-55478-Convertir_Integer\Trabajo.xpr
+# Log file: C:/Users/UPM/Desktop/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/vivado.log
+# Journal file: C:/Users/UPM/Desktop/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer\vivado.jou
+# Running On: upm00035, OS: Windows, CPU Frequency: 2394 MHz, CPU Physical cores: 6, Host memory: 6404 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/UPM/Desktop/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo.xpr
+update_compile_order -fileset sources_1
+create_fileset -simset BOTON2NATURAL_CE_SIM
+file mkdir C:/Users/UPM/Desktop/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo.srcs/BOTON2NATURAL_CE_SIM/new
+set_property SOURCE_SET sources_1 [get_filesets BOTON2NATURAL_CE_SIM]
+close [ open C:/Users/UPM/Desktop/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo.srcs/BOTON2NATURAL_CE_SIM/new/BOTON2NATURAL_TB.vhd w ]
+add_files -fileset BOTON2NATURAL_CE_SIM C:/Users/UPM/Desktop/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo.srcs/BOTON2NATURAL_CE_SIM/new/BOTON2NATURAL_TB.vhd
+update_compile_order -fileset BOTON2NATURAL_CE_SIM
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTON2NATURAL_TB.tcl
+close_sim
+current_fileset -simset [ get_filesets BOTON2NATURAL_CE_SIM ]
+update_compile_order -fileset BOTON2NATURAL_CE_SIM
+launch_simulation -simset [get_filesets BOTON2NATURAL_CE_SIM ]
+launch_simulation -simset [get_filesets BOTON2NATURAL_CE_SIM ]
+source BOTON2NATURAL_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_CE_SIM ]
+source BOTON2NATURAL_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_CE_SIM ]
+source BOTON2NATURAL_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_CE_SIM ]
+source BOTON2NATURAL_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_CE_SIM ]
+source BOTON2NATURAL_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_CE_SIM ]
+source BOTON2NATURAL_TB.tcl
+close_sim

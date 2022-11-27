@@ -50,7 +50,7 @@ architecture Behavioral of ENC_INTEGER_TB is
 
     constant CLK_PERIOD : time := 10 ns;
 
-    constant N_PISOS : integer := 15;
+    constant N_PISOS : integer := 4;
 
     signal BOT_IN : std_logic_vector (N_PISOS -1 downto 0);
     signal PISO : natural;
@@ -78,7 +78,7 @@ begin
             wait for 10*CLK_PERIOD;
 
             assert PISO = i
-            report "[ERROR]: PISO vale " & integer'image(PISO) & "Cuando deberia ser " & integer'image(i)
+            report "[ERROR]: PISO vale " & integer'image(PISO) & ". Cuando deberia ser " & integer'image(i)
             severity FAILURE;
 
         end loop;
@@ -90,37 +90,69 @@ begin
             wait for CLK_PERIOD;
             BOT_IN(i) <= '0';
             wait for 10*CLK_PERIOD;
-            
-             assert PISO = i
-            report "[ERROR]: PISO vale " & integer'image(PISO) & "Cuando deberia ser " & integer'image(i)
+
+            assert PISO = i
+            report "[ERROR]: PISO vale " & integer'image(PISO) & ". Cuando deberia ser " & integer'image(i)
             severity FAILURE;
 
         end loop;
-        
-        for i in BOT_IN'reverse_range loop
-            BOT_IN(i) <= '1';
-            wait for 10*CLK_PERIOD;
-                       
-            end loop;
 
         for i in BOT_IN'reverse_range loop
-            BOT_IN(i) <= '0';
-            wait for 10*CLK_PERIOD;
-                       
-            end loop;
-            
-            for i in BOT_IN'range loop
+            wait for CLK_PERIOD;
             BOT_IN(i) <= '1';
             wait for 10*CLK_PERIOD;
-                       
-            end loop;
+
+
+            assert PISO = 0
+            report "[ERROR]: PISO vale " & integer'image(PISO) & ". Cuando deberia ser " & integer'image(0)
+            severity FAILURE;
+
+        end loop;
+
+        for i in BOT_IN'reverse_range loop
+            wait for CLK_PERIOD;
+            BOT_IN(i) <= '0';
+            wait for 10*CLK_PERIOD;
+
+
+            if (i < BOT_IN'high) then
+                assert PISO = i + 1
+                report "[ERROR]: PISO vale " & integer'image(PISO) & ". Cuando deberia ser " & integer'image(i + 1)
+                severity FAILURE;
+
+            else
+                assert PISO = BOT_IN'high
+                report "[ERROR]: PISO vale " & integer'image(PISO) & ". Cuando deberia ser " & integer'image(BOT_IN'high)
+                severity FAILURE;
+            end if;
+
+
+
+        end loop;
 
         for i in BOT_IN'range loop
+            wait for CLK_PERIOD;
+            BOT_IN(i) <= '1';
+            wait for 10*CLK_PERIOD;
+
+            assert PISO = i
+            report "[ERROR]: PISO vale " & integer'image(PISO) & ". Cuando deberia ser " & integer'image(i - 1)
+            severity FAILURE;
+
+        end loop;
+
+        for i in BOT_IN'range loop
+            wait for CLK_PERIOD;
             BOT_IN(i) <= '0';
             wait for 10*CLK_PERIOD;
-                       
-            end loop;
-            
+
+
+            assert PISO = 0
+            report "[ERROR]: PISO vale " & integer'image(PISO) & ". Cuando deberia ser " & integer'image(0)
+            severity FAILURE;
+
+        end loop;
+
         wait for 10*CLK_PERIOD;
 
         assert FALSE

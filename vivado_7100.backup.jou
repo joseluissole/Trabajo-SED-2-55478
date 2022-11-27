@@ -1,0 +1,134 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 18 20:40:13 2022
+# Process ID: 7100
+# Current directory: C:/Users/UPM/Downloads/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4936 C:\Users\UPM\Downloads\Trabajo-SED-2-55478-Convertir_Integer\Trabajo-SED-2-55478-Convertir_Integer\Trabajo.xpr
+# Log file: C:/Users/UPM/Downloads/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/vivado.log
+# Journal file: C:/Users/UPM/Downloads/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer\vivado.jou
+# Running On: upm00528, OS: Windows, CPU Frequency: 2394 MHz, CPU Physical cores: 6, Host memory: 6404 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/UPM/Downloads/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/UPM/Downloads/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo.srcs/sources_1/new/BOTON2NATURAL.vhd w ]
+add_files C:/Users/UPM/Downloads/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo.srcs/sources_1/new/BOTON2NATURAL.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top BOTON2NATURAL [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+open_run impl_1
+close_design
+create_fileset -simset BOTON2NATURAL_SIM
+file mkdir C:/Users/UPM/Downloads/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo.srcs/BOTON2NATURAL_SIM/new
+set_property SOURCE_SET sources_1 [get_filesets BOTON2NATURAL_SIM]
+close [ open C:/Users/UPM/Downloads/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo.srcs/BOTON2NATURAL_SIM/new/BOTON2NATURAL_TB.vhd w ]
+add_files -fileset BOTON2NATURAL_SIM C:/Users/UPM/Downloads/Trabajo-SED-2-55478-Convertir_Integer/Trabajo-SED-2-55478-Convertir_Integer/Trabajo.srcs/BOTON2NATURAL_SIM/new/BOTON2NATURAL_TB.vhd
+update_compile_order -fileset BOTON2NATURAL_SIM
+current_fileset -simset [ get_filesets BOTON2NATURAL_SIM ]
+update_compile_order -fileset BOTON2NATURAL_SIM
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTONERA_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTONERA_SIM ]
+source BOTONERA_TB.tcl
+current_fileset -simset [ get_filesets BOTON2NATURAL_SIM ]
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets INTEGER_SIM ]
+source ENC_INTEGER_TB.tcl
+close_sim
+current_fileset -simset [ get_filesets BOTON2NATURAL_SIM ]
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets BOTON2NATURAL_SIM ]
+source BOTONERA_TB.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+open_run impl_1
+open_run synth_1 -name synth_1
