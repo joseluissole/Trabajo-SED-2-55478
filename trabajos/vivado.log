@@ -1,0 +1,774 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec  7 12:58:20 2022
+# Process ID: 3644
+# Current directory: C:/Users/sed/Downloads/trab/trabajos
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12928 C:\Users\sed\Downloads\trab\trabajos\trabajos.xpr
+# Log file: C:/Users/sed/Downloads/trab/trabajos/vivado.log
+# Journal file: C:/Users/sed/Downloads/trab/trabajos\vivado.jou
+# Running On: DESKTOP-28O1IPC, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 6, Host memory: 8431 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sed/Downloads/trab/trabajos/trabajos.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/sed/Downloads/trab/trabajos/trabajos.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1638.277 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.1
+  **** Build date : Apr 18 2022 at 16:02:36
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.1.0
+  ****** Build date   : Apr 12 2022-21:12:08
+    **** Build number : 2022.1.1649790728
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1638.277 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF1DDA
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3200.344 ; gain = 1562.066
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/utils_1/imports/synth_1/TOP.dcp with file C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/TOP.dcp
+launch_runs synth_1 -jobs 3
+[Wed Dec  7 13:09:51 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 3
+[Wed Dec  7 13:10:52 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Wed Dec  7 13:12:09 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/utils_1/imports/synth_1/TOP.dcp with file C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/TOP.dcp
+launch_runs synth_1 -jobs 3
+[Wed Dec  7 13:15:54 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 3
+[Wed Dec  7 13:16:42 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4040.980 ; gain = 386.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:53]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTON2NATURAL' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:5' bound to instance 'sensor_planta' of component 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:22]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTONERA' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:6' bound to instance 'BOT' of component 'BOTONERA' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'BOTONERA' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:25]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:23]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'SINCRONIZADO' of component 'SYNCHRNZR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:17]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'FLANCO' of component 'EDGEDTCTR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:17]
+	Parameter N_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DBNCR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:7' bound to instance 'ANTIRREBOTE' of component 'DBNCR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'DBNCR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:23]
+	Parameter N_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DBNCR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ESTAB_BOT' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:23]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'BOTONERA' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:25]
+	Parameter N_PISOS bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'ENC_INTEGER' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:5' bound to instance 'ENC' of component 'ENC_INTEGER' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'ENC_INTEGER' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:18]
+	Parameter N_PISOS bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ENC_INTEGER' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'BOTON2NATURAL' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:22]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTON2NATURAL' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:5' bound to instance 'boton_piso' of component 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:121]
+INFO: [Synth 8-3491] module 'MAQ_ESTADOS' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:6' bound to instance 'maq_est' of component 'MAQ_ESTADOS' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'MAQ_ESTADOS' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'MAQ_ESTADOS' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:18]
+INFO: [Synth 8-3491] module 'Comparador' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:30' bound to instance 'comp' of component 'Comparador' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'Comparador' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Comparador' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4122.219 ; gain = 467.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4144.039 ; gain = 489.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4144.039 ; gain = 489.207
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4144.039 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sed/Downloads/trab/trabajos/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/sed/Downloads/trab/trabajos/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4259.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 4275.004 ; gain = 620.172
+37 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 4275.004 ; gain = 993.105
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Wed Dec  7 13:17:59 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.1
+  **** Build date : Apr 18 2022 at 16:02:36
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.1.0
+  ****** Build date   : Apr 12 2022-21:12:08
+    **** Build number : 2022.1.1649790728
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 4295.602 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF1DDA
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/utils_1/imports/synth_1/TOP.dcp with file C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/TOP.dcp
+launch_runs synth_1 -jobs 3
+[Wed Dec  7 13:25:20 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 3
+[Wed Dec  7 13:26:08 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/utils_1/imports/synth_1/TOP.dcp with file C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/TOP.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1
+
+launch_runs synth_1 -jobs 3
+[Wed Dec  7 13:27:38 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+[Wed Dec  7 13:28:40 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 3
+[Wed Dec  7 13:28:43 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 3
+[Wed Dec  7 13:29:34 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+close_design
+close_hw_manager
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4314.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:53]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTON2NATURAL' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:5' bound to instance 'sensor_planta' of component 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:22]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTONERA' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:6' bound to instance 'BOT' of component 'BOTONERA' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'BOTONERA' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:25]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:23]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'SINCRONIZADO' of component 'SYNCHRNZR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:17]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'FLANCO' of component 'EDGEDTCTR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:17]
+	Parameter N_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DBNCR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:7' bound to instance 'ANTIRREBOTE' of component 'DBNCR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'DBNCR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:23]
+	Parameter N_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DBNCR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ESTAB_BOT' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:23]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'BOTONERA' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:25]
+	Parameter N_PISOS bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'ENC_INTEGER' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:5' bound to instance 'ENC' of component 'ENC_INTEGER' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'ENC_INTEGER' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:18]
+	Parameter N_PISOS bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ENC_INTEGER' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'BOTON2NATURAL' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:22]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTON2NATURAL' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:5' bound to instance 'boton_piso' of component 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:124]
+INFO: [Synth 8-3491] module 'MAQ_ESTADOS' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:6' bound to instance 'maq_est' of component 'MAQ_ESTADOS' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'MAQ_ESTADOS' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'MAQ_ESTADOS' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:18]
+INFO: [Synth 8-3491] module 'Comparador' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:30' bound to instance 'comp' of component 'Comparador' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'Comparador' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Comparador' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4314.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4314.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4314.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4314.082 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sed/Downloads/trab/trabajos/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/sed/Downloads/trab/trabajos/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4335.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4336.055 ; gain = 21.973
+36 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4336.055 ; gain = 21.973
+reset_run impl_1 -prev_step 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/utils_1/imports/synth_1/TOP.dcp with file C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/TOP.dcp
+launch_runs synth_1 -jobs 3
+[Wed Dec  7 13:31:24 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 3
+[Wed Dec  7 13:31:30 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 3
+[Wed Dec  7 13:32:16 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4345.805 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/sed/Downloads/trab/trabajos/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/sed/Downloads/trab/trabajos/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4345.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 4385.629 ; gain = 39.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:53]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTON2NATURAL' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:5' bound to instance 'sensor_planta' of component 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:22]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTONERA' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:6' bound to instance 'BOT' of component 'BOTONERA' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'BOTONERA' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:25]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:23]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'SINCRONIZADO' of component 'SYNCHRNZR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:17]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'FLANCO' of component 'EDGEDTCTR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:17]
+	Parameter N_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DBNCR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:7' bound to instance 'ANTIRREBOTE' of component 'DBNCR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'DBNCR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:23]
+	Parameter N_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DBNCR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ESTAB_BOT' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:23]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'BOTONERA' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:25]
+	Parameter N_PISOS bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'ENC_INTEGER' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:5' bound to instance 'ENC' of component 'ENC_INTEGER' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'ENC_INTEGER' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:18]
+	Parameter N_PISOS bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ENC_INTEGER' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'BOTON2NATURAL' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:22]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTON2NATURAL' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:5' bound to instance 'boton_piso' of component 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:124]
+INFO: [Synth 8-3491] module 'MAQ_ESTADOS' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:6' bound to instance 'maq_est' of component 'MAQ_ESTADOS' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'MAQ_ESTADOS' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'MAQ_ESTADOS' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:18]
+INFO: [Synth 8-3491] module 'Comparador' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:30' bound to instance 'comp' of component 'Comparador' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'Comparador' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Comparador' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 4851.898 ; gain = 506.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 4865.125 ; gain = 519.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 4865.125 ; gain = 519.320
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 4865.125 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sed/Downloads/trab/trabajos/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/sed/Downloads/trab/trabajos/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4978.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 4978.910 ; gain = 633.105
+36 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 4978.910 ; gain = 633.105
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Wed Dec  7 13:33:33 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.1
+  **** Build date : Apr 18 2022 at 16:02:36
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.1.0
+  ****** Build date   : Apr 12 2022-21:12:08
+    **** Build number : 2022.1.1649790728
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4978.910 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF1DDA
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/utils_1/imports/synth_1/TOP.dcp with file C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/TOP.dcp
+launch_runs synth_1 -jobs 3
+[Wed Dec  7 13:37:41 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 3
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Dec  7 13:38:46 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Wed Dec  7 13:40:03 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.1
+  **** Build date : Apr 18 2022 at 16:02:36
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.1.0
+  ****** Build date   : Apr 12 2022-21:12:08
+    **** Build number : 2022.1.1649790728
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 4997.918 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF1DDA
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 5038.941 ; gain = 27.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:53]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTON2NATURAL' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:5' bound to instance 'sensor_planta' of component 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:22]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTONERA' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:6' bound to instance 'BOT' of component 'BOTONERA' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'BOTONERA' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:25]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:23]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'SINCRONIZADO' of component 'SYNCHRNZR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/SYNCHRNZR.vhd:17]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'FLANCO' of component 'EDGEDTCTR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/EDGEDTCTR.vhd:17]
+	Parameter N_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DBNCR' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:7' bound to instance 'ANTIRREBOTE' of component 'DBNCR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'DBNCR' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:23]
+	Parameter N_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DBNCR' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/DBNCR.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ESTAB_BOT' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:23]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ESTAB_BOT' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ESTAB_BOT.vhd:5' bound to instance 'BOTON_i' of component 'ESTAB_BOT' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'BOTONERA' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTONERA.vhd:25]
+	Parameter N_PISOS bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'ENC_INTEGER' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:5' bound to instance 'ENC' of component 'ENC_INTEGER' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'ENC_INTEGER' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:18]
+	Parameter N_PISOS bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ENC_INTEGER' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/ENC_INTEGER.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'BOTON2NATURAL' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:22]
+	Parameter NUM_PISOS bound to: 4 - type: integer 
+	Parameter NUM_CICLOS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOTON2NATURAL' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/BOTON2NATURAL.vhd:5' bound to instance 'boton_piso' of component 'BOTON2NATURAL' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:124]
+INFO: [Synth 8-3491] module 'MAQ_ESTADOS' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:6' bound to instance 'maq_est' of component 'MAQ_ESTADOS' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'MAQ_ESTADOS' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'MAQ_ESTADOS' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/MAQ_ESTADOS.vhd:18]
+INFO: [Synth 8-3491] module 'Comparador' declared at 'C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:30' bound to instance 'comp' of component 'Comparador' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'Comparador' [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Comparador' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/Comparador.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/sources_1/new/TOP.vhd:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5111.125 ; gain = 99.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5135.000 ; gain = 123.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5135.000 ; gain = 123.066
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 5165.270 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sed/Downloads/trab/trabajos/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/sed/Downloads/trab/trabajos/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 5165.270 ; gain = 153.336
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292ABF1DDA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF1DDA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Wed Dec  7 13:43:28 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+current_design synth_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/utils_1/imports/synth_1/TOP.dcp with file C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/TOP.dcp
+launch_runs synth_1 -jobs 3
+[Wed Dec  7 13:43:59 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+current_design rtl_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/utils_1/imports/synth_1/TOP.dcp with file C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/TOP.dcp
+launch_runs impl_1 -jobs 3
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Dec  7 13:44:47 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+[Wed Dec  7 13:44:47 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sed/Downloads/trab/trabajos/trabajos.srcs/utils_1/imports/synth_1/TOP.dcp with file C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/TOP.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Dec  7 13:46:45 2022] Launched synth_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/synth_1/runme.log
+[Wed Dec  7 13:46:45 2022] Launched impl_1...
+Run output will be captured here: C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/sed/Downloads/trab/trabajos/trabajos.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  7 14:03:56 2022...

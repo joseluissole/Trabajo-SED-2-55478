@@ -1,0 +1,98 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Dec  7 13:48:04 2022
+| Host         : DESKTOP-28O1IPC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    65 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     8 |
+| >= 6 to < 8        |     8 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | Yes                    |              43 |           11 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               8 |            4 |
+| Yes          | No                    | Yes                    |              80 |           24 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+|                           Clock Signal                          |                                Enable Signal                               |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+|  boton_piso/BOT/BOTONES_ASCENSOR[2].BOTON_i/ANTIRREBOTE/E[0]    |                                                                            |                                                              |                1 |              2 |         2.00 |
+|  sensor_planta/BOT/BOTONES_ASCENSOR[2].BOTON_i/ANTIRREBOTE/E[0] |                                                                            |                                                              |                1 |              2 |         2.00 |
+|  CLK_IBUF_BUFG                                                  | sensor_planta/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/estado_siguiente | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                                                  | boton_piso/BOT/BOTONES_ASCENSOR[0].BOTON_i/ANTIRREBOTE/estado_siguiente    | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                                                  | boton_piso/BOT/BOTONES_ASCENSOR[1].BOTON_i/ANTIRREBOTE/estado_siguiente    | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                                                  | boton_piso/BOT/BOTONES_ASCENSOR[2].BOTON_i/ANTIRREBOTE/estado_siguiente    | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                                                  | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/estado_siguiente    | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                                                  | sensor_planta/BOT/BOTONES_ASCENSOR[0].BOTON_i/ANTIRREBOTE/estado_siguiente | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                                                  | sensor_planta/BOT/BOTONES_ASCENSOR[1].BOTON_i/ANTIRREBOTE/estado_siguiente | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                                                  | sensor_planta/BOT/BOTONES_ASCENSOR[2].BOTON_i/ANTIRREBOTE/estado_siguiente | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                                                  | sensor_planta/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/cuenta_siguiente | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG                                                  | boton_piso/BOT/BOTONES_ASCENSOR[0].BOTON_i/ANTIRREBOTE/cuenta_siguiente    | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG                                                  | boton_piso/BOT/BOTONES_ASCENSOR[1].BOTON_i/ANTIRREBOTE/cuenta_siguiente    | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG                                                  | boton_piso/BOT/BOTONES_ASCENSOR[2].BOTON_i/ANTIRREBOTE/cuenta_siguiente    | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG                                                  | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/cuenta_siguiente    | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG                                                  | sensor_planta/BOT/BOTONES_ASCENSOR[0].BOTON_i/ANTIRREBOTE/cuenta_siguiente | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG                                                  | sensor_planta/BOT/BOTONES_ASCENSOR[1].BOTON_i/ANTIRREBOTE/cuenta_siguiente | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG                                                  | sensor_planta/BOT/BOTONES_ASCENSOR[2].BOTON_i/ANTIRREBOTE/cuenta_siguiente | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG                                                  | RST_N_IBUF                                                                 |                                                              |                4 |              8 |         2.00 |
+|  CLK_IBUF_BUFG                                                  |                                                                            | boton_piso/BOT/BOTONES_ASCENSOR[3].BOTON_i/ANTIRREBOTE/RST_N |               11 |             43 |         3.91 |
++-----------------------------------------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+
+
