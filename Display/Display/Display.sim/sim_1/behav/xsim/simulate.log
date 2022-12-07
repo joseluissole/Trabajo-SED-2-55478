@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Simulacin finalizada. Test superado.
+Time: 300 ns  Iteration: 0  Process: /decoder_tb/tb  File: C:/Users/UPM/Downloads/Display/Display.sim/Display_tb.vhd
+$finish called at time : 300 ns : File "C:/Users/UPM/Downloads/Display/Display.sim/Display_tb.vhd" Line 60
