@@ -85,7 +85,7 @@ component decoder IS
     );
 END component;
 
-    signal PUERTA_I : std_logic;
+    signal PA_DISTINTO_PD_I : std_logic;
     
     signal PD_BCD : std_logic_vector (3 downto 0);
     signal PA_BCD : std_logic_vector (3 downto 0);
@@ -128,7 +128,7 @@ begin
         OUTPUT_BCD => PA_BCD,                   --salida de los pisos en BCD
 
         CLK => CLK,
-        CE => '1',
+        CE => PA_DISTINTO_PD_I,
         RST_N => RST_N
     );
     
@@ -146,6 +146,8 @@ begin
         RST_N => RST_N
     );
     
+    PA_DISTINTO_PD_I <= not PA_IGUAL_PD_I;
+    
     cidificador7seg: decoder
     
     PORT map (
@@ -154,5 +156,6 @@ begin
     );
     
 VISUALIZADOR <= "11111110";
+
 
 end Behavioral;
