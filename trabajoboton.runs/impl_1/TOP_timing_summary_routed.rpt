@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Fri Dec  9 18:26:12 2022
+| Date         : Fri Dec  9 18:45:41 2022
 | Host         : DESKTOP-9L1N67Q running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file TOP_timing_summary_routed.rpt -pb TOP_timing_summary_routed.pb -rpx TOP_timing_summary_routed.rpx -warn_on_violation
 | Design       : TOP
@@ -56,7 +56,7 @@ Table of Contents
 3. checking pulse_width_clock (0)
 4. checking unconstrained_internal_endpoints (72)
 5. checking no_input_delay (9)
-6. checking no_output_delay (3)
+6. checking no_output_delay (10)
 7. checking multiple_clock (0)
 8. checking generated_clocks (0)
 9. checking loops (0)
@@ -93,9 +93,9 @@ Table of Contents
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
-6. checking no_output_delay (3)
--------------------------------
- There are 3 ports with no output delay specified. (HIGH)
+6. checking no_output_delay (10)
+--------------------------------
+ There are 10 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -140,7 +140,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-        inf        0.000                      0                   75          inf        0.000                      0                   75           NA           NA                      NA                    NA  
+        inf        0.000                      0                   82          inf        0.000                      0                   82           NA           NA                      NA                    NA  
 
 
 There are no user specified timing constraints.
@@ -209,111 +209,163 @@ Path Group:  (none)
 From Clock:  
   To Clock:  
 
-Max Delay            75 Endpoints
-Min Delay            75 Endpoints
+Max Delay            82 Endpoints
+Min Delay            82 Endpoints
 --------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 maq_est/FSM_onehot_state_reg[0]/C
+  Source:                 actual/ENC_BCD/OUTPUT_I_reg[1]/C
                             (rising edge-triggered cell FDPE)
-  Destination:            PUERTA
+  Destination:            SEGMENTO[6]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.360ns  (logic 4.009ns (63.023%)  route 2.352ns (36.977%))
+  Data Path Delay:        8.142ns  (logic 4.157ns (51.054%)  route 3.985ns (48.946%))
+  Logic Levels:           3  (FDPE=1 LUT3=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y88          FDPE                         0.000     0.000 r  actual/ENC_BCD/OUTPUT_I_reg[1]/C
+    SLICE_X0Y88          FDPE (Prop_fdpe_C_Q)         0.456     0.456 f  actual/ENC_BCD/OUTPUT_I_reg[1]/Q
+                         net (fo=9, routed)           1.003     1.459    actual/ENC_BCD/OUTPUT_I[1]
+    SLICE_X0Y90          LUT3 (Prop_lut3_I1_O)        0.124     1.583 r  actual/ENC_BCD/SEGMENTO_OBUF[6]_inst_i_1/O
+                         net (fo=2, routed)           2.983     4.565    SEGMENTO_OBUF[3]
+    T10                  OBUF (Prop_obuf_I_O)         3.577     8.142 r  SEGMENTO_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     8.142    SEGMENTO[6]
+    T10                                                               r  SEGMENTO[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 actual/ENC_BCD/OUTPUT_I_reg[1]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            SEGMENTO[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.865ns  (logic 4.141ns (52.650%)  route 3.724ns (47.350%))
+  Logic Levels:           3  (FDPE=1 LUT3=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y88          FDPE                         0.000     0.000 r  actual/ENC_BCD/OUTPUT_I_reg[1]/C
+    SLICE_X0Y88          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  actual/ENC_BCD/OUTPUT_I_reg[1]/Q
+                         net (fo=9, routed)           1.010     1.466    actual/ENC_BCD/OUTPUT_I[1]
+    SLICE_X0Y90          LUT3 (Prop_lut3_I2_O)        0.124     1.590 r  actual/ENC_BCD/SEGMENTO_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           2.714     4.304    SEGMENTO_OBUF[1]
+    T11                  OBUF (Prop_obuf_I_O)         3.561     7.865 r  SEGMENTO_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     7.865    SEGMENTO[1]
+    T11                                                               r  SEGMENTO[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 actual/ENC_BCD/OUTPUT_I_reg[1]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            SEGMENTO[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.603ns  (logic 4.130ns (54.322%)  route 3.473ns (45.678%))
+  Logic Levels:           3  (FDPE=1 LUT3=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y88          FDPE                         0.000     0.000 r  actual/ENC_BCD/OUTPUT_I_reg[1]/C
+    SLICE_X0Y88          FDPE (Prop_fdpe_C_Q)         0.456     0.456 f  actual/ENC_BCD/OUTPUT_I_reg[1]/Q
+                         net (fo=9, routed)           1.003     1.459    actual/ENC_BCD/OUTPUT_I[1]
+    SLICE_X0Y90          LUT3 (Prop_lut3_I1_O)        0.124     1.583 r  actual/ENC_BCD/SEGMENTO_OBUF[6]_inst_i_1/O
+                         net (fo=2, routed)           2.470     4.053    SEGMENTO_OBUF[3]
+    K13                  OBUF (Prop_obuf_I_O)         3.550     7.603 r  SEGMENTO_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     7.603    SEGMENTO[3]
+    K13                                                               r  SEGMENTO[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 actual/ENC_BCD/OUTPUT_I_reg[3]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            SEGMENTO[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.329ns  (logic 4.114ns (56.129%)  route 3.215ns (43.871%))
+  Logic Levels:           3  (FDPE=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y88          FDPE                         0.000     0.000 r  actual/ENC_BCD/OUTPUT_I_reg[3]/C
+    SLICE_X0Y88          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  actual/ENC_BCD/OUTPUT_I_reg[3]/Q
+                         net (fo=11, routed)          0.900     1.356    actual/ENC_BCD/OUTPUT_I_reg[3]_0
+    SLICE_X0Y88          LUT2 (Prop_lut2_I1_O)        0.124     1.480 r  actual/ENC_BCD/SEGMENTO_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           2.315     3.795    SEGMENTO_OBUF[2]
+    P15                  OBUF (Prop_obuf_I_O)         3.534     7.329 r  SEGMENTO_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     7.329    SEGMENTO[2]
+    P15                                                               r  SEGMENTO[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 actual/ENC_BCD/OUTPUT_I_reg[1]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            SEGMENTO[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.236ns  (logic 4.309ns (59.551%)  route 2.927ns (40.449%))
+  Logic Levels:           3  (FDPE=1 LUT3=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y88          FDPE                         0.000     0.000 r  actual/ENC_BCD/OUTPUT_I_reg[1]/C
+    SLICE_X0Y88          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  actual/ENC_BCD/OUTPUT_I_reg[1]/Q
+                         net (fo=9, routed)           1.003     1.459    actual/ENC_BCD/OUTPUT_I[1]
+    SLICE_X0Y90          LUT3 (Prop_lut3_I2_O)        0.152     1.611 r  actual/ENC_BCD/SEGMENTO_OBUF[4]_inst_i_1/O
+                         net (fo=1, routed)           1.924     3.535    SEGMENTO_OBUF[4]
+    K16                  OBUF (Prop_obuf_I_O)         3.701     7.236 r  SEGMENTO_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     7.236    SEGMENTO[4]
+    K16                                                               r  SEGMENTO[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 actual/ENC_BCD/OUTPUT_I_reg[3]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            SEGMENTO[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.120ns  (logic 4.350ns (61.098%)  route 2.770ns (38.902%))
+  Logic Levels:           3  (FDPE=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y88          FDPE                         0.000     0.000 r  actual/ENC_BCD/OUTPUT_I_reg[3]/C
+    SLICE_X0Y88          FDPE (Prop_fdpe_C_Q)         0.456     0.456 f  actual/ENC_BCD/OUTPUT_I_reg[3]/Q
+                         net (fo=11, routed)          0.900     1.356    actual/ENC_BCD/OUTPUT_I_reg[3]_0
+    SLICE_X0Y88          LUT2 (Prop_lut2_I1_O)        0.149     1.505 r  actual/ENC_BCD/SEGMENTO_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           1.870     3.375    SEGMENTO_OBUF[0]
+    L18                  OBUF (Prop_obuf_I_O)         3.745     7.120 r  SEGMENTO_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     7.120    SEGMENTO[0]
+    L18                                                               r  SEGMENTO[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 actual/ENC_BCD/OUTPUT_I_reg[3]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            SEGMENTO[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.961ns  (logic 4.011ns (57.624%)  route 2.950ns (42.376%))
   Logic Levels:           2  (FDPE=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y95          FDPE                         0.000     0.000 r  maq_est/FSM_onehot_state_reg[0]/C
-    SLICE_X0Y95          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  maq_est/FSM_onehot_state_reg[0]/Q
-                         net (fo=4, routed)           2.352     2.808    PUERTA_OBUF
-    J13                  OBUF (Prop_obuf_I_O)         3.553     6.360 r  PUERTA_OBUF_inst/O
-                         net (fo=0)                   0.000     6.360    PUERTA
-    J13                                                               r  PUERTA (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 maq_est/FSM_onehot_state_reg[1]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            MOTOR[0]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.272ns  (logic 3.976ns (63.400%)  route 2.296ns (36.600%))
-  Logic Levels:           2  (FDCE=1 OBUF=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X0Y95          FDCE                         0.000     0.000 r  maq_est/FSM_onehot_state_reg[1]/C
-    SLICE_X0Y95          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  maq_est/FSM_onehot_state_reg[1]/Q
-                         net (fo=4, routed)           2.296     2.752    MOTOR_OBUF[0]
-    H17                  OBUF (Prop_obuf_I_O)         3.520     6.272 r  MOTOR_OBUF[0]_inst/O
-                         net (fo=0)                   0.000     6.272    MOTOR[0]
-    H17                                                               r  MOTOR[0] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 RST_N
-                            (input port)
-  Destination:            deseado/BOTONES[3].sincronizador_I/sreg_reg[0]/CLR
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.211ns  (logic 1.631ns (26.258%)  route 4.580ns (73.742%))
-  Logic Levels:           2  (IBUF=1 LUT1=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    C12                                               0.000     0.000 r  RST_N (IN)
-                         net (fo=0)                   0.000     0.000    RST_N
-    C12                  IBUF (Prop_ibuf_I_O)         1.507     1.507 r  RST_N_IBUF_inst/O
-                         net (fo=6, routed)           2.930     4.437    actual/ENC_BCD/RST_N_IBUF
-    SLICE_X1Y93          LUT1 (Prop_lut1_I0_O)        0.124     4.561 f  actual/ENC_BCD/FSM_onehot_state[2]_i_2/O
-                         net (fo=24, routed)          1.650     6.211    deseado/BOTONES[3].sincronizador_I/sreg_reg[0]_0
-    SLICE_X0Y83          FDCE                                         f  deseado/BOTONES[3].sincronizador_I/sreg_reg[0]/CLR
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 RST_N
-                            (input port)
-  Destination:            deseado/BOTONES[3].sincronizador_I/sreg_reg[1]/CLR
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.207ns  (logic 1.631ns (26.277%)  route 4.576ns (73.723%))
-  Logic Levels:           2  (IBUF=1 LUT1=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    C12                                               0.000     0.000 r  RST_N (IN)
-                         net (fo=0)                   0.000     0.000    RST_N
-    C12                  IBUF (Prop_ibuf_I_O)         1.507     1.507 r  RST_N_IBUF_inst/O
-                         net (fo=6, routed)           2.930     4.437    actual/ENC_BCD/RST_N_IBUF
-    SLICE_X1Y93          LUT1 (Prop_lut1_I0_O)        0.124     4.561 f  actual/ENC_BCD/FSM_onehot_state[2]_i_2/O
-                         net (fo=24, routed)          1.646     6.207    deseado/BOTONES[3].sincronizador_I/sreg_reg[0]_0
-    SLICE_X1Y83          FDCE                                         f  deseado/BOTONES[3].sincronizador_I/sreg_reg[1]/CLR
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 RST_N
-                            (input port)
-  Destination:            actual/BOTONES[0].sincronizador_I/sreg_reg[0]/CLR
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.192ns  (logic 1.631ns (26.339%)  route 4.561ns (73.661%))
-  Logic Levels:           2  (IBUF=1 LUT1=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    C12                                               0.000     0.000 r  RST_N (IN)
-                         net (fo=0)                   0.000     0.000    RST_N
-    C12                  IBUF (Prop_ibuf_I_O)         1.507     1.507 r  RST_N_IBUF_inst/O
-                         net (fo=6, routed)           2.930     4.437    actual/ENC_BCD/RST_N_IBUF
-    SLICE_X1Y93          LUT1 (Prop_lut1_I0_O)        0.124     4.561 f  actual/ENC_BCD/FSM_onehot_state[2]_i_2/O
-                         net (fo=24, routed)          1.631     6.192    actual/BOTONES[0].sincronizador_I/AR[0]
-    SLICE_X0Y81          FDCE                                         f  actual/BOTONES[0].sincronizador_I/sreg_reg[0]/CLR
+    SLICE_X0Y88          FDPE                         0.000     0.000 r  actual/ENC_BCD/OUTPUT_I_reg[3]/C
+    SLICE_X0Y88          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  actual/ENC_BCD/OUTPUT_I_reg[3]/Q
+                         net (fo=11, routed)          2.950     3.406    SEGMENTO_OBUF[5]
+    R10                  OBUF (Prop_obuf_I_O)         3.555     6.961 r  SEGMENTO_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     6.961    SEGMENTO[5]
+    R10                                                               r  SEGMENTO[5] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -322,7 +374,7 @@ Slack:                    inf
   Destination:            actual/BOTONES[2].sincronizador_I/sreg_reg[0]/CLR
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.192ns  (logic 1.631ns (26.339%)  route 4.561ns (73.661%))
+  Data Path Delay:        6.496ns  (logic 1.631ns (25.108%)  route 4.865ns (74.892%))
   Logic Levels:           2  (IBUF=1 LUT1=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -330,10 +382,10 @@ Slack:                    inf
     C12                                               0.000     0.000 r  RST_N (IN)
                          net (fo=0)                   0.000     0.000    RST_N
     C12                  IBUF (Prop_ibuf_I_O)         1.507     1.507 r  RST_N_IBUF_inst/O
-                         net (fo=6, routed)           2.930     4.437    actual/ENC_BCD/RST_N_IBUF
-    SLICE_X1Y93          LUT1 (Prop_lut1_I0_O)        0.124     4.561 f  actual/ENC_BCD/FSM_onehot_state[2]_i_2/O
-                         net (fo=24, routed)          1.631     6.192    actual/BOTONES[2].sincronizador_I/AR[0]
-    SLICE_X0Y81          FDCE                                         f  actual/BOTONES[2].sincronizador_I/sreg_reg[0]/CLR
+                         net (fo=6, routed)           3.054     4.561    actual/ENC_BCD/RST_N_IBUF
+    SLICE_X0Y92          LUT1 (Prop_lut1_I0_O)        0.124     4.685 f  actual/ENC_BCD/FSM_onehot_state[2]_i_2/O
+                         net (fo=24, routed)          1.811     6.496    actual/BOTONES[2].sincronizador_I/AR[0]
+    SLICE_X0Y78          FDCE                                         f  actual/BOTONES[2].sincronizador_I/sreg_reg[0]/CLR
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -342,7 +394,7 @@ Slack:                    inf
   Destination:            actual/BOTONES[2].sincronizador_I/sreg_reg[1]/CLR
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.192ns  (logic 1.631ns (26.339%)  route 4.561ns (73.661%))
+  Data Path Delay:        6.496ns  (logic 1.631ns (25.108%)  route 4.865ns (74.892%))
   Logic Levels:           2  (IBUF=1 LUT1=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -350,10 +402,10 @@ Slack:                    inf
     C12                                               0.000     0.000 r  RST_N (IN)
                          net (fo=0)                   0.000     0.000    RST_N
     C12                  IBUF (Prop_ibuf_I_O)         1.507     1.507 r  RST_N_IBUF_inst/O
-                         net (fo=6, routed)           2.930     4.437    actual/ENC_BCD/RST_N_IBUF
-    SLICE_X1Y93          LUT1 (Prop_lut1_I0_O)        0.124     4.561 f  actual/ENC_BCD/FSM_onehot_state[2]_i_2/O
-                         net (fo=24, routed)          1.631     6.192    actual/BOTONES[2].sincronizador_I/AR[0]
-    SLICE_X0Y81          FDCE                                         f  actual/BOTONES[2].sincronizador_I/sreg_reg[1]/CLR
+                         net (fo=6, routed)           3.054     4.561    actual/ENC_BCD/RST_N_IBUF
+    SLICE_X0Y92          LUT1 (Prop_lut1_I0_O)        0.124     4.685 f  actual/ENC_BCD/FSM_onehot_state[2]_i_2/O
+                         net (fo=24, routed)          1.811     6.496    actual/BOTONES[2].sincronizador_I/AR[0]
+    SLICE_X0Y78          FDCE                                         f  actual/BOTONES[2].sincronizador_I/sreg_reg[1]/CLR
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -362,7 +414,7 @@ Slack:                    inf
   Destination:            actual/BOTONES[0].sincronizador_I/sreg_reg[1]/CLR
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.066ns  (logic 1.631ns (26.890%)  route 4.435ns (73.110%))
+  Data Path Delay:        6.424ns  (logic 1.631ns (25.389%)  route 4.793ns (74.611%))
   Logic Levels:           2  (IBUF=1 LUT1=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -370,50 +422,10 @@ Slack:                    inf
     C12                                               0.000     0.000 r  RST_N (IN)
                          net (fo=0)                   0.000     0.000    RST_N
     C12                  IBUF (Prop_ibuf_I_O)         1.507     1.507 r  RST_N_IBUF_inst/O
-                         net (fo=6, routed)           2.930     4.437    actual/ENC_BCD/RST_N_IBUF
-    SLICE_X1Y93          LUT1 (Prop_lut1_I0_O)        0.124     4.561 f  actual/ENC_BCD/FSM_onehot_state[2]_i_2/O
-                         net (fo=24, routed)          1.504     6.066    actual/BOTONES[0].sincronizador_I/AR[0]
+                         net (fo=6, routed)           3.054     4.561    actual/ENC_BCD/RST_N_IBUF
+    SLICE_X0Y92          LUT1 (Prop_lut1_I0_O)        0.124     4.685 f  actual/ENC_BCD/FSM_onehot_state[2]_i_2/O
+                         net (fo=24, routed)          1.739     6.424    actual/BOTONES[0].sincronizador_I/AR[0]
     SLICE_X0Y82          FDCE                                         f  actual/BOTONES[0].sincronizador_I/sreg_reg[1]/CLR
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 RST_N
-                            (input port)
-  Destination:            actual/BOTONES[1].sincronizador_I/sreg_reg[0]/CLR
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.980ns  (logic 1.631ns (27.276%)  route 4.349ns (72.724%))
-  Logic Levels:           2  (IBUF=1 LUT1=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    C12                                               0.000     0.000 r  RST_N (IN)
-                         net (fo=0)                   0.000     0.000    RST_N
-    C12                  IBUF (Prop_ibuf_I_O)         1.507     1.507 r  RST_N_IBUF_inst/O
-                         net (fo=6, routed)           2.930     4.437    actual/ENC_BCD/RST_N_IBUF
-    SLICE_X1Y93          LUT1 (Prop_lut1_I0_O)        0.124     4.561 f  actual/ENC_BCD/FSM_onehot_state[2]_i_2/O
-                         net (fo=24, routed)          1.419     5.980    actual/BOTONES[1].sincronizador_I/AR[0]
-    SLICE_X0Y86          FDCE                                         f  actual/BOTONES[1].sincronizador_I/sreg_reg[0]/CLR
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 RST_N
-                            (input port)
-  Destination:            actual/BOTONES[1].sincronizador_I/sreg_reg[1]/CLR
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.980ns  (logic 1.631ns (27.276%)  route 4.349ns (72.724%))
-  Logic Levels:           2  (IBUF=1 LUT1=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    C12                                               0.000     0.000 r  RST_N (IN)
-                         net (fo=0)                   0.000     0.000    RST_N
-    C12                  IBUF (Prop_ibuf_I_O)         1.507     1.507 r  RST_N_IBUF_inst/O
-                         net (fo=6, routed)           2.930     4.437    actual/ENC_BCD/RST_N_IBUF
-    SLICE_X1Y93          LUT1 (Prop_lut1_I0_O)        0.124     4.561 f  actual/ENC_BCD/FSM_onehot_state[2]_i_2/O
-                         net (fo=24, routed)          1.419     5.980    actual/BOTONES[1].sincronizador_I/AR[0]
-    SLICE_X0Y86          FDCE                                         f  actual/BOTONES[1].sincronizador_I/sreg_reg[1]/CLR
   -------------------------------------------------------------------    -------------------
 
 
@@ -423,39 +435,20 @@ Slack:                    inf
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 actual/BOTONES[3].sincronizador_I/sreg_reg[0]/C
+  Source:                 actual/BOTONES[1].sincronizador_I/sreg_reg[1]/C
                             (rising edge-triggered cell FDCE)
-  Destination:            actual/BOTONES[3].sincronizador_I/sreg_reg[1]/D
+  Destination:            actual/BOTONES[1].sincronizador_I/SYNC_OUT_reg/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.247ns  (logic 0.128ns (51.736%)  route 0.119ns (48.264%))
+  Data Path Delay:        0.247ns  (logic 0.128ns (51.722%)  route 0.119ns (48.278%))
   Logic Levels:           1  (FDCE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y90          FDCE                         0.000     0.000 r  actual/BOTONES[3].sincronizador_I/sreg_reg[0]/C
-    SLICE_X0Y90          FDCE (Prop_fdce_C_Q)         0.128     0.128 r  actual/BOTONES[3].sincronizador_I/sreg_reg[0]/Q
-                         net (fo=1, routed)           0.119     0.247    actual/BOTONES[3].sincronizador_I/p_1_in[1]
-    SLICE_X0Y90          FDCE                                         r  actual/BOTONES[3].sincronizador_I/sreg_reg[1]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            deseado/ENC_BCD/OUTPUT_I_reg[1]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.248ns  (logic 0.186ns (74.990%)  route 0.062ns (25.010%))
-  Logic Levels:           2  (FDRE=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X0Y92          FDRE                         0.000     0.000 r  deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/C
-    SLICE_X0Y92          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/Q
-                         net (fo=2, routed)           0.062     0.203    deseado/ENC_BCD/OUTPUT_I_reg[1]_1
-    SLICE_X1Y92          LUT6 (Prop_lut6_I1_O)        0.045     0.248 r  deseado/ENC_BCD/OUTPUT_I[1]_i_1/O
-                         net (fo=1, routed)           0.000     0.248    deseado/ENC_BCD/OUTPUT_I[1]_i_1_n_0
-    SLICE_X1Y92          FDCE                                         r  deseado/ENC_BCD/OUTPUT_I_reg[1]/D
+    SLICE_X0Y88          FDCE                         0.000     0.000 r  actual/BOTONES[1].sincronizador_I/sreg_reg[1]/C
+    SLICE_X0Y88          FDCE (Prop_fdce_C_Q)         0.128     0.128 r  actual/BOTONES[1].sincronizador_I/sreg_reg[1]/Q
+                         net (fo=1, routed)           0.119     0.247    actual/BOTONES[1].sincronizador_I/sreg_reg_n_0_[1]
+    SLICE_X0Y89          FDRE                                         r  actual/BOTONES[1].sincronizador_I/SYNC_OUT_reg/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -464,34 +457,36 @@ Slack:                    inf
   Destination:            deseado/ENC_BCD/OUTPUT_I_reg[0]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.251ns  (logic 0.186ns (74.094%)  route 0.065ns (25.906%))
+  Data Path Delay:        0.250ns  (logic 0.186ns (74.383%)  route 0.064ns (25.617%))
   Logic Levels:           2  (FDRE=1 LUT6=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y92          FDRE                         0.000     0.000 r  deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/C
-    SLICE_X0Y92          FDRE (Prop_fdre_C_Q)         0.141     0.141 f  deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/Q
-                         net (fo=2, routed)           0.065     0.206    deseado/ENC_BCD/OUTPUT_I_reg[1]_1
-    SLICE_X1Y92          LUT6 (Prop_lut6_I1_O)        0.045     0.251 r  deseado/ENC_BCD/OUTPUT_I[0]_i_1/O
-                         net (fo=1, routed)           0.000     0.251    deseado/ENC_BCD/OUTPUT_I[0]_i_1_n_0
-    SLICE_X1Y92          FDCE                                         r  deseado/ENC_BCD/OUTPUT_I_reg[0]/D
+    SLICE_X0Y90          FDRE                         0.000     0.000 r  deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/C
+    SLICE_X0Y90          FDRE (Prop_fdre_C_Q)         0.141     0.141 f  deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/Q
+                         net (fo=2, routed)           0.064     0.205    deseado/ENC_BCD/OUTPUT_I_reg[1]_3
+    SLICE_X1Y90          LUT6 (Prop_lut6_I3_O)        0.045     0.250 r  deseado/ENC_BCD/OUTPUT_I[0]_i_1/O
+                         net (fo=1, routed)           0.000     0.250    deseado/ENC_BCD/OUTPUT_I[0]_i_1_n_0
+    SLICE_X1Y90          FDCE                                         r  deseado/ENC_BCD/OUTPUT_I_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 actual/BOTONES[0].sincronizador_I/sreg_reg[0]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            actual/BOTONES[0].sincronizador_I/sreg_reg[1]/D
+  Source:                 deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            deseado/ENC_BCD/OUTPUT_I_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.262ns  (logic 0.141ns (53.727%)  route 0.121ns (46.273%))
-  Logic Levels:           1  (FDCE=1)
+  Data Path Delay:        0.251ns  (logic 0.186ns (74.086%)  route 0.065ns (25.914%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y81          FDCE                         0.000     0.000 r  actual/BOTONES[0].sincronizador_I/sreg_reg[0]/C
-    SLICE_X0Y81          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  actual/BOTONES[0].sincronizador_I/sreg_reg[0]/Q
-                         net (fo=1, routed)           0.121     0.262    actual/BOTONES[0].sincronizador_I/p_1_in__2[1]
-    SLICE_X0Y82          FDCE                                         r  actual/BOTONES[0].sincronizador_I/sreg_reg[1]/D
+    SLICE_X0Y90          FDRE                         0.000     0.000 r  deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/C
+    SLICE_X0Y90          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/Q
+                         net (fo=2, routed)           0.065     0.206    deseado/ENC_BCD/OUTPUT_I_reg[1]_3
+    SLICE_X1Y90          LUT6 (Prop_lut6_I3_O)        0.045     0.251 r  deseado/ENC_BCD/OUTPUT_I[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.251    deseado/ENC_BCD/OUTPUT_I[1]_i_1_n_0
+    SLICE_X1Y90          FDCE                                         r  deseado/ENC_BCD/OUTPUT_I_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -500,32 +495,15 @@ Slack:                    inf
   Destination:            deseado/BOTONES[0].sincronizador_I/SYNC_OUT_reg/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.286ns  (logic 0.141ns (49.307%)  route 0.145ns (50.693%))
+  Data Path Delay:        0.253ns  (logic 0.141ns (55.769%)  route 0.112ns (44.231%))
   Logic Levels:           1  (FDCE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y94          FDCE                         0.000     0.000 r  deseado/BOTONES[0].sincronizador_I/sreg_reg[1]/C
-    SLICE_X0Y94          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  deseado/BOTONES[0].sincronizador_I/sreg_reg[1]/Q
-                         net (fo=1, routed)           0.145     0.286    deseado/BOTONES[0].sincronizador_I/sreg_reg_n_0_[1]
+    SLICE_X0Y92          FDCE                         0.000     0.000 r  deseado/BOTONES[0].sincronizador_I/sreg_reg[1]/C
+    SLICE_X0Y92          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  deseado/BOTONES[0].sincronizador_I/sreg_reg[1]/Q
+                         net (fo=1, routed)           0.112     0.253    deseado/BOTONES[0].sincronizador_I/sreg_reg_n_0_[1]
     SLICE_X1Y93          FDRE                                         r  deseado/BOTONES[0].sincronizador_I/SYNC_OUT_reg/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 deseado/BOTONES[2].sincronizador_I/sreg_reg[1]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.289ns  (logic 0.141ns (48.837%)  route 0.148ns (51.163%))
-  Logic Levels:           1  (FDCE=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X0Y91          FDCE                         0.000     0.000 r  deseado/BOTONES[2].sincronizador_I/sreg_reg[1]/C
-    SLICE_X0Y91          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  deseado/BOTONES[2].sincronizador_I/sreg_reg[1]/Q
-                         net (fo=1, routed)           0.148     0.289    deseado/BOTONES[2].sincronizador_I/sreg_reg_n_0_[1]
-    SLICE_X0Y92          FDRE                                         r  deseado/BOTONES[2].sincronizador_I/SYNC_OUT_reg/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -534,51 +512,49 @@ Slack:                    inf
   Destination:            deseado/BOTONES[1].sincronizador_I/SYNC_OUT_reg/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.292ns  (logic 0.141ns (48.317%)  route 0.151ns (51.683%))
+  Data Path Delay:        0.253ns  (logic 0.141ns (55.769%)  route 0.112ns (44.231%))
   Logic Levels:           1  (FDCE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y93          FDCE                         0.000     0.000 r  deseado/BOTONES[1].sincronizador_I/sreg_reg[1]/C
-    SLICE_X0Y93          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  deseado/BOTONES[1].sincronizador_I/sreg_reg[1]/Q
-                         net (fo=1, routed)           0.151     0.292    deseado/BOTONES[1].sincronizador_I/sreg_reg_n_0_[1]
-    SLICE_X0Y92          FDRE                                         r  deseado/BOTONES[1].sincronizador_I/SYNC_OUT_reg/D
+    SLICE_X0Y91          FDCE                         0.000     0.000 r  deseado/BOTONES[1].sincronizador_I/sreg_reg[1]/C
+    SLICE_X0Y91          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  deseado/BOTONES[1].sincronizador_I/sreg_reg[1]/Q
+                         net (fo=1, routed)           0.112     0.253    deseado/BOTONES[1].sincronizador_I/sreg_reg_n_0_[1]
+    SLICE_X0Y90          FDRE                                         r  deseado/BOTONES[1].sincronizador_I/SYNC_OUT_reg/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 actual/BOTONES[1].sincronizador_I/SYNC_OUT_reg/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            actual/ENC_BCD/OUTPUT_I_reg[1]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.295ns  (logic 0.186ns (63.050%)  route 0.109ns (36.950%))
-  Logic Levels:           2  (FDRE=1 LUT5=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X1Y90          FDRE                         0.000     0.000 r  actual/BOTONES[1].sincronizador_I/SYNC_OUT_reg/C
-    SLICE_X1Y90          FDRE (Prop_fdre_C_Q)         0.141     0.141 f  actual/BOTONES[1].sincronizador_I/SYNC_OUT_reg/Q
-                         net (fo=3, routed)           0.109     0.250    actual/ENC_BCD/OUTPUT_I_reg[1]_2
-    SLICE_X0Y90          LUT5 (Prop_lut5_I1_O)        0.045     0.295 r  actual/ENC_BCD/OUTPUT_I[1]_i_1/O
-                         net (fo=1, routed)           0.000     0.295    actual/ENC_BCD/OUTPUT_I[1]_i_1_n_0
-    SLICE_X0Y90          FDPE                                         r  actual/ENC_BCD/OUTPUT_I_reg[1]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 actual/BOTONES[2].sincronizador_I/sreg_reg[0]/C
+  Source:                 deseado/BOTONES[2].sincronizador_I/sreg_reg[0]/C
                             (rising edge-triggered cell FDCE)
-  Destination:            actual/BOTONES[2].sincronizador_I/sreg_reg[1]/D
+  Destination:            deseado/BOTONES[2].sincronizador_I/sreg_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.313ns  (logic 0.141ns (45.034%)  route 0.172ns (54.966%))
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.953%)  route 0.116ns (45.047%))
   Logic Levels:           1  (FDCE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y81          FDCE                         0.000     0.000 r  actual/BOTONES[2].sincronizador_I/sreg_reg[0]/C
-    SLICE_X0Y81          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  actual/BOTONES[2].sincronizador_I/sreg_reg[0]/Q
-                         net (fo=1, routed)           0.172     0.313    actual/BOTONES[2].sincronizador_I/p_1_in__0[1]
-    SLICE_X0Y81          FDCE                                         r  actual/BOTONES[2].sincronizador_I/sreg_reg[1]/D
+    SLICE_X0Y87          FDCE                         0.000     0.000 r  deseado/BOTONES[2].sincronizador_I/sreg_reg[0]/C
+    SLICE_X0Y87          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  deseado/BOTONES[2].sincronizador_I/sreg_reg[0]/Q
+                         net (fo=1, routed)           0.116     0.257    deseado/BOTONES[2].sincronizador_I/p_1_in__4[1]
+    SLICE_X1Y88          FDCE                                         r  deseado/BOTONES[2].sincronizador_I/sreg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 deseado/BOTONES[3].sincronizador_I/sreg_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            deseado/BOTONES[3].sincronizador_I/SYNC_OUT_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.284ns  (logic 0.141ns (49.624%)  route 0.143ns (50.376%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y87          FDCE                         0.000     0.000 r  deseado/BOTONES[3].sincronizador_I/sreg_reg[1]/C
+    SLICE_X1Y87          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  deseado/BOTONES[3].sincronizador_I/sreg_reg[1]/Q
+                         net (fo=1, routed)           0.143     0.284    deseado/BOTONES[3].sincronizador_I/sreg_reg_n_0_[1]
+    SLICE_X1Y86          FDRE                                         r  deseado/BOTONES[3].sincronizador_I/SYNC_OUT_reg/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -587,15 +563,49 @@ Slack:                    inf
   Destination:            actual/BOTONES[3].sincronizador_I/SYNC_OUT_reg/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.313ns  (logic 0.141ns (45.034%)  route 0.172ns (54.966%))
+  Data Path Delay:        0.309ns  (logic 0.128ns (41.480%)  route 0.181ns (58.520%))
   Logic Levels:           1  (FDCE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y90          FDCE                         0.000     0.000 r  actual/BOTONES[3].sincronizador_I/sreg_reg[1]/C
-    SLICE_X0Y90          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  actual/BOTONES[3].sincronizador_I/sreg_reg[1]/Q
-                         net (fo=1, routed)           0.172     0.313    actual/BOTONES[3].sincronizador_I/p_0_in
-    SLICE_X1Y90          FDRE                                         r  actual/BOTONES[3].sincronizador_I/SYNC_OUT_reg/D
+    SLICE_X0Y88          FDCE                         0.000     0.000 r  actual/BOTONES[3].sincronizador_I/sreg_reg[1]/C
+    SLICE_X0Y88          FDCE (Prop_fdce_C_Q)         0.128     0.128 r  actual/BOTONES[3].sincronizador_I/sreg_reg[1]/Q
+                         net (fo=1, routed)           0.181     0.309    actual/BOTONES[3].sincronizador_I/p_0_in
+    SLICE_X0Y89          FDRE                                         r  actual/BOTONES[3].sincronizador_I/SYNC_OUT_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 deseado/BOTONES[3].sincronizador_I/sreg_reg[0]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            deseado/BOTONES[3].sincronizador_I/sreg_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.311ns  (logic 0.141ns (45.298%)  route 0.170ns (54.702%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y87          FDCE                         0.000     0.000 r  deseado/BOTONES[3].sincronizador_I/sreg_reg[0]/C
+    SLICE_X1Y87          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  deseado/BOTONES[3].sincronizador_I/sreg_reg[0]/Q
+                         net (fo=1, routed)           0.170     0.311    deseado/BOTONES[3].sincronizador_I/p_1_in__3[1]
+    SLICE_X1Y87          FDCE                                         r  deseado/BOTONES[3].sincronizador_I/sreg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 actual/BOTONES[2].sincronizador_I/sreg_reg[0]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            actual/BOTONES[2].sincronizador_I/sreg_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.315ns  (logic 0.141ns (44.783%)  route 0.174ns (55.217%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y78          FDCE                         0.000     0.000 r  actual/BOTONES[2].sincronizador_I/sreg_reg[0]/C
+    SLICE_X0Y78          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  actual/BOTONES[2].sincronizador_I/sreg_reg[0]/Q
+                         net (fo=1, routed)           0.174     0.315    actual/BOTONES[2].sincronizador_I/p_1_in__0[1]
+    SLICE_X0Y78          FDCE                                         r  actual/BOTONES[2].sincronizador_I/sreg_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 

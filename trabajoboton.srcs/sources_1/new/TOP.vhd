@@ -20,8 +20,10 @@ entity TOP is
         PLANTA_D : in std_logic_vector (NUM_PISOS - 1 downto 0);   --emtrada de boton
         PLANTA_A : in std_logic_vector (NUM_PISOS - 1 downto 0);   --emtrada de planta
 
-        MOTOR	: out std_logic_vector(1 downto 0);
-        PUERTA	: out std_logic;
+        MOTOR	: out std_logic_vector(1 downto 0);               --MOTOR
+        PUERTA	: out std_logic;                                 --Puerta
+        SEGMENTO : out std_logic_vector (6 downto 0);               --segmento
+        VISUALIZADOR : out std_logic_vector (7 downto 0);           --visualizador
 
         CLK : in std_logic;     --RELOJ EN flanco positivo
         RST_N: in std_logic     --renincio asincrono con valor a '0'
@@ -70,6 +72,18 @@ architecture Behavioral of TOP is
         RST_N : in std_logic
     );
 end component;
+
+component decoder IS
+
+    GENERIC(
+        RANGO_IN  : positive := 4;  --Rango del BCD
+        RANGO_OUT : positive := 7   --Rango de display de 7 segmentos
+    );
+    PORT (
+        code : IN std_logic_vector(RANGO_IN - 1 DOWNTO 0);  --Codigo BCD
+        led : OUT std_logic_vector(RANGO_OUT -1 DOWNTO 0)   --Salida 7 segmentos
+    );
+END component;
 
     signal PUERTA_I : std_logic;
     
@@ -132,6 +146,13 @@ begin
         RST_N => RST_N
     );
     
-
+    cidificador7seg: decoder
+    
+    PORT map (
+        code => PA_BCD,  --Codigo BCD
+        led => SEGMENTO   --Salida 7 segmentos
+    );
+    
+VISUALIZADOR <= "11111110";
 
 end Behavioral;

@@ -87,6 +87,7 @@ OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/BOTON2BCD.vhd
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/Comparador.vhd
+  C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/Display.vhd
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/MAQ_ESTADOS.vhd
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/PRIOR_ENCODER.vhd
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/SYNCHRNZR.vhd
