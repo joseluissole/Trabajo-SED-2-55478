@@ -128,7 +128,7 @@ begin
         OUTPUT_BCD => PD_BCD,                   --salida de los pisos en BCD
 
         CLK => CLK,
-        CE => '1',
+        CE => PA_IGUAL_PD_I,
         RST_N => RST_N
     );
     
