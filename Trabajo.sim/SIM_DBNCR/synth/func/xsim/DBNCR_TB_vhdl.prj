@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../../Trabajo.srcs/sources_1/new/DBNCR.vhd" \
-"../../../../../Trabajo.srcs/SIM_DBNCR/new/DBNCR_TB.vhd" \
-
-# Do not sort compile order
-nosort

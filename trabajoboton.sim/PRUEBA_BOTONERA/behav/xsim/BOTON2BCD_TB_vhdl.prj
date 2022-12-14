@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../trabajoboton.srcs/sources_1/new/BOTON2BCD.vhd" \
+"../../../../trabajoboton.srcs/sources_1/new/PRIOR_ENCODER.vhd" \
+"../../../../trabajoboton.srcs/sources_1/new/SYNCHRNZR.vhd" \
+"../../../../trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd" \
+
+# Do not sort compile order
+nosort

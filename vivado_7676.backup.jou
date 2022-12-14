@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Dec  9 16:39:49 2022
+# Process ID: 7676
+# Current directory: C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4596 C:\Users\UPM\Desktop\trabajoboton-bueno-3\trabajoboton-bueno\trabajoboton\trabajoboton.xpr
+# Log file: C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/vivado.log
+# Journal file: C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton\vivado.jou
+# Running On: upm00483, OS: Windows, CPU Frequency: 2394 MHz, CPU Physical cores: 6, Host memory: 6404 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.xpr
+update_compile_order -fileset sources_1
+launch_simulation -simset [get_filesets PRUEBA_BOTONERA ]
+source BOTON2BCD_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets PRUEBA_BOTONERA ]
+source BOTON2BCD_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets PRUEBA_BOTONERA ]
+source BOTON2BCD_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets PRUEBA_BOTONERA ]
+source BOTON2BCD_TB.tcl
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 93
+close_sim
+launch_simulation -simset [get_filesets PRUEBA_BOTONERA ]
+source BOTON2BCD_TB.tcl
+run 10 us
+restart
+run all
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 99
+run all
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 101
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 99
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 93
+run 10 ns
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 101
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 104
+run all
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 104
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 108
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 108
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 105
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 106
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 107
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 108
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 110
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 111
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 112
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 113
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 115
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 116
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 117
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 119
+add_bp {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} 120
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 105
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 106
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 107
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 108
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 110
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 111
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 112
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 113
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 115
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 116
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 117
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 119
+remove_bps -file {C:/Users/UPM/Desktop/trabajoboton-bueno-3/trabajoboton-bueno/trabajoboton/trabajoboton.srcs/PRUEBA_BOTONERA/new/BOTON2BCD_TB.vhd} -line 120
+close_sim
+launch_simulation -simset [get_filesets PRUEBA_BOTONERA ]
+source BOTON2BCD_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets PRUEBA_BOTONERA ]
+source BOTON2BCD_TB.tcl
+close_sim
+launch_simulation -simset [get_filesets PRUEBA_BOTONERA ]
+source BOTON2BCD_TB.tcl
+close_sim

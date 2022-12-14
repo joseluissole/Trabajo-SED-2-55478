@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Trabajo.srcs/sources_1/new/EDGEDTCTR.vhd" \
-"../../../../Trabajo.srcs/sources_1/new/ESTAB_BOT.vhd" \
-"../../../../Trabajo.srcs/sources_1/new/SYNCHRNZR.vhd" \
-"../../../../Trabajo.srcs/ESTAB_BOTON_V1/new/ESTAB_BOT_TB.vhd" \
-
-# Do not sort compile order
-nosort
