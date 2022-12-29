@@ -23,22 +23,22 @@ ARCHITECTURE BEHAVIORAL OF decoder_tb IS
 
     TYPE vtest_vector IS ARRAY (natural RANGE <>) OF vtest; -- variables de test
     CONSTANT test: vtest_vector := (
-        (code => "0000", led => "1111110"),
-        (code => "0001", led => "0000001"),
-        (code => "0010", led => "1001111"),
-        (code => "0011", led => "1111110"),
-        (code => "0100", led => "0010010"),
-        (code => "0101", led => "1111110"),
-        (code => "0110", led => "1111110"),
-        (code => "0111", led => "1111110"),
-        (code => "1000", led => "0000110"),
-        (code => "1001", led => "1111110"),
-        (code => "1010", led => "1111110"),
-        (code => "1011", led => "1111110"),
-        (code => "1100", led => "1111110"),
-        (code => "1101", led => "1111110"),
+        (code => "0000", led => "0000001"),
+        (code => "0001", led => "1001111"),
+        (code => "0010", led => "0010010"),
+        (code => "0011", led => "0000110"),
+        (code => "0100", led => "1001100"),
+        (code => "0101", led => "0100100"),
+        (code => "0110", led => "0100000"),
+        (code => "0111", led => "0001111"),
+        (code => "1000", led => "0000000"),
+        (code => "1001", led => "0000100"),
+        (code => "1010", led => "0001000"),
+        (code => "1011", led => "1100000"),
+        (code => "1100", led => "0110001"),
+        (code => "1101", led => "1000010"),
         (code => "1110", led => "1111110"),
-        (code => "1111", led => "1111110")
+        (code => "1111", led => "1111111")
     );
 BEGIN
     uut: decoder PORT MAP(
