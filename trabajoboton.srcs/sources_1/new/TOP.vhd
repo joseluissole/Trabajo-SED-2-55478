@@ -130,7 +130,7 @@ begin
         actual : BOTON2BCD 
     generic map (
         N_PISOS => NUM_PISOS,    --numero de pisos entre 1 y 10
-        RESET_VALUE => "1111"      --valor predeterminado para el reset del valor BCD
+        RESET_VALUE => "1110"      --valor predeterminado para el reset del valor BCD
     )
     port map(
         INPUT_INTERRUPTOR => PLANTA_A,     --entrada de los pisos
@@ -172,7 +172,7 @@ begin
     
     );
    
-RISTRA_DIGITOS <= "111111111111111111111111" & PD_BCD & PA_BCD;
+RISTRA_DIGITOS <= "110111100000" & PD_BCD & "101011100000" & PA_BCD;
 
 
 end Behavioral;

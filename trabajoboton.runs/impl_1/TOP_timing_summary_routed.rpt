@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Thu Dec 15 17:43:00 2022
+| Date         : Thu Dec 15 18:17:54 2022
 | Host         : DESKTOP-9L1N67Q running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file TOP_timing_summary_routed.rpt -pb TOP_timing_summary_routed.pb -rpx TOP_timing_summary_routed.rpx -warn_on_violation
 | Design       : TOP
@@ -217,813 +217,833 @@ Min Delay           132 Endpoints
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 cidificador7seg/desc/COUNT_reg[4]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            cidificador7seg/desc/COUNT_reg[9]/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        20.122ns  (logic 8.329ns (41.392%)  route 11.793ns (58.608%))
-  Logic Levels:           26  (CARRY4=14 FDCE=1 LUT1=1 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y91          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[4]/C
-    SLICE_X5Y91          FDCE (Prop_fdce_C_Q)         0.419     0.419 r  cidificador7seg/desc/COUNT_reg[4]/Q
-                         net (fo=2, routed)           0.614     1.033    cidificador7seg/desc/COUNT[4]
-    SLICE_X3Y88          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.697     1.730 r  cidificador7seg/desc/COUNT3_carry/CO[3]
-                         net (fo=1, routed)           0.000     1.730    cidificador7seg/desc/COUNT3_carry_n_0
-    SLICE_X3Y89          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.222     1.952 f  cidificador7seg/desc/COUNT3_carry__0/O[0]
-                         net (fo=19, routed)          1.844     3.796    cidificador7seg/desc/COUNT3_carry__0_n_7
-    SLICE_X2Y85          LUT3 (Prop_lut3_I2_O)        0.327     4.123 r  cidificador7seg/desc/i___41_carry__0_i_2/O
-                         net (fo=2, routed)           0.859     4.982    cidificador7seg/desc/i___41_carry__0_i_2_n_0
-    SLICE_X2Y85          LUT4 (Prop_lut4_I3_O)        0.348     5.330 r  cidificador7seg/desc/i___41_carry__0_i_6/O
-                         net (fo=1, routed)           0.000     5.330    cidificador7seg/desc/i___41_carry__0_i_6_n_0
-    SLICE_X2Y85          CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.380     5.710 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.710    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0_n_0
-    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     5.827 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.827    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1_n_0
-    SLICE_X2Y87          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323     6.150 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2/O[1]
-                         net (fo=3, routed)           1.436     7.586    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2_n_6
-    SLICE_X7Y87          LUT3 (Prop_lut3_I2_O)        0.334     7.920 r  cidificador7seg/desc/i___146_carry__2_i_9/O
-                         net (fo=2, routed)           0.828     8.748    cidificador7seg/desc/i___146_carry__2_i_9_n_0
-    SLICE_X7Y86          LUT5 (Prop_lut5_I4_O)        0.332     9.080 r  cidificador7seg/desc/i___146_carry__2_i_3/O
-                         net (fo=2, routed)           0.600     9.680    cidificador7seg/desc/i___146_carry__2_i_3_n_0
-    SLICE_X6Y87          LUT6 (Prop_lut6_I0_O)        0.124     9.804 r  cidificador7seg/desc/i___146_carry__2_i_7/O
-                         net (fo=1, routed)           0.000     9.804    cidificador7seg/desc/i___146_carry__2_i_7_n_0
-    SLICE_X6Y87          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533    10.337 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
-                         net (fo=1, routed)           0.000    10.337    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
-    SLICE_X6Y88          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.454 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
-                         net (fo=1, routed)           0.000    10.454    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
-    SLICE_X6Y89          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.571 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
-                         net (fo=1, routed)           0.000    10.571    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
-    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    10.894 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
-                         net (fo=8, routed)           1.171    12.065    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
-    SLICE_X4Y92          LUT3 (Prop_lut3_I1_O)        0.335    12.400 r  cidificador7seg/desc/i___217_carry_i_1/O
-                         net (fo=2, routed)           0.811    13.211    cidificador7seg/desc/i___217_carry_i_1_n_0
-    SLICE_X4Y92          LUT4 (Prop_lut4_I3_O)        0.327    13.538 r  cidificador7seg/desc/i___217_carry_i_4/O
-                         net (fo=1, routed)           0.000    13.538    cidificador7seg/desc/i___217_carry_i_4_n_0
-    SLICE_X4Y92          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.401    13.939 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.939    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
-    SLICE_X4Y93          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    14.273 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[1]
-                         net (fo=2, routed)           0.862    15.135    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_6
-    SLICE_X2Y92          LUT3 (Prop_lut3_I0_O)        0.303    15.438 r  cidificador7seg/desc/i___236_carry__0_i_2/O
-                         net (fo=1, routed)           0.000    15.438    cidificador7seg/desc/i___236_carry__0_i_2_n_0
-    SLICE_X2Y92          CARRY4 (Prop_carry4_S[0]_O[1])
-                                                      0.427    15.865 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0/O[1]
-                         net (fo=1, routed)           0.833    16.698    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0_n_6
-    SLICE_X4Y91          LUT2 (Prop_lut2_I1_O)        0.306    17.004 r  cidificador7seg/desc/i___251_carry__2_i_1/O
-                         net (fo=1, routed)           0.000    17.004    cidificador7seg/desc/i___251_carry__2_i_1_n_0
-    SLICE_X4Y91          CARRY4 (Prop_carry4_S[1]_O[1])
-                                                      0.227    17.231 f  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[1]
-                         net (fo=1, routed)           0.797    18.029    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_6
-    SLICE_X7Y91          LUT1 (Prop_lut1_I0_O)        0.303    18.332 r  cidificador7seg/desc/i___288_carry__1_i_1/O
-                         net (fo=1, routed)           0.000    18.332    cidificador7seg/desc/i___288_carry__1_i_1_n_0
-    SLICE_X7Y91          CARRY4 (Prop_carry4_S[2]_CO[2])
-                                                      0.314    18.646 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
-                         net (fo=10, routed)          1.138    19.783    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
-    SLICE_X2Y90          LUT3 (Prop_lut3_I1_O)        0.339    20.122 r  cidificador7seg/desc/COUNT[9]_i_1/O
-                         net (fo=1, routed)           0.000    20.122    cidificador7seg/desc/COUNT3[9]
-    SLICE_X2Y90          FDCE                                         r  cidificador7seg/desc/COUNT_reg[9]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 cidificador7seg/desc/COUNT_reg[4]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            cidificador7seg/desc/COUNT_reg[10]/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        20.096ns  (logic 8.303ns (41.316%)  route 11.793ns (58.684%))
-  Logic Levels:           26  (CARRY4=14 FDCE=1 LUT1=1 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y91          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[4]/C
-    SLICE_X5Y91          FDCE (Prop_fdce_C_Q)         0.419     0.419 r  cidificador7seg/desc/COUNT_reg[4]/Q
-                         net (fo=2, routed)           0.614     1.033    cidificador7seg/desc/COUNT[4]
-    SLICE_X3Y88          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.697     1.730 r  cidificador7seg/desc/COUNT3_carry/CO[3]
-                         net (fo=1, routed)           0.000     1.730    cidificador7seg/desc/COUNT3_carry_n_0
-    SLICE_X3Y89          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.222     1.952 f  cidificador7seg/desc/COUNT3_carry__0/O[0]
-                         net (fo=19, routed)          1.844     3.796    cidificador7seg/desc/COUNT3_carry__0_n_7
-    SLICE_X2Y85          LUT3 (Prop_lut3_I2_O)        0.327     4.123 r  cidificador7seg/desc/i___41_carry__0_i_2/O
-                         net (fo=2, routed)           0.859     4.982    cidificador7seg/desc/i___41_carry__0_i_2_n_0
-    SLICE_X2Y85          LUT4 (Prop_lut4_I3_O)        0.348     5.330 r  cidificador7seg/desc/i___41_carry__0_i_6/O
-                         net (fo=1, routed)           0.000     5.330    cidificador7seg/desc/i___41_carry__0_i_6_n_0
-    SLICE_X2Y85          CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.380     5.710 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.710    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0_n_0
-    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     5.827 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.827    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1_n_0
-    SLICE_X2Y87          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323     6.150 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2/O[1]
-                         net (fo=3, routed)           1.436     7.586    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2_n_6
-    SLICE_X7Y87          LUT3 (Prop_lut3_I2_O)        0.334     7.920 r  cidificador7seg/desc/i___146_carry__2_i_9/O
-                         net (fo=2, routed)           0.828     8.748    cidificador7seg/desc/i___146_carry__2_i_9_n_0
-    SLICE_X7Y86          LUT5 (Prop_lut5_I4_O)        0.332     9.080 r  cidificador7seg/desc/i___146_carry__2_i_3/O
-                         net (fo=2, routed)           0.600     9.680    cidificador7seg/desc/i___146_carry__2_i_3_n_0
-    SLICE_X6Y87          LUT6 (Prop_lut6_I0_O)        0.124     9.804 r  cidificador7seg/desc/i___146_carry__2_i_7/O
-                         net (fo=1, routed)           0.000     9.804    cidificador7seg/desc/i___146_carry__2_i_7_n_0
-    SLICE_X6Y87          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533    10.337 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
-                         net (fo=1, routed)           0.000    10.337    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
-    SLICE_X6Y88          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.454 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
-                         net (fo=1, routed)           0.000    10.454    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
-    SLICE_X6Y89          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.571 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
-                         net (fo=1, routed)           0.000    10.571    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
-    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    10.894 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
-                         net (fo=8, routed)           1.171    12.065    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
-    SLICE_X4Y92          LUT3 (Prop_lut3_I1_O)        0.335    12.400 r  cidificador7seg/desc/i___217_carry_i_1/O
-                         net (fo=2, routed)           0.811    13.211    cidificador7seg/desc/i___217_carry_i_1_n_0
-    SLICE_X4Y92          LUT4 (Prop_lut4_I3_O)        0.327    13.538 r  cidificador7seg/desc/i___217_carry_i_4/O
-                         net (fo=1, routed)           0.000    13.538    cidificador7seg/desc/i___217_carry_i_4_n_0
-    SLICE_X4Y92          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.401    13.939 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.939    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
-    SLICE_X4Y93          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    14.273 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[1]
-                         net (fo=2, routed)           0.862    15.135    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_6
-    SLICE_X2Y92          LUT3 (Prop_lut3_I0_O)        0.303    15.438 r  cidificador7seg/desc/i___236_carry__0_i_2/O
-                         net (fo=1, routed)           0.000    15.438    cidificador7seg/desc/i___236_carry__0_i_2_n_0
-    SLICE_X2Y92          CARRY4 (Prop_carry4_S[0]_O[1])
-                                                      0.427    15.865 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0/O[1]
-                         net (fo=1, routed)           0.833    16.698    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0_n_6
-    SLICE_X4Y91          LUT2 (Prop_lut2_I1_O)        0.306    17.004 r  cidificador7seg/desc/i___251_carry__2_i_1/O
-                         net (fo=1, routed)           0.000    17.004    cidificador7seg/desc/i___251_carry__2_i_1_n_0
-    SLICE_X4Y91          CARRY4 (Prop_carry4_S[1]_O[1])
-                                                      0.227    17.231 f  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[1]
-                         net (fo=1, routed)           0.797    18.029    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_6
-    SLICE_X7Y91          LUT1 (Prop_lut1_I0_O)        0.303    18.332 r  cidificador7seg/desc/i___288_carry__1_i_1/O
-                         net (fo=1, routed)           0.000    18.332    cidificador7seg/desc/i___288_carry__1_i_1_n_0
-    SLICE_X7Y91          CARRY4 (Prop_carry4_S[2]_CO[2])
-                                                      0.314    18.646 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
-                         net (fo=10, routed)          1.138    19.783    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
-    SLICE_X2Y90          LUT3 (Prop_lut3_I1_O)        0.313    20.096 r  cidificador7seg/desc/COUNT[10]_i_1/O
-                         net (fo=1, routed)           0.000    20.096    cidificador7seg/desc/COUNT3[10]
-    SLICE_X2Y90          FDCE                                         r  cidificador7seg/desc/COUNT_reg[10]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 cidificador7seg/desc/COUNT_reg[4]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            cidificador7seg/desc/COUNT_reg[4]/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        19.975ns  (logic 8.331ns (41.708%)  route 11.644ns (58.292%))
-  Logic Levels:           26  (CARRY4=14 FDCE=1 LUT1=1 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y91          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[4]/C
-    SLICE_X5Y91          FDCE (Prop_fdce_C_Q)         0.419     0.419 r  cidificador7seg/desc/COUNT_reg[4]/Q
-                         net (fo=2, routed)           0.614     1.033    cidificador7seg/desc/COUNT[4]
-    SLICE_X3Y88          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.697     1.730 r  cidificador7seg/desc/COUNT3_carry/CO[3]
-                         net (fo=1, routed)           0.000     1.730    cidificador7seg/desc/COUNT3_carry_n_0
-    SLICE_X3Y89          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.222     1.952 f  cidificador7seg/desc/COUNT3_carry__0/O[0]
-                         net (fo=19, routed)          1.844     3.796    cidificador7seg/desc/COUNT3_carry__0_n_7
-    SLICE_X2Y85          LUT3 (Prop_lut3_I2_O)        0.327     4.123 r  cidificador7seg/desc/i___41_carry__0_i_2/O
-                         net (fo=2, routed)           0.859     4.982    cidificador7seg/desc/i___41_carry__0_i_2_n_0
-    SLICE_X2Y85          LUT4 (Prop_lut4_I3_O)        0.348     5.330 r  cidificador7seg/desc/i___41_carry__0_i_6/O
-                         net (fo=1, routed)           0.000     5.330    cidificador7seg/desc/i___41_carry__0_i_6_n_0
-    SLICE_X2Y85          CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.380     5.710 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.710    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0_n_0
-    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     5.827 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.827    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1_n_0
-    SLICE_X2Y87          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323     6.150 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2/O[1]
-                         net (fo=3, routed)           1.436     7.586    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2_n_6
-    SLICE_X7Y87          LUT3 (Prop_lut3_I2_O)        0.334     7.920 r  cidificador7seg/desc/i___146_carry__2_i_9/O
-                         net (fo=2, routed)           0.828     8.748    cidificador7seg/desc/i___146_carry__2_i_9_n_0
-    SLICE_X7Y86          LUT5 (Prop_lut5_I4_O)        0.332     9.080 r  cidificador7seg/desc/i___146_carry__2_i_3/O
-                         net (fo=2, routed)           0.600     9.680    cidificador7seg/desc/i___146_carry__2_i_3_n_0
-    SLICE_X6Y87          LUT6 (Prop_lut6_I0_O)        0.124     9.804 r  cidificador7seg/desc/i___146_carry__2_i_7/O
-                         net (fo=1, routed)           0.000     9.804    cidificador7seg/desc/i___146_carry__2_i_7_n_0
-    SLICE_X6Y87          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533    10.337 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
-                         net (fo=1, routed)           0.000    10.337    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
-    SLICE_X6Y88          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.454 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
-                         net (fo=1, routed)           0.000    10.454    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
-    SLICE_X6Y89          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.571 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
-                         net (fo=1, routed)           0.000    10.571    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
-    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    10.894 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
-                         net (fo=8, routed)           1.171    12.065    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
-    SLICE_X4Y92          LUT3 (Prop_lut3_I1_O)        0.335    12.400 r  cidificador7seg/desc/i___217_carry_i_1/O
-                         net (fo=2, routed)           0.811    13.211    cidificador7seg/desc/i___217_carry_i_1_n_0
-    SLICE_X4Y92          LUT4 (Prop_lut4_I3_O)        0.327    13.538 r  cidificador7seg/desc/i___217_carry_i_4/O
-                         net (fo=1, routed)           0.000    13.538    cidificador7seg/desc/i___217_carry_i_4_n_0
-    SLICE_X4Y92          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.401    13.939 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.939    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
-    SLICE_X4Y93          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    14.273 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[1]
-                         net (fo=2, routed)           0.862    15.135    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_6
-    SLICE_X2Y92          LUT3 (Prop_lut3_I0_O)        0.303    15.438 r  cidificador7seg/desc/i___236_carry__0_i_2/O
-                         net (fo=1, routed)           0.000    15.438    cidificador7seg/desc/i___236_carry__0_i_2_n_0
-    SLICE_X2Y92          CARRY4 (Prop_carry4_S[0]_O[1])
-                                                      0.427    15.865 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0/O[1]
-                         net (fo=1, routed)           0.833    16.698    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0_n_6
-    SLICE_X4Y91          LUT2 (Prop_lut2_I1_O)        0.306    17.004 r  cidificador7seg/desc/i___251_carry__2_i_1/O
-                         net (fo=1, routed)           0.000    17.004    cidificador7seg/desc/i___251_carry__2_i_1_n_0
-    SLICE_X4Y91          CARRY4 (Prop_carry4_S[1]_O[1])
-                                                      0.227    17.231 f  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[1]
-                         net (fo=1, routed)           0.797    18.029    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_6
-    SLICE_X7Y91          LUT1 (Prop_lut1_I0_O)        0.303    18.332 r  cidificador7seg/desc/i___288_carry__1_i_1/O
-                         net (fo=1, routed)           0.000    18.332    cidificador7seg/desc/i___288_carry__1_i_1_n_0
-    SLICE_X7Y91          CARRY4 (Prop_carry4_S[2]_CO[2])
-                                                      0.314    18.646 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
-                         net (fo=10, routed)          0.988    19.634    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
-    SLICE_X5Y91          LUT3 (Prop_lut3_I1_O)        0.341    19.975 r  cidificador7seg/desc/COUNT[4]_i_1/O
-                         net (fo=1, routed)           0.000    19.975    cidificador7seg/desc/COUNT3[4]
-    SLICE_X5Y91          FDCE                                         r  cidificador7seg/desc/COUNT_reg[4]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 cidificador7seg/desc/COUNT_reg[4]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            cidificador7seg/desc/COUNT_reg[12]/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        19.973ns  (logic 8.331ns (41.712%)  route 11.642ns (58.288%))
-  Logic Levels:           26  (CARRY4=14 FDCE=1 LUT1=1 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y91          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[4]/C
-    SLICE_X5Y91          FDCE (Prop_fdce_C_Q)         0.419     0.419 r  cidificador7seg/desc/COUNT_reg[4]/Q
-                         net (fo=2, routed)           0.614     1.033    cidificador7seg/desc/COUNT[4]
-    SLICE_X3Y88          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.697     1.730 r  cidificador7seg/desc/COUNT3_carry/CO[3]
-                         net (fo=1, routed)           0.000     1.730    cidificador7seg/desc/COUNT3_carry_n_0
-    SLICE_X3Y89          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.222     1.952 f  cidificador7seg/desc/COUNT3_carry__0/O[0]
-                         net (fo=19, routed)          1.844     3.796    cidificador7seg/desc/COUNT3_carry__0_n_7
-    SLICE_X2Y85          LUT3 (Prop_lut3_I2_O)        0.327     4.123 r  cidificador7seg/desc/i___41_carry__0_i_2/O
-                         net (fo=2, routed)           0.859     4.982    cidificador7seg/desc/i___41_carry__0_i_2_n_0
-    SLICE_X2Y85          LUT4 (Prop_lut4_I3_O)        0.348     5.330 r  cidificador7seg/desc/i___41_carry__0_i_6/O
-                         net (fo=1, routed)           0.000     5.330    cidificador7seg/desc/i___41_carry__0_i_6_n_0
-    SLICE_X2Y85          CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.380     5.710 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.710    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0_n_0
-    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     5.827 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.827    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1_n_0
-    SLICE_X2Y87          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323     6.150 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2/O[1]
-                         net (fo=3, routed)           1.436     7.586    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2_n_6
-    SLICE_X7Y87          LUT3 (Prop_lut3_I2_O)        0.334     7.920 r  cidificador7seg/desc/i___146_carry__2_i_9/O
-                         net (fo=2, routed)           0.828     8.748    cidificador7seg/desc/i___146_carry__2_i_9_n_0
-    SLICE_X7Y86          LUT5 (Prop_lut5_I4_O)        0.332     9.080 r  cidificador7seg/desc/i___146_carry__2_i_3/O
-                         net (fo=2, routed)           0.600     9.680    cidificador7seg/desc/i___146_carry__2_i_3_n_0
-    SLICE_X6Y87          LUT6 (Prop_lut6_I0_O)        0.124     9.804 r  cidificador7seg/desc/i___146_carry__2_i_7/O
-                         net (fo=1, routed)           0.000     9.804    cidificador7seg/desc/i___146_carry__2_i_7_n_0
-    SLICE_X6Y87          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533    10.337 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
-                         net (fo=1, routed)           0.000    10.337    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
-    SLICE_X6Y88          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.454 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
-                         net (fo=1, routed)           0.000    10.454    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
-    SLICE_X6Y89          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.571 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
-                         net (fo=1, routed)           0.000    10.571    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
-    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    10.894 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
-                         net (fo=8, routed)           1.171    12.065    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
-    SLICE_X4Y92          LUT3 (Prop_lut3_I1_O)        0.335    12.400 r  cidificador7seg/desc/i___217_carry_i_1/O
-                         net (fo=2, routed)           0.811    13.211    cidificador7seg/desc/i___217_carry_i_1_n_0
-    SLICE_X4Y92          LUT4 (Prop_lut4_I3_O)        0.327    13.538 r  cidificador7seg/desc/i___217_carry_i_4/O
-                         net (fo=1, routed)           0.000    13.538    cidificador7seg/desc/i___217_carry_i_4_n_0
-    SLICE_X4Y92          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.401    13.939 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.939    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
-    SLICE_X4Y93          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    14.273 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[1]
-                         net (fo=2, routed)           0.862    15.135    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_6
-    SLICE_X2Y92          LUT3 (Prop_lut3_I0_O)        0.303    15.438 r  cidificador7seg/desc/i___236_carry__0_i_2/O
-                         net (fo=1, routed)           0.000    15.438    cidificador7seg/desc/i___236_carry__0_i_2_n_0
-    SLICE_X2Y92          CARRY4 (Prop_carry4_S[0]_O[1])
-                                                      0.427    15.865 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0/O[1]
-                         net (fo=1, routed)           0.833    16.698    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0_n_6
-    SLICE_X4Y91          LUT2 (Prop_lut2_I1_O)        0.306    17.004 r  cidificador7seg/desc/i___251_carry__2_i_1/O
-                         net (fo=1, routed)           0.000    17.004    cidificador7seg/desc/i___251_carry__2_i_1_n_0
-    SLICE_X4Y91          CARRY4 (Prop_carry4_S[1]_O[1])
-                                                      0.227    17.231 f  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[1]
-                         net (fo=1, routed)           0.797    18.029    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_6
-    SLICE_X7Y91          LUT1 (Prop_lut1_I0_O)        0.303    18.332 r  cidificador7seg/desc/i___288_carry__1_i_1/O
-                         net (fo=1, routed)           0.000    18.332    cidificador7seg/desc/i___288_carry__1_i_1_n_0
-    SLICE_X7Y91          CARRY4 (Prop_carry4_S[2]_CO[2])
-                                                      0.314    18.646 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
-                         net (fo=10, routed)          0.986    19.632    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
-    SLICE_X5Y91          LUT3 (Prop_lut3_I1_O)        0.341    19.973 r  cidificador7seg/desc/COUNT[12]_i_1/O
-                         net (fo=1, routed)           0.000    19.973    cidificador7seg/desc/COUNT3[12]
-    SLICE_X5Y91          FDCE                                         r  cidificador7seg/desc/COUNT_reg[12]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 cidificador7seg/desc/COUNT_reg[4]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            cidificador7seg/desc/COUNT_reg[3]/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        19.947ns  (logic 8.303ns (41.626%)  route 11.644ns (58.374%))
-  Logic Levels:           26  (CARRY4=14 FDCE=1 LUT1=1 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y91          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[4]/C
-    SLICE_X5Y91          FDCE (Prop_fdce_C_Q)         0.419     0.419 r  cidificador7seg/desc/COUNT_reg[4]/Q
-                         net (fo=2, routed)           0.614     1.033    cidificador7seg/desc/COUNT[4]
-    SLICE_X3Y88          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.697     1.730 r  cidificador7seg/desc/COUNT3_carry/CO[3]
-                         net (fo=1, routed)           0.000     1.730    cidificador7seg/desc/COUNT3_carry_n_0
-    SLICE_X3Y89          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.222     1.952 f  cidificador7seg/desc/COUNT3_carry__0/O[0]
-                         net (fo=19, routed)          1.844     3.796    cidificador7seg/desc/COUNT3_carry__0_n_7
-    SLICE_X2Y85          LUT3 (Prop_lut3_I2_O)        0.327     4.123 r  cidificador7seg/desc/i___41_carry__0_i_2/O
-                         net (fo=2, routed)           0.859     4.982    cidificador7seg/desc/i___41_carry__0_i_2_n_0
-    SLICE_X2Y85          LUT4 (Prop_lut4_I3_O)        0.348     5.330 r  cidificador7seg/desc/i___41_carry__0_i_6/O
-                         net (fo=1, routed)           0.000     5.330    cidificador7seg/desc/i___41_carry__0_i_6_n_0
-    SLICE_X2Y85          CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.380     5.710 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.710    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0_n_0
-    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     5.827 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.827    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1_n_0
-    SLICE_X2Y87          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323     6.150 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2/O[1]
-                         net (fo=3, routed)           1.436     7.586    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2_n_6
-    SLICE_X7Y87          LUT3 (Prop_lut3_I2_O)        0.334     7.920 r  cidificador7seg/desc/i___146_carry__2_i_9/O
-                         net (fo=2, routed)           0.828     8.748    cidificador7seg/desc/i___146_carry__2_i_9_n_0
-    SLICE_X7Y86          LUT5 (Prop_lut5_I4_O)        0.332     9.080 r  cidificador7seg/desc/i___146_carry__2_i_3/O
-                         net (fo=2, routed)           0.600     9.680    cidificador7seg/desc/i___146_carry__2_i_3_n_0
-    SLICE_X6Y87          LUT6 (Prop_lut6_I0_O)        0.124     9.804 r  cidificador7seg/desc/i___146_carry__2_i_7/O
-                         net (fo=1, routed)           0.000     9.804    cidificador7seg/desc/i___146_carry__2_i_7_n_0
-    SLICE_X6Y87          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533    10.337 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
-                         net (fo=1, routed)           0.000    10.337    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
-    SLICE_X6Y88          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.454 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
-                         net (fo=1, routed)           0.000    10.454    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
-    SLICE_X6Y89          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.571 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
-                         net (fo=1, routed)           0.000    10.571    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
-    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    10.894 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
-                         net (fo=8, routed)           1.171    12.065    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
-    SLICE_X4Y92          LUT3 (Prop_lut3_I1_O)        0.335    12.400 r  cidificador7seg/desc/i___217_carry_i_1/O
-                         net (fo=2, routed)           0.811    13.211    cidificador7seg/desc/i___217_carry_i_1_n_0
-    SLICE_X4Y92          LUT4 (Prop_lut4_I3_O)        0.327    13.538 r  cidificador7seg/desc/i___217_carry_i_4/O
-                         net (fo=1, routed)           0.000    13.538    cidificador7seg/desc/i___217_carry_i_4_n_0
-    SLICE_X4Y92          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.401    13.939 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.939    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
-    SLICE_X4Y93          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    14.273 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[1]
-                         net (fo=2, routed)           0.862    15.135    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_6
-    SLICE_X2Y92          LUT3 (Prop_lut3_I0_O)        0.303    15.438 r  cidificador7seg/desc/i___236_carry__0_i_2/O
-                         net (fo=1, routed)           0.000    15.438    cidificador7seg/desc/i___236_carry__0_i_2_n_0
-    SLICE_X2Y92          CARRY4 (Prop_carry4_S[0]_O[1])
-                                                      0.427    15.865 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0/O[1]
-                         net (fo=1, routed)           0.833    16.698    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0_n_6
-    SLICE_X4Y91          LUT2 (Prop_lut2_I1_O)        0.306    17.004 r  cidificador7seg/desc/i___251_carry__2_i_1/O
-                         net (fo=1, routed)           0.000    17.004    cidificador7seg/desc/i___251_carry__2_i_1_n_0
-    SLICE_X4Y91          CARRY4 (Prop_carry4_S[1]_O[1])
-                                                      0.227    17.231 f  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[1]
-                         net (fo=1, routed)           0.797    18.029    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_6
-    SLICE_X7Y91          LUT1 (Prop_lut1_I0_O)        0.303    18.332 r  cidificador7seg/desc/i___288_carry__1_i_1/O
-                         net (fo=1, routed)           0.000    18.332    cidificador7seg/desc/i___288_carry__1_i_1_n_0
-    SLICE_X7Y91          CARRY4 (Prop_carry4_S[2]_CO[2])
-                                                      0.314    18.646 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
-                         net (fo=10, routed)          0.988    19.634    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
-    SLICE_X5Y91          LUT3 (Prop_lut3_I1_O)        0.313    19.947 r  cidificador7seg/desc/COUNT[3]_i_1/O
-                         net (fo=1, routed)           0.000    19.947    cidificador7seg/desc/COUNT3[3]
-    SLICE_X5Y91          FDCE                                         r  cidificador7seg/desc/COUNT_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 cidificador7seg/desc/COUNT_reg[4]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            cidificador7seg/desc/COUNT_reg[11]/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        19.945ns  (logic 8.303ns (41.630%)  route 11.642ns (58.370%))
-  Logic Levels:           26  (CARRY4=14 FDCE=1 LUT1=1 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y91          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[4]/C
-    SLICE_X5Y91          FDCE (Prop_fdce_C_Q)         0.419     0.419 r  cidificador7seg/desc/COUNT_reg[4]/Q
-                         net (fo=2, routed)           0.614     1.033    cidificador7seg/desc/COUNT[4]
-    SLICE_X3Y88          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.697     1.730 r  cidificador7seg/desc/COUNT3_carry/CO[3]
-                         net (fo=1, routed)           0.000     1.730    cidificador7seg/desc/COUNT3_carry_n_0
-    SLICE_X3Y89          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.222     1.952 f  cidificador7seg/desc/COUNT3_carry__0/O[0]
-                         net (fo=19, routed)          1.844     3.796    cidificador7seg/desc/COUNT3_carry__0_n_7
-    SLICE_X2Y85          LUT3 (Prop_lut3_I2_O)        0.327     4.123 r  cidificador7seg/desc/i___41_carry__0_i_2/O
-                         net (fo=2, routed)           0.859     4.982    cidificador7seg/desc/i___41_carry__0_i_2_n_0
-    SLICE_X2Y85          LUT4 (Prop_lut4_I3_O)        0.348     5.330 r  cidificador7seg/desc/i___41_carry__0_i_6/O
-                         net (fo=1, routed)           0.000     5.330    cidificador7seg/desc/i___41_carry__0_i_6_n_0
-    SLICE_X2Y85          CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.380     5.710 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.710    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0_n_0
-    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     5.827 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.827    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1_n_0
-    SLICE_X2Y87          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323     6.150 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2/O[1]
-                         net (fo=3, routed)           1.436     7.586    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2_n_6
-    SLICE_X7Y87          LUT3 (Prop_lut3_I2_O)        0.334     7.920 r  cidificador7seg/desc/i___146_carry__2_i_9/O
-                         net (fo=2, routed)           0.828     8.748    cidificador7seg/desc/i___146_carry__2_i_9_n_0
-    SLICE_X7Y86          LUT5 (Prop_lut5_I4_O)        0.332     9.080 r  cidificador7seg/desc/i___146_carry__2_i_3/O
-                         net (fo=2, routed)           0.600     9.680    cidificador7seg/desc/i___146_carry__2_i_3_n_0
-    SLICE_X6Y87          LUT6 (Prop_lut6_I0_O)        0.124     9.804 r  cidificador7seg/desc/i___146_carry__2_i_7/O
-                         net (fo=1, routed)           0.000     9.804    cidificador7seg/desc/i___146_carry__2_i_7_n_0
-    SLICE_X6Y87          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533    10.337 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
-                         net (fo=1, routed)           0.000    10.337    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
-    SLICE_X6Y88          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.454 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
-                         net (fo=1, routed)           0.000    10.454    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
-    SLICE_X6Y89          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.571 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
-                         net (fo=1, routed)           0.000    10.571    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
-    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    10.894 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
-                         net (fo=8, routed)           1.171    12.065    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
-    SLICE_X4Y92          LUT3 (Prop_lut3_I1_O)        0.335    12.400 r  cidificador7seg/desc/i___217_carry_i_1/O
-                         net (fo=2, routed)           0.811    13.211    cidificador7seg/desc/i___217_carry_i_1_n_0
-    SLICE_X4Y92          LUT4 (Prop_lut4_I3_O)        0.327    13.538 r  cidificador7seg/desc/i___217_carry_i_4/O
-                         net (fo=1, routed)           0.000    13.538    cidificador7seg/desc/i___217_carry_i_4_n_0
-    SLICE_X4Y92          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.401    13.939 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.939    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
-    SLICE_X4Y93          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    14.273 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[1]
-                         net (fo=2, routed)           0.862    15.135    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_6
-    SLICE_X2Y92          LUT3 (Prop_lut3_I0_O)        0.303    15.438 r  cidificador7seg/desc/i___236_carry__0_i_2/O
-                         net (fo=1, routed)           0.000    15.438    cidificador7seg/desc/i___236_carry__0_i_2_n_0
-    SLICE_X2Y92          CARRY4 (Prop_carry4_S[0]_O[1])
-                                                      0.427    15.865 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0/O[1]
-                         net (fo=1, routed)           0.833    16.698    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0_n_6
-    SLICE_X4Y91          LUT2 (Prop_lut2_I1_O)        0.306    17.004 r  cidificador7seg/desc/i___251_carry__2_i_1/O
-                         net (fo=1, routed)           0.000    17.004    cidificador7seg/desc/i___251_carry__2_i_1_n_0
-    SLICE_X4Y91          CARRY4 (Prop_carry4_S[1]_O[1])
-                                                      0.227    17.231 f  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[1]
-                         net (fo=1, routed)           0.797    18.029    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_6
-    SLICE_X7Y91          LUT1 (Prop_lut1_I0_O)        0.303    18.332 r  cidificador7seg/desc/i___288_carry__1_i_1/O
-                         net (fo=1, routed)           0.000    18.332    cidificador7seg/desc/i___288_carry__1_i_1_n_0
-    SLICE_X7Y91          CARRY4 (Prop_carry4_S[2]_CO[2])
-                                                      0.314    18.646 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
-                         net (fo=10, routed)          0.986    19.632    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
-    SLICE_X5Y91          LUT3 (Prop_lut3_I1_O)        0.313    19.945 r  cidificador7seg/desc/COUNT[11]_i_1/O
-                         net (fo=1, routed)           0.000    19.945    cidificador7seg/desc/COUNT3[11]
-    SLICE_X5Y91          FDCE                                         r  cidificador7seg/desc/COUNT_reg[11]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 cidificador7seg/desc/COUNT_reg[4]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            cidificador7seg/desc/COUNT_reg[6]/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        19.739ns  (logic 8.332ns (42.211%)  route 11.407ns (57.789%))
-  Logic Levels:           26  (CARRY4=14 FDCE=1 LUT1=1 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y91          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[4]/C
-    SLICE_X5Y91          FDCE (Prop_fdce_C_Q)         0.419     0.419 r  cidificador7seg/desc/COUNT_reg[4]/Q
-                         net (fo=2, routed)           0.614     1.033    cidificador7seg/desc/COUNT[4]
-    SLICE_X3Y88          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.697     1.730 r  cidificador7seg/desc/COUNT3_carry/CO[3]
-                         net (fo=1, routed)           0.000     1.730    cidificador7seg/desc/COUNT3_carry_n_0
-    SLICE_X3Y89          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.222     1.952 f  cidificador7seg/desc/COUNT3_carry__0/O[0]
-                         net (fo=19, routed)          1.844     3.796    cidificador7seg/desc/COUNT3_carry__0_n_7
-    SLICE_X2Y85          LUT3 (Prop_lut3_I2_O)        0.327     4.123 r  cidificador7seg/desc/i___41_carry__0_i_2/O
-                         net (fo=2, routed)           0.859     4.982    cidificador7seg/desc/i___41_carry__0_i_2_n_0
-    SLICE_X2Y85          LUT4 (Prop_lut4_I3_O)        0.348     5.330 r  cidificador7seg/desc/i___41_carry__0_i_6/O
-                         net (fo=1, routed)           0.000     5.330    cidificador7seg/desc/i___41_carry__0_i_6_n_0
-    SLICE_X2Y85          CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.380     5.710 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.710    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0_n_0
-    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     5.827 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.827    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1_n_0
-    SLICE_X2Y87          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323     6.150 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2/O[1]
-                         net (fo=3, routed)           1.436     7.586    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2_n_6
-    SLICE_X7Y87          LUT3 (Prop_lut3_I2_O)        0.334     7.920 r  cidificador7seg/desc/i___146_carry__2_i_9/O
-                         net (fo=2, routed)           0.828     8.748    cidificador7seg/desc/i___146_carry__2_i_9_n_0
-    SLICE_X7Y86          LUT5 (Prop_lut5_I4_O)        0.332     9.080 r  cidificador7seg/desc/i___146_carry__2_i_3/O
-                         net (fo=2, routed)           0.600     9.680    cidificador7seg/desc/i___146_carry__2_i_3_n_0
-    SLICE_X6Y87          LUT6 (Prop_lut6_I0_O)        0.124     9.804 r  cidificador7seg/desc/i___146_carry__2_i_7/O
-                         net (fo=1, routed)           0.000     9.804    cidificador7seg/desc/i___146_carry__2_i_7_n_0
-    SLICE_X6Y87          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533    10.337 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
-                         net (fo=1, routed)           0.000    10.337    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
-    SLICE_X6Y88          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.454 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
-                         net (fo=1, routed)           0.000    10.454    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
-    SLICE_X6Y89          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.571 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
-                         net (fo=1, routed)           0.000    10.571    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
-    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    10.894 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
-                         net (fo=8, routed)           1.171    12.065    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
-    SLICE_X4Y92          LUT3 (Prop_lut3_I1_O)        0.335    12.400 r  cidificador7seg/desc/i___217_carry_i_1/O
-                         net (fo=2, routed)           0.811    13.211    cidificador7seg/desc/i___217_carry_i_1_n_0
-    SLICE_X4Y92          LUT4 (Prop_lut4_I3_O)        0.327    13.538 r  cidificador7seg/desc/i___217_carry_i_4/O
-                         net (fo=1, routed)           0.000    13.538    cidificador7seg/desc/i___217_carry_i_4_n_0
-    SLICE_X4Y92          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.401    13.939 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.939    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
-    SLICE_X4Y93          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    14.273 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[1]
-                         net (fo=2, routed)           0.862    15.135    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_6
-    SLICE_X2Y92          LUT3 (Prop_lut3_I0_O)        0.303    15.438 r  cidificador7seg/desc/i___236_carry__0_i_2/O
-                         net (fo=1, routed)           0.000    15.438    cidificador7seg/desc/i___236_carry__0_i_2_n_0
-    SLICE_X2Y92          CARRY4 (Prop_carry4_S[0]_O[1])
-                                                      0.427    15.865 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0/O[1]
-                         net (fo=1, routed)           0.833    16.698    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0_n_6
-    SLICE_X4Y91          LUT2 (Prop_lut2_I1_O)        0.306    17.004 r  cidificador7seg/desc/i___251_carry__2_i_1/O
-                         net (fo=1, routed)           0.000    17.004    cidificador7seg/desc/i___251_carry__2_i_1_n_0
-    SLICE_X4Y91          CARRY4 (Prop_carry4_S[1]_O[1])
-                                                      0.227    17.231 f  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[1]
-                         net (fo=1, routed)           0.797    18.029    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_6
-    SLICE_X7Y91          LUT1 (Prop_lut1_I0_O)        0.303    18.332 r  cidificador7seg/desc/i___288_carry__1_i_1/O
-                         net (fo=1, routed)           0.000    18.332    cidificador7seg/desc/i___288_carry__1_i_1_n_0
-    SLICE_X7Y91          CARRY4 (Prop_carry4_S[2]_CO[2])
-                                                      0.314    18.646 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
-                         net (fo=10, routed)          0.751    19.397    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
-    SLICE_X5Y91          LUT3 (Prop_lut3_I1_O)        0.342    19.739 r  cidificador7seg/desc/COUNT[6]_i_1/O
-                         net (fo=1, routed)           0.000    19.739    cidificador7seg/desc/COUNT3[6]
-    SLICE_X5Y91          FDCE                                         r  cidificador7seg/desc/COUNT_reg[6]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 cidificador7seg/desc/COUNT_reg[4]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            cidificador7seg/desc/COUNT_reg[5]/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        19.710ns  (logic 8.303ns (42.126%)  route 11.407ns (57.874%))
-  Logic Levels:           26  (CARRY4=14 FDCE=1 LUT1=1 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y91          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[4]/C
-    SLICE_X5Y91          FDCE (Prop_fdce_C_Q)         0.419     0.419 r  cidificador7seg/desc/COUNT_reg[4]/Q
-                         net (fo=2, routed)           0.614     1.033    cidificador7seg/desc/COUNT[4]
-    SLICE_X3Y88          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.697     1.730 r  cidificador7seg/desc/COUNT3_carry/CO[3]
-                         net (fo=1, routed)           0.000     1.730    cidificador7seg/desc/COUNT3_carry_n_0
-    SLICE_X3Y89          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.222     1.952 f  cidificador7seg/desc/COUNT3_carry__0/O[0]
-                         net (fo=19, routed)          1.844     3.796    cidificador7seg/desc/COUNT3_carry__0_n_7
-    SLICE_X2Y85          LUT3 (Prop_lut3_I2_O)        0.327     4.123 r  cidificador7seg/desc/i___41_carry__0_i_2/O
-                         net (fo=2, routed)           0.859     4.982    cidificador7seg/desc/i___41_carry__0_i_2_n_0
-    SLICE_X2Y85          LUT4 (Prop_lut4_I3_O)        0.348     5.330 r  cidificador7seg/desc/i___41_carry__0_i_6/O
-                         net (fo=1, routed)           0.000     5.330    cidificador7seg/desc/i___41_carry__0_i_6_n_0
-    SLICE_X2Y85          CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.380     5.710 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.710    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0_n_0
-    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     5.827 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.827    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1_n_0
-    SLICE_X2Y87          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323     6.150 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2/O[1]
-                         net (fo=3, routed)           1.436     7.586    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2_n_6
-    SLICE_X7Y87          LUT3 (Prop_lut3_I2_O)        0.334     7.920 r  cidificador7seg/desc/i___146_carry__2_i_9/O
-                         net (fo=2, routed)           0.828     8.748    cidificador7seg/desc/i___146_carry__2_i_9_n_0
-    SLICE_X7Y86          LUT5 (Prop_lut5_I4_O)        0.332     9.080 r  cidificador7seg/desc/i___146_carry__2_i_3/O
-                         net (fo=2, routed)           0.600     9.680    cidificador7seg/desc/i___146_carry__2_i_3_n_0
-    SLICE_X6Y87          LUT6 (Prop_lut6_I0_O)        0.124     9.804 r  cidificador7seg/desc/i___146_carry__2_i_7/O
-                         net (fo=1, routed)           0.000     9.804    cidificador7seg/desc/i___146_carry__2_i_7_n_0
-    SLICE_X6Y87          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533    10.337 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
-                         net (fo=1, routed)           0.000    10.337    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
-    SLICE_X6Y88          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.454 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
-                         net (fo=1, routed)           0.000    10.454    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
-    SLICE_X6Y89          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.571 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
-                         net (fo=1, routed)           0.000    10.571    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
-    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    10.894 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
-                         net (fo=8, routed)           1.171    12.065    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
-    SLICE_X4Y92          LUT3 (Prop_lut3_I1_O)        0.335    12.400 r  cidificador7seg/desc/i___217_carry_i_1/O
-                         net (fo=2, routed)           0.811    13.211    cidificador7seg/desc/i___217_carry_i_1_n_0
-    SLICE_X4Y92          LUT4 (Prop_lut4_I3_O)        0.327    13.538 r  cidificador7seg/desc/i___217_carry_i_4/O
-                         net (fo=1, routed)           0.000    13.538    cidificador7seg/desc/i___217_carry_i_4_n_0
-    SLICE_X4Y92          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.401    13.939 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.939    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
-    SLICE_X4Y93          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    14.273 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[1]
-                         net (fo=2, routed)           0.862    15.135    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_6
-    SLICE_X2Y92          LUT3 (Prop_lut3_I0_O)        0.303    15.438 r  cidificador7seg/desc/i___236_carry__0_i_2/O
-                         net (fo=1, routed)           0.000    15.438    cidificador7seg/desc/i___236_carry__0_i_2_n_0
-    SLICE_X2Y92          CARRY4 (Prop_carry4_S[0]_O[1])
-                                                      0.427    15.865 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0/O[1]
-                         net (fo=1, routed)           0.833    16.698    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0_n_6
-    SLICE_X4Y91          LUT2 (Prop_lut2_I1_O)        0.306    17.004 r  cidificador7seg/desc/i___251_carry__2_i_1/O
-                         net (fo=1, routed)           0.000    17.004    cidificador7seg/desc/i___251_carry__2_i_1_n_0
-    SLICE_X4Y91          CARRY4 (Prop_carry4_S[1]_O[1])
-                                                      0.227    17.231 f  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[1]
-                         net (fo=1, routed)           0.797    18.029    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_6
-    SLICE_X7Y91          LUT1 (Prop_lut1_I0_O)        0.303    18.332 r  cidificador7seg/desc/i___288_carry__1_i_1/O
-                         net (fo=1, routed)           0.000    18.332    cidificador7seg/desc/i___288_carry__1_i_1_n_0
-    SLICE_X7Y91          CARRY4 (Prop_carry4_S[2]_CO[2])
-                                                      0.314    18.646 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
-                         net (fo=10, routed)          0.751    19.397    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
-    SLICE_X5Y91          LUT3 (Prop_lut3_I1_O)        0.313    19.710 r  cidificador7seg/desc/COUNT[5]_i_1/O
-                         net (fo=1, routed)           0.000    19.710    cidificador7seg/desc/COUNT3[5]
-    SLICE_X5Y91          FDCE                                         r  cidificador7seg/desc/COUNT_reg[5]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 cidificador7seg/desc/COUNT_reg[4]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            cidificador7seg/desc/COUNT_reg[7]/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        19.542ns  (logic 8.303ns (42.489%)  route 11.239ns (57.511%))
-  Logic Levels:           26  (CARRY4=14 FDCE=1 LUT1=1 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y91          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[4]/C
-    SLICE_X5Y91          FDCE (Prop_fdce_C_Q)         0.419     0.419 r  cidificador7seg/desc/COUNT_reg[4]/Q
-                         net (fo=2, routed)           0.614     1.033    cidificador7seg/desc/COUNT[4]
-    SLICE_X3Y88          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.697     1.730 r  cidificador7seg/desc/COUNT3_carry/CO[3]
-                         net (fo=1, routed)           0.000     1.730    cidificador7seg/desc/COUNT3_carry_n_0
-    SLICE_X3Y89          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.222     1.952 f  cidificador7seg/desc/COUNT3_carry__0/O[0]
-                         net (fo=19, routed)          1.844     3.796    cidificador7seg/desc/COUNT3_carry__0_n_7
-    SLICE_X2Y85          LUT3 (Prop_lut3_I2_O)        0.327     4.123 r  cidificador7seg/desc/i___41_carry__0_i_2/O
-                         net (fo=2, routed)           0.859     4.982    cidificador7seg/desc/i___41_carry__0_i_2_n_0
-    SLICE_X2Y85          LUT4 (Prop_lut4_I3_O)        0.348     5.330 r  cidificador7seg/desc/i___41_carry__0_i_6/O
-                         net (fo=1, routed)           0.000     5.330    cidificador7seg/desc/i___41_carry__0_i_6_n_0
-    SLICE_X2Y85          CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.380     5.710 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.710    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0_n_0
-    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     5.827 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.827    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1_n_0
-    SLICE_X2Y87          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323     6.150 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2/O[1]
-                         net (fo=3, routed)           1.436     7.586    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2_n_6
-    SLICE_X7Y87          LUT3 (Prop_lut3_I2_O)        0.334     7.920 r  cidificador7seg/desc/i___146_carry__2_i_9/O
-                         net (fo=2, routed)           0.828     8.748    cidificador7seg/desc/i___146_carry__2_i_9_n_0
-    SLICE_X7Y86          LUT5 (Prop_lut5_I4_O)        0.332     9.080 r  cidificador7seg/desc/i___146_carry__2_i_3/O
-                         net (fo=2, routed)           0.600     9.680    cidificador7seg/desc/i___146_carry__2_i_3_n_0
-    SLICE_X6Y87          LUT6 (Prop_lut6_I0_O)        0.124     9.804 r  cidificador7seg/desc/i___146_carry__2_i_7/O
-                         net (fo=1, routed)           0.000     9.804    cidificador7seg/desc/i___146_carry__2_i_7_n_0
-    SLICE_X6Y87          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533    10.337 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
-                         net (fo=1, routed)           0.000    10.337    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
-    SLICE_X6Y88          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.454 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
-                         net (fo=1, routed)           0.000    10.454    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
-    SLICE_X6Y89          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.571 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
-                         net (fo=1, routed)           0.000    10.571    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
-    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    10.894 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
-                         net (fo=8, routed)           1.171    12.065    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
-    SLICE_X4Y92          LUT3 (Prop_lut3_I1_O)        0.335    12.400 r  cidificador7seg/desc/i___217_carry_i_1/O
-                         net (fo=2, routed)           0.811    13.211    cidificador7seg/desc/i___217_carry_i_1_n_0
-    SLICE_X4Y92          LUT4 (Prop_lut4_I3_O)        0.327    13.538 r  cidificador7seg/desc/i___217_carry_i_4/O
-                         net (fo=1, routed)           0.000    13.538    cidificador7seg/desc/i___217_carry_i_4_n_0
-    SLICE_X4Y92          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.401    13.939 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.939    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
-    SLICE_X4Y93          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    14.273 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[1]
-                         net (fo=2, routed)           0.862    15.135    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_6
-    SLICE_X2Y92          LUT3 (Prop_lut3_I0_O)        0.303    15.438 r  cidificador7seg/desc/i___236_carry__0_i_2/O
-                         net (fo=1, routed)           0.000    15.438    cidificador7seg/desc/i___236_carry__0_i_2_n_0
-    SLICE_X2Y92          CARRY4 (Prop_carry4_S[0]_O[1])
-                                                      0.427    15.865 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0/O[1]
-                         net (fo=1, routed)           0.833    16.698    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0_n_6
-    SLICE_X4Y91          LUT2 (Prop_lut2_I1_O)        0.306    17.004 r  cidificador7seg/desc/i___251_carry__2_i_1/O
-                         net (fo=1, routed)           0.000    17.004    cidificador7seg/desc/i___251_carry__2_i_1_n_0
-    SLICE_X4Y91          CARRY4 (Prop_carry4_S[1]_O[1])
-                                                      0.227    17.231 f  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[1]
-                         net (fo=1, routed)           0.797    18.029    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_6
-    SLICE_X7Y91          LUT1 (Prop_lut1_I0_O)        0.303    18.332 r  cidificador7seg/desc/i___288_carry__1_i_1/O
-                         net (fo=1, routed)           0.000    18.332    cidificador7seg/desc/i___288_carry__1_i_1_n_0
-    SLICE_X7Y91          CARRY4 (Prop_carry4_S[2]_CO[2])
-                                                      0.314    18.646 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
-                         net (fo=10, routed)          0.583    19.229    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
-    SLICE_X5Y91          LUT3 (Prop_lut3_I1_O)        0.313    19.542 r  cidificador7seg/desc/COUNT[7]_i_1/O
-                         net (fo=1, routed)           0.000    19.542    cidificador7seg/desc/COUNT3[7]
-    SLICE_X5Y91          FDCE                                         r  cidificador7seg/desc/COUNT_reg[7]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 cidificador7seg/desc/COUNT_reg[4]/C
+  Source:                 cidificador7seg/desc/COUNT_reg[1]/C
                             (rising edge-triggered cell FDCE)
   Destination:            cidificador7seg/desc/COUNT_reg[8]/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        19.535ns  (logic 8.296ns (42.468%)  route 11.239ns (57.532%))
-  Logic Levels:           26  (CARRY4=14 FDCE=1 LUT1=1 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=1)
+  Data Path Delay:        19.055ns  (logic 8.539ns (44.811%)  route 10.516ns (55.189%))
+  Logic Levels:           26  (CARRY4=16 FDCE=1 LUT2=3 LUT3=3 LUT4=1 LUT5=1 LUT6=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X5Y91          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[4]/C
-    SLICE_X5Y91          FDCE (Prop_fdce_C_Q)         0.419     0.419 r  cidificador7seg/desc/COUNT_reg[4]/Q
-                         net (fo=2, routed)           0.614     1.033    cidificador7seg/desc/COUNT[4]
-    SLICE_X3Y88          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.697     1.730 r  cidificador7seg/desc/COUNT3_carry/CO[3]
-                         net (fo=1, routed)           0.000     1.730    cidificador7seg/desc/COUNT3_carry_n_0
-    SLICE_X3Y89          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.222     1.952 f  cidificador7seg/desc/COUNT3_carry__0/O[0]
-                         net (fo=19, routed)          1.844     3.796    cidificador7seg/desc/COUNT3_carry__0_n_7
-    SLICE_X2Y85          LUT3 (Prop_lut3_I2_O)        0.327     4.123 r  cidificador7seg/desc/i___41_carry__0_i_2/O
-                         net (fo=2, routed)           0.859     4.982    cidificador7seg/desc/i___41_carry__0_i_2_n_0
-    SLICE_X2Y85          LUT4 (Prop_lut4_I3_O)        0.348     5.330 r  cidificador7seg/desc/i___41_carry__0_i_6/O
-                         net (fo=1, routed)           0.000     5.330    cidificador7seg/desc/i___41_carry__0_i_6_n_0
-    SLICE_X2Y85          CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.380     5.710 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.710    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__0_n_0
-    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     5.827 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.827    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__1_n_0
-    SLICE_X2Y87          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323     6.150 r  cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2/O[1]
-                         net (fo=3, routed)           1.436     7.586    cidificador7seg/desc/COUNT3_inferred__0/i___41_carry__2_n_6
-    SLICE_X7Y87          LUT3 (Prop_lut3_I2_O)        0.334     7.920 r  cidificador7seg/desc/i___146_carry__2_i_9/O
-                         net (fo=2, routed)           0.828     8.748    cidificador7seg/desc/i___146_carry__2_i_9_n_0
-    SLICE_X7Y86          LUT5 (Prop_lut5_I4_O)        0.332     9.080 r  cidificador7seg/desc/i___146_carry__2_i_3/O
-                         net (fo=2, routed)           0.600     9.680    cidificador7seg/desc/i___146_carry__2_i_3_n_0
-    SLICE_X6Y87          LUT6 (Prop_lut6_I0_O)        0.124     9.804 r  cidificador7seg/desc/i___146_carry__2_i_7/O
-                         net (fo=1, routed)           0.000     9.804    cidificador7seg/desc/i___146_carry__2_i_7_n_0
-    SLICE_X6Y87          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533    10.337 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
-                         net (fo=1, routed)           0.000    10.337    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
-    SLICE_X6Y88          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.454 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
-                         net (fo=1, routed)           0.000    10.454    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
-    SLICE_X6Y89          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.571 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
-                         net (fo=1, routed)           0.000    10.571    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
-    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    10.894 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
-                         net (fo=8, routed)           1.171    12.065    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
-    SLICE_X4Y92          LUT3 (Prop_lut3_I1_O)        0.335    12.400 r  cidificador7seg/desc/i___217_carry_i_1/O
-                         net (fo=2, routed)           0.811    13.211    cidificador7seg/desc/i___217_carry_i_1_n_0
-    SLICE_X4Y92          LUT4 (Prop_lut4_I3_O)        0.327    13.538 r  cidificador7seg/desc/i___217_carry_i_4/O
-                         net (fo=1, routed)           0.000    13.538    cidificador7seg/desc/i___217_carry_i_4_n_0
-    SLICE_X4Y92          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.401    13.939 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.939    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
-    SLICE_X4Y93          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334    14.273 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[1]
-                         net (fo=2, routed)           0.862    15.135    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_6
-    SLICE_X2Y92          LUT3 (Prop_lut3_I0_O)        0.303    15.438 r  cidificador7seg/desc/i___236_carry__0_i_2/O
-                         net (fo=1, routed)           0.000    15.438    cidificador7seg/desc/i___236_carry__0_i_2_n_0
-    SLICE_X2Y92          CARRY4 (Prop_carry4_S[0]_O[1])
-                                                      0.427    15.865 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0/O[1]
-                         net (fo=1, routed)           0.833    16.698    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry__0_n_6
-    SLICE_X4Y91          LUT2 (Prop_lut2_I1_O)        0.306    17.004 r  cidificador7seg/desc/i___251_carry__2_i_1/O
-                         net (fo=1, routed)           0.000    17.004    cidificador7seg/desc/i___251_carry__2_i_1_n_0
-    SLICE_X4Y91          CARRY4 (Prop_carry4_S[1]_O[1])
-                                                      0.227    17.231 f  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[1]
-                         net (fo=1, routed)           0.797    18.029    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_6
-    SLICE_X7Y91          LUT1 (Prop_lut1_I0_O)        0.303    18.332 r  cidificador7seg/desc/i___288_carry__1_i_1/O
-                         net (fo=1, routed)           0.000    18.332    cidificador7seg/desc/i___288_carry__1_i_1_n_0
-    SLICE_X7Y91          CARRY4 (Prop_carry4_S[2]_CO[2])
-                                                      0.314    18.646 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
-                         net (fo=10, routed)          0.583    19.229    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
-    SLICE_X5Y91          LUT3 (Prop_lut3_I1_O)        0.306    19.535 r  cidificador7seg/desc/COUNT[8]_i_1/O
-                         net (fo=1, routed)           0.000    19.535    cidificador7seg/desc/COUNT3[8]
-    SLICE_X5Y91          FDCE                                         r  cidificador7seg/desc/COUNT_reg[8]/D
+    SLICE_X3Y87          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[1]/C
+    SLICE_X3Y87          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  cidificador7seg/desc/COUNT_reg[1]/Q
+                         net (fo=2, routed)           0.650     1.106    cidificador7seg/desc/COUNT[1]
+    SLICE_X5Y87          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.762 r  cidificador7seg/desc/COUNT3_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.762    cidificador7seg/desc/COUNT3_carry_n_0
+    SLICE_X5Y88          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.876 r  cidificador7seg/desc/COUNT3_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.876    cidificador7seg/desc/COUNT3_carry__0_n_0
+    SLICE_X5Y89          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.990 r  cidificador7seg/desc/COUNT3_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.990    cidificador7seg/desc/COUNT3_carry__1_n_0
+    SLICE_X5Y90          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.261 r  cidificador7seg/desc/i__carry__3_i_1/CO[0]
+                         net (fo=18, routed)          1.637     3.898    cidificador7seg/desc/i__carry__3_i_1_n_3
+    SLICE_X2Y85          LUT2 (Prop_lut2_I1_O)        0.373     4.271 r  cidificador7seg/desc/i__carry__2_i_3/O
+                         net (fo=1, routed)           0.000     4.271    cidificador7seg/desc/i__carry__2_i_3_n_0
+    SLICE_X2Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.804 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.804    cidificador7seg/desc/COUNT3_inferred__0/i__carry__2_n_0
+    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     4.961 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__3/CO[1]
+                         net (fo=39, routed)          1.872     6.833    cidificador7seg/desc/COUNT3_inferred__0/i__carry__3_n_2
+    SLICE_X5Y84          LUT3 (Prop_lut3_I1_O)        0.360     7.193 r  cidificador7seg/desc/i___146_carry__2_i_9/O
+                         net (fo=2, routed)           0.317     7.510    cidificador7seg/desc/i___146_carry__2_i_9_n_0
+    SLICE_X7Y85          LUT5 (Prop_lut5_I4_O)        0.326     7.836 r  cidificador7seg/desc/i___146_carry__2_i_3/O
+                         net (fo=2, routed)           0.513     8.349    cidificador7seg/desc/i___146_carry__2_i_3_n_0
+    SLICE_X4Y85          LUT6 (Prop_lut6_I0_O)        0.124     8.473 r  cidificador7seg/desc/i___146_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     8.473    cidificador7seg/desc/i___146_carry__2_i_7_n_0
+    SLICE_X4Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.023 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     9.023    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
+    SLICE_X4Y86          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.137 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     9.137    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
+    SLICE_X4Y87          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.251 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     9.251    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
+    SLICE_X4Y88          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.585 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
+                         net (fo=8, routed)           1.485    11.070    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
+    SLICE_X6Y89          LUT3 (Prop_lut3_I1_O)        0.332    11.402 r  cidificador7seg/desc/i___217_carry_i_1/O
+                         net (fo=2, routed)           0.708    12.110    cidificador7seg/desc/i___217_carry_i_1_n_0
+    SLICE_X6Y89          LUT4 (Prop_lut4_I3_O)        0.331    12.441 r  cidificador7seg/desc/i___217_carry_i_4/O
+                         net (fo=1, routed)           0.000    12.441    cidificador7seg/desc/i___217_carry_i_4_n_0
+    SLICE_X6Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    12.817 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.817    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
+    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.036 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[0]
+                         net (fo=1, routed)           0.800    13.836    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_7
+    SLICE_X7Y89          LUT2 (Prop_lut2_I1_O)        0.295    14.131 r  cidificador7seg/desc/i___236_carry_i_1/O
+                         net (fo=1, routed)           0.000    14.131    cidificador7seg/desc/i___236_carry_i_1_n_0
+    SLICE_X7Y89          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.248    14.379 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry/O[3]
+                         net (fo=1, routed)           0.815    15.194    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry_n_4
+    SLICE_X3Y89          LUT2 (Prop_lut2_I1_O)        0.306    15.500 r  cidificador7seg/desc/i___251_carry__1_i_1/O
+                         net (fo=1, routed)           0.000    15.500    cidificador7seg/desc/i___251_carry__1_i_1_n_0
+    SLICE_X3Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    15.901 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    15.901    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1_n_0
+    SLICE_X3Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.123 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[0]
+                         net (fo=2, routed)           0.727    16.850    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_7
+    SLICE_X2Y90          CARRY4 (Prop_carry4_S[1]_CO[2])
+                                                      0.873    17.723 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
+                         net (fo=10, routed)          0.992    18.715    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
+    SLICE_X1Y88          LUT3 (Prop_lut3_I1_O)        0.340    19.055 r  cidificador7seg/desc/COUNT[8]_i_1/O
+                         net (fo=1, routed)           0.000    19.055    cidificador7seg/desc/COUNT3[8]
+    SLICE_X1Y88          FDCE                                         r  cidificador7seg/desc/COUNT_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 cidificador7seg/desc/COUNT_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            cidificador7seg/desc/COUNT_reg[7]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        19.025ns  (logic 8.509ns (44.724%)  route 10.516ns (55.276%))
+  Logic Levels:           26  (CARRY4=16 FDCE=1 LUT2=3 LUT3=3 LUT4=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y87          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[1]/C
+    SLICE_X3Y87          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  cidificador7seg/desc/COUNT_reg[1]/Q
+                         net (fo=2, routed)           0.650     1.106    cidificador7seg/desc/COUNT[1]
+    SLICE_X5Y87          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.762 r  cidificador7seg/desc/COUNT3_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.762    cidificador7seg/desc/COUNT3_carry_n_0
+    SLICE_X5Y88          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.876 r  cidificador7seg/desc/COUNT3_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.876    cidificador7seg/desc/COUNT3_carry__0_n_0
+    SLICE_X5Y89          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.990 r  cidificador7seg/desc/COUNT3_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.990    cidificador7seg/desc/COUNT3_carry__1_n_0
+    SLICE_X5Y90          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.261 r  cidificador7seg/desc/i__carry__3_i_1/CO[0]
+                         net (fo=18, routed)          1.637     3.898    cidificador7seg/desc/i__carry__3_i_1_n_3
+    SLICE_X2Y85          LUT2 (Prop_lut2_I1_O)        0.373     4.271 r  cidificador7seg/desc/i__carry__2_i_3/O
+                         net (fo=1, routed)           0.000     4.271    cidificador7seg/desc/i__carry__2_i_3_n_0
+    SLICE_X2Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.804 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.804    cidificador7seg/desc/COUNT3_inferred__0/i__carry__2_n_0
+    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     4.961 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__3/CO[1]
+                         net (fo=39, routed)          1.872     6.833    cidificador7seg/desc/COUNT3_inferred__0/i__carry__3_n_2
+    SLICE_X5Y84          LUT3 (Prop_lut3_I1_O)        0.360     7.193 r  cidificador7seg/desc/i___146_carry__2_i_9/O
+                         net (fo=2, routed)           0.317     7.510    cidificador7seg/desc/i___146_carry__2_i_9_n_0
+    SLICE_X7Y85          LUT5 (Prop_lut5_I4_O)        0.326     7.836 r  cidificador7seg/desc/i___146_carry__2_i_3/O
+                         net (fo=2, routed)           0.513     8.349    cidificador7seg/desc/i___146_carry__2_i_3_n_0
+    SLICE_X4Y85          LUT6 (Prop_lut6_I0_O)        0.124     8.473 r  cidificador7seg/desc/i___146_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     8.473    cidificador7seg/desc/i___146_carry__2_i_7_n_0
+    SLICE_X4Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.023 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     9.023    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
+    SLICE_X4Y86          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.137 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     9.137    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
+    SLICE_X4Y87          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.251 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     9.251    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
+    SLICE_X4Y88          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.585 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
+                         net (fo=8, routed)           1.485    11.070    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
+    SLICE_X6Y89          LUT3 (Prop_lut3_I1_O)        0.332    11.402 r  cidificador7seg/desc/i___217_carry_i_1/O
+                         net (fo=2, routed)           0.708    12.110    cidificador7seg/desc/i___217_carry_i_1_n_0
+    SLICE_X6Y89          LUT4 (Prop_lut4_I3_O)        0.331    12.441 r  cidificador7seg/desc/i___217_carry_i_4/O
+                         net (fo=1, routed)           0.000    12.441    cidificador7seg/desc/i___217_carry_i_4_n_0
+    SLICE_X6Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    12.817 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.817    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
+    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.036 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[0]
+                         net (fo=1, routed)           0.800    13.836    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_7
+    SLICE_X7Y89          LUT2 (Prop_lut2_I1_O)        0.295    14.131 r  cidificador7seg/desc/i___236_carry_i_1/O
+                         net (fo=1, routed)           0.000    14.131    cidificador7seg/desc/i___236_carry_i_1_n_0
+    SLICE_X7Y89          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.248    14.379 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry/O[3]
+                         net (fo=1, routed)           0.815    15.194    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry_n_4
+    SLICE_X3Y89          LUT2 (Prop_lut2_I1_O)        0.306    15.500 r  cidificador7seg/desc/i___251_carry__1_i_1/O
+                         net (fo=1, routed)           0.000    15.500    cidificador7seg/desc/i___251_carry__1_i_1_n_0
+    SLICE_X3Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    15.901 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    15.901    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1_n_0
+    SLICE_X3Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.123 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[0]
+                         net (fo=2, routed)           0.727    16.850    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_7
+    SLICE_X2Y90          CARRY4 (Prop_carry4_S[1]_CO[2])
+                                                      0.873    17.723 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
+                         net (fo=10, routed)          0.992    18.715    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
+    SLICE_X1Y88          LUT3 (Prop_lut3_I1_O)        0.310    19.025 r  cidificador7seg/desc/COUNT[7]_i_1/O
+                         net (fo=1, routed)           0.000    19.025    cidificador7seg/desc/COUNT3[7]
+    SLICE_X1Y88          FDCE                                         r  cidificador7seg/desc/COUNT_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 cidificador7seg/desc/COUNT_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            cidificador7seg/desc/COUNT_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        19.006ns  (logic 8.535ns (44.907%)  route 10.471ns (55.093%))
+  Logic Levels:           26  (CARRY4=16 FDCE=1 LUT2=3 LUT3=3 LUT4=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y87          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[1]/C
+    SLICE_X3Y87          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  cidificador7seg/desc/COUNT_reg[1]/Q
+                         net (fo=2, routed)           0.650     1.106    cidificador7seg/desc/COUNT[1]
+    SLICE_X5Y87          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.762 r  cidificador7seg/desc/COUNT3_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.762    cidificador7seg/desc/COUNT3_carry_n_0
+    SLICE_X5Y88          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.876 r  cidificador7seg/desc/COUNT3_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.876    cidificador7seg/desc/COUNT3_carry__0_n_0
+    SLICE_X5Y89          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.990 r  cidificador7seg/desc/COUNT3_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.990    cidificador7seg/desc/COUNT3_carry__1_n_0
+    SLICE_X5Y90          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.261 r  cidificador7seg/desc/i__carry__3_i_1/CO[0]
+                         net (fo=18, routed)          1.637     3.898    cidificador7seg/desc/i__carry__3_i_1_n_3
+    SLICE_X2Y85          LUT2 (Prop_lut2_I1_O)        0.373     4.271 r  cidificador7seg/desc/i__carry__2_i_3/O
+                         net (fo=1, routed)           0.000     4.271    cidificador7seg/desc/i__carry__2_i_3_n_0
+    SLICE_X2Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.804 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.804    cidificador7seg/desc/COUNT3_inferred__0/i__carry__2_n_0
+    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     4.961 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__3/CO[1]
+                         net (fo=39, routed)          1.872     6.833    cidificador7seg/desc/COUNT3_inferred__0/i__carry__3_n_2
+    SLICE_X5Y84          LUT3 (Prop_lut3_I1_O)        0.360     7.193 r  cidificador7seg/desc/i___146_carry__2_i_9/O
+                         net (fo=2, routed)           0.317     7.510    cidificador7seg/desc/i___146_carry__2_i_9_n_0
+    SLICE_X7Y85          LUT5 (Prop_lut5_I4_O)        0.326     7.836 r  cidificador7seg/desc/i___146_carry__2_i_3/O
+                         net (fo=2, routed)           0.513     8.349    cidificador7seg/desc/i___146_carry__2_i_3_n_0
+    SLICE_X4Y85          LUT6 (Prop_lut6_I0_O)        0.124     8.473 r  cidificador7seg/desc/i___146_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     8.473    cidificador7seg/desc/i___146_carry__2_i_7_n_0
+    SLICE_X4Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.023 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     9.023    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
+    SLICE_X4Y86          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.137 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     9.137    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
+    SLICE_X4Y87          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.251 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     9.251    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
+    SLICE_X4Y88          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.585 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
+                         net (fo=8, routed)           1.485    11.070    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
+    SLICE_X6Y89          LUT3 (Prop_lut3_I1_O)        0.332    11.402 r  cidificador7seg/desc/i___217_carry_i_1/O
+                         net (fo=2, routed)           0.708    12.110    cidificador7seg/desc/i___217_carry_i_1_n_0
+    SLICE_X6Y89          LUT4 (Prop_lut4_I3_O)        0.331    12.441 r  cidificador7seg/desc/i___217_carry_i_4/O
+                         net (fo=1, routed)           0.000    12.441    cidificador7seg/desc/i___217_carry_i_4_n_0
+    SLICE_X6Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    12.817 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.817    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
+    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.036 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[0]
+                         net (fo=1, routed)           0.800    13.836    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_7
+    SLICE_X7Y89          LUT2 (Prop_lut2_I1_O)        0.295    14.131 r  cidificador7seg/desc/i___236_carry_i_1/O
+                         net (fo=1, routed)           0.000    14.131    cidificador7seg/desc/i___236_carry_i_1_n_0
+    SLICE_X7Y89          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.248    14.379 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry/O[3]
+                         net (fo=1, routed)           0.815    15.194    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry_n_4
+    SLICE_X3Y89          LUT2 (Prop_lut2_I1_O)        0.306    15.500 r  cidificador7seg/desc/i___251_carry__1_i_1/O
+                         net (fo=1, routed)           0.000    15.500    cidificador7seg/desc/i___251_carry__1_i_1_n_0
+    SLICE_X3Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    15.901 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    15.901    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1_n_0
+    SLICE_X3Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.123 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[0]
+                         net (fo=2, routed)           0.727    16.850    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_7
+    SLICE_X2Y90          CARRY4 (Prop_carry4_S[1]_CO[2])
+                                                      0.873    17.723 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
+                         net (fo=10, routed)          0.947    18.670    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
+    SLICE_X1Y88          LUT3 (Prop_lut3_I1_O)        0.336    19.006 r  cidificador7seg/desc/COUNT[6]_i_1/O
+                         net (fo=1, routed)           0.000    19.006    cidificador7seg/desc/COUNT3[6]
+    SLICE_X1Y88          FDCE                                         r  cidificador7seg/desc/COUNT_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 cidificador7seg/desc/COUNT_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            cidificador7seg/desc/COUNT_reg[5]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.980ns  (logic 8.509ns (44.832%)  route 10.471ns (55.168%))
+  Logic Levels:           26  (CARRY4=16 FDCE=1 LUT2=3 LUT3=3 LUT4=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y87          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[1]/C
+    SLICE_X3Y87          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  cidificador7seg/desc/COUNT_reg[1]/Q
+                         net (fo=2, routed)           0.650     1.106    cidificador7seg/desc/COUNT[1]
+    SLICE_X5Y87          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.762 r  cidificador7seg/desc/COUNT3_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.762    cidificador7seg/desc/COUNT3_carry_n_0
+    SLICE_X5Y88          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.876 r  cidificador7seg/desc/COUNT3_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.876    cidificador7seg/desc/COUNT3_carry__0_n_0
+    SLICE_X5Y89          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.990 r  cidificador7seg/desc/COUNT3_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.990    cidificador7seg/desc/COUNT3_carry__1_n_0
+    SLICE_X5Y90          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.261 r  cidificador7seg/desc/i__carry__3_i_1/CO[0]
+                         net (fo=18, routed)          1.637     3.898    cidificador7seg/desc/i__carry__3_i_1_n_3
+    SLICE_X2Y85          LUT2 (Prop_lut2_I1_O)        0.373     4.271 r  cidificador7seg/desc/i__carry__2_i_3/O
+                         net (fo=1, routed)           0.000     4.271    cidificador7seg/desc/i__carry__2_i_3_n_0
+    SLICE_X2Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.804 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.804    cidificador7seg/desc/COUNT3_inferred__0/i__carry__2_n_0
+    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     4.961 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__3/CO[1]
+                         net (fo=39, routed)          1.872     6.833    cidificador7seg/desc/COUNT3_inferred__0/i__carry__3_n_2
+    SLICE_X5Y84          LUT3 (Prop_lut3_I1_O)        0.360     7.193 r  cidificador7seg/desc/i___146_carry__2_i_9/O
+                         net (fo=2, routed)           0.317     7.510    cidificador7seg/desc/i___146_carry__2_i_9_n_0
+    SLICE_X7Y85          LUT5 (Prop_lut5_I4_O)        0.326     7.836 r  cidificador7seg/desc/i___146_carry__2_i_3/O
+                         net (fo=2, routed)           0.513     8.349    cidificador7seg/desc/i___146_carry__2_i_3_n_0
+    SLICE_X4Y85          LUT6 (Prop_lut6_I0_O)        0.124     8.473 r  cidificador7seg/desc/i___146_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     8.473    cidificador7seg/desc/i___146_carry__2_i_7_n_0
+    SLICE_X4Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.023 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     9.023    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
+    SLICE_X4Y86          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.137 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     9.137    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
+    SLICE_X4Y87          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.251 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     9.251    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
+    SLICE_X4Y88          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.585 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
+                         net (fo=8, routed)           1.485    11.070    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
+    SLICE_X6Y89          LUT3 (Prop_lut3_I1_O)        0.332    11.402 r  cidificador7seg/desc/i___217_carry_i_1/O
+                         net (fo=2, routed)           0.708    12.110    cidificador7seg/desc/i___217_carry_i_1_n_0
+    SLICE_X6Y89          LUT4 (Prop_lut4_I3_O)        0.331    12.441 r  cidificador7seg/desc/i___217_carry_i_4/O
+                         net (fo=1, routed)           0.000    12.441    cidificador7seg/desc/i___217_carry_i_4_n_0
+    SLICE_X6Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    12.817 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.817    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
+    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.036 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[0]
+                         net (fo=1, routed)           0.800    13.836    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_7
+    SLICE_X7Y89          LUT2 (Prop_lut2_I1_O)        0.295    14.131 r  cidificador7seg/desc/i___236_carry_i_1/O
+                         net (fo=1, routed)           0.000    14.131    cidificador7seg/desc/i___236_carry_i_1_n_0
+    SLICE_X7Y89          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.248    14.379 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry/O[3]
+                         net (fo=1, routed)           0.815    15.194    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry_n_4
+    SLICE_X3Y89          LUT2 (Prop_lut2_I1_O)        0.306    15.500 r  cidificador7seg/desc/i___251_carry__1_i_1/O
+                         net (fo=1, routed)           0.000    15.500    cidificador7seg/desc/i___251_carry__1_i_1_n_0
+    SLICE_X3Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    15.901 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    15.901    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1_n_0
+    SLICE_X3Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.123 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[0]
+                         net (fo=2, routed)           0.727    16.850    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_7
+    SLICE_X2Y90          CARRY4 (Prop_carry4_S[1]_CO[2])
+                                                      0.873    17.723 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
+                         net (fo=10, routed)          0.947    18.670    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
+    SLICE_X1Y88          LUT3 (Prop_lut3_I1_O)        0.310    18.980 r  cidificador7seg/desc/COUNT[5]_i_1/O
+                         net (fo=1, routed)           0.000    18.980    cidificador7seg/desc/COUNT3[5]
+    SLICE_X1Y88          FDCE                                         r  cidificador7seg/desc/COUNT_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 cidificador7seg/desc/COUNT_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            cidificador7seg/desc/COUNT_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.892ns  (logic 8.533ns (45.166%)  route 10.359ns (54.834%))
+  Logic Levels:           26  (CARRY4=16 FDCE=1 LUT2=3 LUT3=3 LUT4=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y87          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[1]/C
+    SLICE_X3Y87          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  cidificador7seg/desc/COUNT_reg[1]/Q
+                         net (fo=2, routed)           0.650     1.106    cidificador7seg/desc/COUNT[1]
+    SLICE_X5Y87          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.762 r  cidificador7seg/desc/COUNT3_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.762    cidificador7seg/desc/COUNT3_carry_n_0
+    SLICE_X5Y88          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.876 r  cidificador7seg/desc/COUNT3_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.876    cidificador7seg/desc/COUNT3_carry__0_n_0
+    SLICE_X5Y89          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.990 r  cidificador7seg/desc/COUNT3_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.990    cidificador7seg/desc/COUNT3_carry__1_n_0
+    SLICE_X5Y90          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.261 r  cidificador7seg/desc/i__carry__3_i_1/CO[0]
+                         net (fo=18, routed)          1.637     3.898    cidificador7seg/desc/i__carry__3_i_1_n_3
+    SLICE_X2Y85          LUT2 (Prop_lut2_I1_O)        0.373     4.271 r  cidificador7seg/desc/i__carry__2_i_3/O
+                         net (fo=1, routed)           0.000     4.271    cidificador7seg/desc/i__carry__2_i_3_n_0
+    SLICE_X2Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.804 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.804    cidificador7seg/desc/COUNT3_inferred__0/i__carry__2_n_0
+    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     4.961 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__3/CO[1]
+                         net (fo=39, routed)          1.872     6.833    cidificador7seg/desc/COUNT3_inferred__0/i__carry__3_n_2
+    SLICE_X5Y84          LUT3 (Prop_lut3_I1_O)        0.360     7.193 r  cidificador7seg/desc/i___146_carry__2_i_9/O
+                         net (fo=2, routed)           0.317     7.510    cidificador7seg/desc/i___146_carry__2_i_9_n_0
+    SLICE_X7Y85          LUT5 (Prop_lut5_I4_O)        0.326     7.836 r  cidificador7seg/desc/i___146_carry__2_i_3/O
+                         net (fo=2, routed)           0.513     8.349    cidificador7seg/desc/i___146_carry__2_i_3_n_0
+    SLICE_X4Y85          LUT6 (Prop_lut6_I0_O)        0.124     8.473 r  cidificador7seg/desc/i___146_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     8.473    cidificador7seg/desc/i___146_carry__2_i_7_n_0
+    SLICE_X4Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.023 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     9.023    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
+    SLICE_X4Y86          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.137 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     9.137    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
+    SLICE_X4Y87          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.251 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     9.251    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
+    SLICE_X4Y88          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.585 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
+                         net (fo=8, routed)           1.485    11.070    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
+    SLICE_X6Y89          LUT3 (Prop_lut3_I1_O)        0.332    11.402 r  cidificador7seg/desc/i___217_carry_i_1/O
+                         net (fo=2, routed)           0.708    12.110    cidificador7seg/desc/i___217_carry_i_1_n_0
+    SLICE_X6Y89          LUT4 (Prop_lut4_I3_O)        0.331    12.441 r  cidificador7seg/desc/i___217_carry_i_4/O
+                         net (fo=1, routed)           0.000    12.441    cidificador7seg/desc/i___217_carry_i_4_n_0
+    SLICE_X6Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    12.817 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.817    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
+    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.036 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[0]
+                         net (fo=1, routed)           0.800    13.836    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_7
+    SLICE_X7Y89          LUT2 (Prop_lut2_I1_O)        0.295    14.131 r  cidificador7seg/desc/i___236_carry_i_1/O
+                         net (fo=1, routed)           0.000    14.131    cidificador7seg/desc/i___236_carry_i_1_n_0
+    SLICE_X7Y89          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.248    14.379 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry/O[3]
+                         net (fo=1, routed)           0.815    15.194    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry_n_4
+    SLICE_X3Y89          LUT2 (Prop_lut2_I1_O)        0.306    15.500 r  cidificador7seg/desc/i___251_carry__1_i_1/O
+                         net (fo=1, routed)           0.000    15.500    cidificador7seg/desc/i___251_carry__1_i_1_n_0
+    SLICE_X3Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    15.901 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    15.901    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1_n_0
+    SLICE_X3Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.123 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[0]
+                         net (fo=2, routed)           0.727    16.850    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_7
+    SLICE_X2Y90          CARRY4 (Prop_carry4_S[1]_CO[2])
+                                                      0.873    17.723 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
+                         net (fo=10, routed)          0.835    18.558    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
+    SLICE_X2Y87          LUT3 (Prop_lut3_I1_O)        0.334    18.892 r  cidificador7seg/desc/COUNT[4]_i_1/O
+                         net (fo=1, routed)           0.000    18.892    cidificador7seg/desc/COUNT3[4]
+    SLICE_X2Y87          FDCE                                         r  cidificador7seg/desc/COUNT_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 cidificador7seg/desc/COUNT_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            cidificador7seg/desc/COUNT_reg[12]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.891ns  (logic 8.539ns (45.200%)  route 10.352ns (54.800%))
+  Logic Levels:           26  (CARRY4=16 FDCE=1 LUT2=3 LUT3=3 LUT4=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y87          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[1]/C
+    SLICE_X3Y87          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  cidificador7seg/desc/COUNT_reg[1]/Q
+                         net (fo=2, routed)           0.650     1.106    cidificador7seg/desc/COUNT[1]
+    SLICE_X5Y87          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.762 r  cidificador7seg/desc/COUNT3_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.762    cidificador7seg/desc/COUNT3_carry_n_0
+    SLICE_X5Y88          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.876 r  cidificador7seg/desc/COUNT3_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.876    cidificador7seg/desc/COUNT3_carry__0_n_0
+    SLICE_X5Y89          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.990 r  cidificador7seg/desc/COUNT3_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.990    cidificador7seg/desc/COUNT3_carry__1_n_0
+    SLICE_X5Y90          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.261 r  cidificador7seg/desc/i__carry__3_i_1/CO[0]
+                         net (fo=18, routed)          1.637     3.898    cidificador7seg/desc/i__carry__3_i_1_n_3
+    SLICE_X2Y85          LUT2 (Prop_lut2_I1_O)        0.373     4.271 r  cidificador7seg/desc/i__carry__2_i_3/O
+                         net (fo=1, routed)           0.000     4.271    cidificador7seg/desc/i__carry__2_i_3_n_0
+    SLICE_X2Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.804 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.804    cidificador7seg/desc/COUNT3_inferred__0/i__carry__2_n_0
+    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     4.961 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__3/CO[1]
+                         net (fo=39, routed)          1.872     6.833    cidificador7seg/desc/COUNT3_inferred__0/i__carry__3_n_2
+    SLICE_X5Y84          LUT3 (Prop_lut3_I1_O)        0.360     7.193 r  cidificador7seg/desc/i___146_carry__2_i_9/O
+                         net (fo=2, routed)           0.317     7.510    cidificador7seg/desc/i___146_carry__2_i_9_n_0
+    SLICE_X7Y85          LUT5 (Prop_lut5_I4_O)        0.326     7.836 r  cidificador7seg/desc/i___146_carry__2_i_3/O
+                         net (fo=2, routed)           0.513     8.349    cidificador7seg/desc/i___146_carry__2_i_3_n_0
+    SLICE_X4Y85          LUT6 (Prop_lut6_I0_O)        0.124     8.473 r  cidificador7seg/desc/i___146_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     8.473    cidificador7seg/desc/i___146_carry__2_i_7_n_0
+    SLICE_X4Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.023 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     9.023    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
+    SLICE_X4Y86          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.137 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     9.137    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
+    SLICE_X4Y87          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.251 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     9.251    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
+    SLICE_X4Y88          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.585 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
+                         net (fo=8, routed)           1.485    11.070    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
+    SLICE_X6Y89          LUT3 (Prop_lut3_I1_O)        0.332    11.402 r  cidificador7seg/desc/i___217_carry_i_1/O
+                         net (fo=2, routed)           0.708    12.110    cidificador7seg/desc/i___217_carry_i_1_n_0
+    SLICE_X6Y89          LUT4 (Prop_lut4_I3_O)        0.331    12.441 r  cidificador7seg/desc/i___217_carry_i_4/O
+                         net (fo=1, routed)           0.000    12.441    cidificador7seg/desc/i___217_carry_i_4_n_0
+    SLICE_X6Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    12.817 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.817    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
+    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.036 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[0]
+                         net (fo=1, routed)           0.800    13.836    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_7
+    SLICE_X7Y89          LUT2 (Prop_lut2_I1_O)        0.295    14.131 r  cidificador7seg/desc/i___236_carry_i_1/O
+                         net (fo=1, routed)           0.000    14.131    cidificador7seg/desc/i___236_carry_i_1_n_0
+    SLICE_X7Y89          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.248    14.379 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry/O[3]
+                         net (fo=1, routed)           0.815    15.194    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry_n_4
+    SLICE_X3Y89          LUT2 (Prop_lut2_I1_O)        0.306    15.500 r  cidificador7seg/desc/i___251_carry__1_i_1/O
+                         net (fo=1, routed)           0.000    15.500    cidificador7seg/desc/i___251_carry__1_i_1_n_0
+    SLICE_X3Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    15.901 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    15.901    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1_n_0
+    SLICE_X3Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.123 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[0]
+                         net (fo=2, routed)           0.727    16.850    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_7
+    SLICE_X2Y90          CARRY4 (Prop_carry4_S[1]_CO[2])
+                                                      0.873    17.723 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
+                         net (fo=10, routed)          0.828    18.551    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
+    SLICE_X1Y90          LUT3 (Prop_lut3_I1_O)        0.340    18.891 r  cidificador7seg/desc/COUNT[12]_i_1/O
+                         net (fo=1, routed)           0.000    18.891    cidificador7seg/desc/COUNT3[12]
+    SLICE_X1Y90          FDCE                                         r  cidificador7seg/desc/COUNT_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 cidificador7seg/desc/COUNT_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            cidificador7seg/desc/COUNT_reg[9]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.878ns  (logic 8.537ns (45.221%)  route 10.341ns (54.779%))
+  Logic Levels:           26  (CARRY4=16 FDCE=1 LUT2=3 LUT3=3 LUT4=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y87          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[1]/C
+    SLICE_X3Y87          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  cidificador7seg/desc/COUNT_reg[1]/Q
+                         net (fo=2, routed)           0.650     1.106    cidificador7seg/desc/COUNT[1]
+    SLICE_X5Y87          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.762 r  cidificador7seg/desc/COUNT3_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.762    cidificador7seg/desc/COUNT3_carry_n_0
+    SLICE_X5Y88          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.876 r  cidificador7seg/desc/COUNT3_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.876    cidificador7seg/desc/COUNT3_carry__0_n_0
+    SLICE_X5Y89          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.990 r  cidificador7seg/desc/COUNT3_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.990    cidificador7seg/desc/COUNT3_carry__1_n_0
+    SLICE_X5Y90          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.261 r  cidificador7seg/desc/i__carry__3_i_1/CO[0]
+                         net (fo=18, routed)          1.637     3.898    cidificador7seg/desc/i__carry__3_i_1_n_3
+    SLICE_X2Y85          LUT2 (Prop_lut2_I1_O)        0.373     4.271 r  cidificador7seg/desc/i__carry__2_i_3/O
+                         net (fo=1, routed)           0.000     4.271    cidificador7seg/desc/i__carry__2_i_3_n_0
+    SLICE_X2Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.804 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.804    cidificador7seg/desc/COUNT3_inferred__0/i__carry__2_n_0
+    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     4.961 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__3/CO[1]
+                         net (fo=39, routed)          1.872     6.833    cidificador7seg/desc/COUNT3_inferred__0/i__carry__3_n_2
+    SLICE_X5Y84          LUT3 (Prop_lut3_I1_O)        0.360     7.193 r  cidificador7seg/desc/i___146_carry__2_i_9/O
+                         net (fo=2, routed)           0.317     7.510    cidificador7seg/desc/i___146_carry__2_i_9_n_0
+    SLICE_X7Y85          LUT5 (Prop_lut5_I4_O)        0.326     7.836 r  cidificador7seg/desc/i___146_carry__2_i_3/O
+                         net (fo=2, routed)           0.513     8.349    cidificador7seg/desc/i___146_carry__2_i_3_n_0
+    SLICE_X4Y85          LUT6 (Prop_lut6_I0_O)        0.124     8.473 r  cidificador7seg/desc/i___146_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     8.473    cidificador7seg/desc/i___146_carry__2_i_7_n_0
+    SLICE_X4Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.023 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     9.023    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
+    SLICE_X4Y86          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.137 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     9.137    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
+    SLICE_X4Y87          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.251 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     9.251    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
+    SLICE_X4Y88          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.585 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
+                         net (fo=8, routed)           1.485    11.070    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
+    SLICE_X6Y89          LUT3 (Prop_lut3_I1_O)        0.332    11.402 r  cidificador7seg/desc/i___217_carry_i_1/O
+                         net (fo=2, routed)           0.708    12.110    cidificador7seg/desc/i___217_carry_i_1_n_0
+    SLICE_X6Y89          LUT4 (Prop_lut4_I3_O)        0.331    12.441 r  cidificador7seg/desc/i___217_carry_i_4/O
+                         net (fo=1, routed)           0.000    12.441    cidificador7seg/desc/i___217_carry_i_4_n_0
+    SLICE_X6Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    12.817 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.817    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
+    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.036 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[0]
+                         net (fo=1, routed)           0.800    13.836    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_7
+    SLICE_X7Y89          LUT2 (Prop_lut2_I1_O)        0.295    14.131 r  cidificador7seg/desc/i___236_carry_i_1/O
+                         net (fo=1, routed)           0.000    14.131    cidificador7seg/desc/i___236_carry_i_1_n_0
+    SLICE_X7Y89          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.248    14.379 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry/O[3]
+                         net (fo=1, routed)           0.815    15.194    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry_n_4
+    SLICE_X3Y89          LUT2 (Prop_lut2_I1_O)        0.306    15.500 r  cidificador7seg/desc/i___251_carry__1_i_1/O
+                         net (fo=1, routed)           0.000    15.500    cidificador7seg/desc/i___251_carry__1_i_1_n_0
+    SLICE_X3Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    15.901 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    15.901    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1_n_0
+    SLICE_X3Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.123 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[0]
+                         net (fo=2, routed)           0.727    16.850    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_7
+    SLICE_X2Y90          CARRY4 (Prop_carry4_S[1]_CO[2])
+                                                      0.873    17.723 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
+                         net (fo=10, routed)          0.817    18.540    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
+    SLICE_X1Y90          LUT3 (Prop_lut3_I1_O)        0.338    18.878 r  cidificador7seg/desc/COUNT[9]_i_1/O
+                         net (fo=1, routed)           0.000    18.878    cidificador7seg/desc/COUNT3[9]
+    SLICE_X1Y90          FDCE                                         r  cidificador7seg/desc/COUNT_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 cidificador7seg/desc/COUNT_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            cidificador7seg/desc/COUNT_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.868ns  (logic 8.509ns (45.096%)  route 10.359ns (54.903%))
+  Logic Levels:           26  (CARRY4=16 FDCE=1 LUT2=3 LUT3=3 LUT4=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y87          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[1]/C
+    SLICE_X3Y87          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  cidificador7seg/desc/COUNT_reg[1]/Q
+                         net (fo=2, routed)           0.650     1.106    cidificador7seg/desc/COUNT[1]
+    SLICE_X5Y87          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.762 r  cidificador7seg/desc/COUNT3_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.762    cidificador7seg/desc/COUNT3_carry_n_0
+    SLICE_X5Y88          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.876 r  cidificador7seg/desc/COUNT3_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.876    cidificador7seg/desc/COUNT3_carry__0_n_0
+    SLICE_X5Y89          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.990 r  cidificador7seg/desc/COUNT3_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.990    cidificador7seg/desc/COUNT3_carry__1_n_0
+    SLICE_X5Y90          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.261 r  cidificador7seg/desc/i__carry__3_i_1/CO[0]
+                         net (fo=18, routed)          1.637     3.898    cidificador7seg/desc/i__carry__3_i_1_n_3
+    SLICE_X2Y85          LUT2 (Prop_lut2_I1_O)        0.373     4.271 r  cidificador7seg/desc/i__carry__2_i_3/O
+                         net (fo=1, routed)           0.000     4.271    cidificador7seg/desc/i__carry__2_i_3_n_0
+    SLICE_X2Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.804 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.804    cidificador7seg/desc/COUNT3_inferred__0/i__carry__2_n_0
+    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     4.961 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__3/CO[1]
+                         net (fo=39, routed)          1.872     6.833    cidificador7seg/desc/COUNT3_inferred__0/i__carry__3_n_2
+    SLICE_X5Y84          LUT3 (Prop_lut3_I1_O)        0.360     7.193 r  cidificador7seg/desc/i___146_carry__2_i_9/O
+                         net (fo=2, routed)           0.317     7.510    cidificador7seg/desc/i___146_carry__2_i_9_n_0
+    SLICE_X7Y85          LUT5 (Prop_lut5_I4_O)        0.326     7.836 r  cidificador7seg/desc/i___146_carry__2_i_3/O
+                         net (fo=2, routed)           0.513     8.349    cidificador7seg/desc/i___146_carry__2_i_3_n_0
+    SLICE_X4Y85          LUT6 (Prop_lut6_I0_O)        0.124     8.473 r  cidificador7seg/desc/i___146_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     8.473    cidificador7seg/desc/i___146_carry__2_i_7_n_0
+    SLICE_X4Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.023 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     9.023    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
+    SLICE_X4Y86          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.137 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     9.137    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
+    SLICE_X4Y87          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.251 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     9.251    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
+    SLICE_X4Y88          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.585 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
+                         net (fo=8, routed)           1.485    11.070    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
+    SLICE_X6Y89          LUT3 (Prop_lut3_I1_O)        0.332    11.402 r  cidificador7seg/desc/i___217_carry_i_1/O
+                         net (fo=2, routed)           0.708    12.110    cidificador7seg/desc/i___217_carry_i_1_n_0
+    SLICE_X6Y89          LUT4 (Prop_lut4_I3_O)        0.331    12.441 r  cidificador7seg/desc/i___217_carry_i_4/O
+                         net (fo=1, routed)           0.000    12.441    cidificador7seg/desc/i___217_carry_i_4_n_0
+    SLICE_X6Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    12.817 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.817    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
+    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.036 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[0]
+                         net (fo=1, routed)           0.800    13.836    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_7
+    SLICE_X7Y89          LUT2 (Prop_lut2_I1_O)        0.295    14.131 r  cidificador7seg/desc/i___236_carry_i_1/O
+                         net (fo=1, routed)           0.000    14.131    cidificador7seg/desc/i___236_carry_i_1_n_0
+    SLICE_X7Y89          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.248    14.379 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry/O[3]
+                         net (fo=1, routed)           0.815    15.194    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry_n_4
+    SLICE_X3Y89          LUT2 (Prop_lut2_I1_O)        0.306    15.500 r  cidificador7seg/desc/i___251_carry__1_i_1/O
+                         net (fo=1, routed)           0.000    15.500    cidificador7seg/desc/i___251_carry__1_i_1_n_0
+    SLICE_X3Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    15.901 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    15.901    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1_n_0
+    SLICE_X3Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.123 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[0]
+                         net (fo=2, routed)           0.727    16.850    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_7
+    SLICE_X2Y90          CARRY4 (Prop_carry4_S[1]_CO[2])
+                                                      0.873    17.723 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
+                         net (fo=10, routed)          0.835    18.558    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
+    SLICE_X2Y87          LUT3 (Prop_lut3_I1_O)        0.310    18.868 r  cidificador7seg/desc/COUNT[3]_i_1/O
+                         net (fo=1, routed)           0.000    18.868    cidificador7seg/desc/COUNT3[3]
+    SLICE_X2Y87          FDCE                                         r  cidificador7seg/desc/COUNT_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 cidificador7seg/desc/COUNT_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            cidificador7seg/desc/COUNT_reg[11]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.861ns  (logic 8.509ns (45.113%)  route 10.352ns (54.887%))
+  Logic Levels:           26  (CARRY4=16 FDCE=1 LUT2=3 LUT3=3 LUT4=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y87          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[1]/C
+    SLICE_X3Y87          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  cidificador7seg/desc/COUNT_reg[1]/Q
+                         net (fo=2, routed)           0.650     1.106    cidificador7seg/desc/COUNT[1]
+    SLICE_X5Y87          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.762 r  cidificador7seg/desc/COUNT3_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.762    cidificador7seg/desc/COUNT3_carry_n_0
+    SLICE_X5Y88          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.876 r  cidificador7seg/desc/COUNT3_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.876    cidificador7seg/desc/COUNT3_carry__0_n_0
+    SLICE_X5Y89          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.990 r  cidificador7seg/desc/COUNT3_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.990    cidificador7seg/desc/COUNT3_carry__1_n_0
+    SLICE_X5Y90          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.261 r  cidificador7seg/desc/i__carry__3_i_1/CO[0]
+                         net (fo=18, routed)          1.637     3.898    cidificador7seg/desc/i__carry__3_i_1_n_3
+    SLICE_X2Y85          LUT2 (Prop_lut2_I1_O)        0.373     4.271 r  cidificador7seg/desc/i__carry__2_i_3/O
+                         net (fo=1, routed)           0.000     4.271    cidificador7seg/desc/i__carry__2_i_3_n_0
+    SLICE_X2Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.804 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.804    cidificador7seg/desc/COUNT3_inferred__0/i__carry__2_n_0
+    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     4.961 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__3/CO[1]
+                         net (fo=39, routed)          1.872     6.833    cidificador7seg/desc/COUNT3_inferred__0/i__carry__3_n_2
+    SLICE_X5Y84          LUT3 (Prop_lut3_I1_O)        0.360     7.193 r  cidificador7seg/desc/i___146_carry__2_i_9/O
+                         net (fo=2, routed)           0.317     7.510    cidificador7seg/desc/i___146_carry__2_i_9_n_0
+    SLICE_X7Y85          LUT5 (Prop_lut5_I4_O)        0.326     7.836 r  cidificador7seg/desc/i___146_carry__2_i_3/O
+                         net (fo=2, routed)           0.513     8.349    cidificador7seg/desc/i___146_carry__2_i_3_n_0
+    SLICE_X4Y85          LUT6 (Prop_lut6_I0_O)        0.124     8.473 r  cidificador7seg/desc/i___146_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     8.473    cidificador7seg/desc/i___146_carry__2_i_7_n_0
+    SLICE_X4Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.023 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     9.023    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
+    SLICE_X4Y86          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.137 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     9.137    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
+    SLICE_X4Y87          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.251 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     9.251    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
+    SLICE_X4Y88          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.585 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
+                         net (fo=8, routed)           1.485    11.070    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
+    SLICE_X6Y89          LUT3 (Prop_lut3_I1_O)        0.332    11.402 r  cidificador7seg/desc/i___217_carry_i_1/O
+                         net (fo=2, routed)           0.708    12.110    cidificador7seg/desc/i___217_carry_i_1_n_0
+    SLICE_X6Y89          LUT4 (Prop_lut4_I3_O)        0.331    12.441 r  cidificador7seg/desc/i___217_carry_i_4/O
+                         net (fo=1, routed)           0.000    12.441    cidificador7seg/desc/i___217_carry_i_4_n_0
+    SLICE_X6Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    12.817 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.817    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
+    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.036 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[0]
+                         net (fo=1, routed)           0.800    13.836    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_7
+    SLICE_X7Y89          LUT2 (Prop_lut2_I1_O)        0.295    14.131 r  cidificador7seg/desc/i___236_carry_i_1/O
+                         net (fo=1, routed)           0.000    14.131    cidificador7seg/desc/i___236_carry_i_1_n_0
+    SLICE_X7Y89          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.248    14.379 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry/O[3]
+                         net (fo=1, routed)           0.815    15.194    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry_n_4
+    SLICE_X3Y89          LUT2 (Prop_lut2_I1_O)        0.306    15.500 r  cidificador7seg/desc/i___251_carry__1_i_1/O
+                         net (fo=1, routed)           0.000    15.500    cidificador7seg/desc/i___251_carry__1_i_1_n_0
+    SLICE_X3Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    15.901 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    15.901    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1_n_0
+    SLICE_X3Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.123 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[0]
+                         net (fo=2, routed)           0.727    16.850    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_7
+    SLICE_X2Y90          CARRY4 (Prop_carry4_S[1]_CO[2])
+                                                      0.873    17.723 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
+                         net (fo=10, routed)          0.828    18.551    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
+    SLICE_X1Y90          LUT3 (Prop_lut3_I1_O)        0.310    18.861 r  cidificador7seg/desc/COUNT[11]_i_1/O
+                         net (fo=1, routed)           0.000    18.861    cidificador7seg/desc/COUNT3[11]
+    SLICE_X1Y90          FDCE                                         r  cidificador7seg/desc/COUNT_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 cidificador7seg/desc/COUNT_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            cidificador7seg/desc/COUNT_reg[10]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.850ns  (logic 8.509ns (45.140%)  route 10.341ns (54.860%))
+  Logic Levels:           26  (CARRY4=16 FDCE=1 LUT2=3 LUT3=3 LUT4=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y87          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[1]/C
+    SLICE_X3Y87          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  cidificador7seg/desc/COUNT_reg[1]/Q
+                         net (fo=2, routed)           0.650     1.106    cidificador7seg/desc/COUNT[1]
+    SLICE_X5Y87          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.762 r  cidificador7seg/desc/COUNT3_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.762    cidificador7seg/desc/COUNT3_carry_n_0
+    SLICE_X5Y88          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.876 r  cidificador7seg/desc/COUNT3_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.876    cidificador7seg/desc/COUNT3_carry__0_n_0
+    SLICE_X5Y89          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.990 r  cidificador7seg/desc/COUNT3_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.990    cidificador7seg/desc/COUNT3_carry__1_n_0
+    SLICE_X5Y90          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.261 r  cidificador7seg/desc/i__carry__3_i_1/CO[0]
+                         net (fo=18, routed)          1.637     3.898    cidificador7seg/desc/i__carry__3_i_1_n_3
+    SLICE_X2Y85          LUT2 (Prop_lut2_I1_O)        0.373     4.271 r  cidificador7seg/desc/i__carry__2_i_3/O
+                         net (fo=1, routed)           0.000     4.271    cidificador7seg/desc/i__carry__2_i_3_n_0
+    SLICE_X2Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.804 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.804    cidificador7seg/desc/COUNT3_inferred__0/i__carry__2_n_0
+    SLICE_X2Y86          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     4.961 r  cidificador7seg/desc/COUNT3_inferred__0/i__carry__3/CO[1]
+                         net (fo=39, routed)          1.872     6.833    cidificador7seg/desc/COUNT3_inferred__0/i__carry__3_n_2
+    SLICE_X5Y84          LUT3 (Prop_lut3_I1_O)        0.360     7.193 r  cidificador7seg/desc/i___146_carry__2_i_9/O
+                         net (fo=2, routed)           0.317     7.510    cidificador7seg/desc/i___146_carry__2_i_9_n_0
+    SLICE_X7Y85          LUT5 (Prop_lut5_I4_O)        0.326     7.836 r  cidificador7seg/desc/i___146_carry__2_i_3/O
+                         net (fo=2, routed)           0.513     8.349    cidificador7seg/desc/i___146_carry__2_i_3_n_0
+    SLICE_X4Y85          LUT6 (Prop_lut6_I0_O)        0.124     8.473 r  cidificador7seg/desc/i___146_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     8.473    cidificador7seg/desc/i___146_carry__2_i_7_n_0
+    SLICE_X4Y85          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.023 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     9.023    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__2_n_0
+    SLICE_X4Y86          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.137 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     9.137    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__3_n_0
+    SLICE_X4Y87          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.251 r  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     9.251    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__4_n_0
+    SLICE_X4Y88          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.585 f  cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5/O[1]
+                         net (fo=8, routed)           1.485    11.070    cidificador7seg/desc/COUNT3_inferred__0/i___146_carry__5_n_6
+    SLICE_X6Y89          LUT3 (Prop_lut3_I1_O)        0.332    11.402 r  cidificador7seg/desc/i___217_carry_i_1/O
+                         net (fo=2, routed)           0.708    12.110    cidificador7seg/desc/i___217_carry_i_1_n_0
+    SLICE_X6Y89          LUT4 (Prop_lut4_I3_O)        0.331    12.441 r  cidificador7seg/desc/i___217_carry_i_4/O
+                         net (fo=1, routed)           0.000    12.441    cidificador7seg/desc/i___217_carry_i_4_n_0
+    SLICE_X6Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    12.817 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.817    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry_n_0
+    SLICE_X6Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.036 r  cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0/O[0]
+                         net (fo=1, routed)           0.800    13.836    cidificador7seg/desc/COUNT3_inferred__0/i___217_carry__0_n_7
+    SLICE_X7Y89          LUT2 (Prop_lut2_I1_O)        0.295    14.131 r  cidificador7seg/desc/i___236_carry_i_1/O
+                         net (fo=1, routed)           0.000    14.131    cidificador7seg/desc/i___236_carry_i_1_n_0
+    SLICE_X7Y89          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.248    14.379 r  cidificador7seg/desc/COUNT3_inferred__0/i___236_carry/O[3]
+                         net (fo=1, routed)           0.815    15.194    cidificador7seg/desc/COUNT3_inferred__0/i___236_carry_n_4
+    SLICE_X3Y89          LUT2 (Prop_lut2_I1_O)        0.306    15.500 r  cidificador7seg/desc/i___251_carry__1_i_1/O
+                         net (fo=1, routed)           0.000    15.500    cidificador7seg/desc/i___251_carry__1_i_1_n_0
+    SLICE_X3Y89          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    15.901 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    15.901    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__1_n_0
+    SLICE_X3Y90          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.123 r  cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2/O[0]
+                         net (fo=2, routed)           0.727    16.850    cidificador7seg/desc/COUNT3_inferred__0/i___251_carry__2_n_7
+    SLICE_X2Y90          CARRY4 (Prop_carry4_S[1]_CO[2])
+                                                      0.873    17.723 r  cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1/CO[2]
+                         net (fo=10, routed)          0.817    18.540    cidificador7seg/desc/COUNT3_inferred__0/i___288_carry__1_n_1
+    SLICE_X1Y90          LUT3 (Prop_lut3_I1_O)        0.310    18.850 r  cidificador7seg/desc/COUNT[10]_i_1/O
+                         net (fo=1, routed)           0.000    18.850    cidificador7seg/desc/COUNT3[10]
+    SLICE_X1Y90          FDCE                                         r  cidificador7seg/desc/COUNT_reg[10]/D
   -------------------------------------------------------------------    -------------------
 
 
@@ -1033,73 +1053,94 @@ Slack:                    inf
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 actual/BOTONES[3].sincronizador_I/sreg_reg[0]/C
+  Source:                 actual/BOTONES[3].sincronizador_I/sreg_reg[1]/C
                             (rising edge-triggered cell FDCE)
-  Destination:            actual/BOTONES[3].sincronizador_I/sreg_reg[1]/D
+  Destination:            actual/BOTONES[3].sincronizador_I/SYNC_OUT_reg/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.257ns  (logic 0.141ns (54.953%)  route 0.116ns (45.047%))
+  Data Path Delay:        0.232ns  (logic 0.141ns (60.749%)  route 0.091ns (39.251%))
   Logic Levels:           1  (FDCE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y89          FDCE                         0.000     0.000 r  actual/BOTONES[3].sincronizador_I/sreg_reg[0]/C
-    SLICE_X0Y89          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  actual/BOTONES[3].sincronizador_I/sreg_reg[0]/Q
-                         net (fo=1, routed)           0.116     0.257    actual/BOTONES[3].sincronizador_I/p_1_in[1]
-    SLICE_X1Y90          FDCE                                         r  actual/BOTONES[3].sincronizador_I/sreg_reg[1]/D
+    SLICE_X3Y90          FDCE                         0.000     0.000 r  actual/BOTONES[3].sincronizador_I/sreg_reg[1]/C
+    SLICE_X3Y90          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  actual/BOTONES[3].sincronizador_I/sreg_reg[1]/Q
+                         net (fo=1, routed)           0.091     0.232    actual/BOTONES[3].sincronizador_I/p_0_in
+    SLICE_X2Y90          FDRE                                         r  actual/BOTONES[3].sincronizador_I/SYNC_OUT_reg/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 actual/BOTONES[0].sincronizador_I/sreg_reg[0]/C
+  Source:                 cidificador7seg/desc/COUNT_reg[2]/C
                             (rising edge-triggered cell FDCE)
-  Destination:            actual/BOTONES[0].sincronizador_I/sreg_reg[1]/D
+  Destination:            cidificador7seg/desc/fin_cuenta_reg/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.262ns  (logic 0.141ns (53.727%)  route 0.121ns (46.273%))
+  Data Path Delay:        0.252ns  (logic 0.186ns (73.721%)  route 0.066ns (26.279%))
+  Logic Levels:           2  (FDCE=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y87          FDCE                         0.000     0.000 r  cidificador7seg/desc/COUNT_reg[2]/C
+    SLICE_X3Y87          FDCE (Prop_fdce_C_Q)         0.141     0.141 f  cidificador7seg/desc/COUNT_reg[2]/Q
+                         net (fo=2, routed)           0.066     0.207    cidificador7seg/desc/COUNT[2]
+    SLICE_X2Y87          LUT5 (Prop_lut5_I2_O)        0.045     0.252 r  cidificador7seg/desc/fin_cuenta_i_1/O
+                         net (fo=1, routed)           0.000     0.252    cidificador7seg/desc/fin_cuenta_0
+    SLICE_X2Y87          FDCE                                         r  cidificador7seg/desc/fin_cuenta_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 maq_est/FSM_onehot_state_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            maq_est/FSM_onehot_state_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.280ns  (logic 0.186ns (66.415%)  route 0.094ns (33.585%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y93          FDCE                         0.000     0.000 r  maq_est/FSM_onehot_state_reg[1]/C
+    SLICE_X1Y93          FDCE (Prop_fdce_C_Q)         0.141     0.141 f  maq_est/FSM_onehot_state_reg[1]/Q
+                         net (fo=4, routed)           0.094     0.235    maq_est/MOTOR_OBUF[0]
+    SLICE_X0Y93          LUT6 (Prop_lut6_I5_O)        0.045     0.280 r  maq_est/FSM_onehot_state[2]_i_1/O
+                         net (fo=1, routed)           0.000     0.280    maq_est/FSM_onehot_state[2]_i_1_n_0
+    SLICE_X0Y93          FDCE                                         r  maq_est/FSM_onehot_state_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 maq_est/FSM_onehot_state_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            maq_est/FSM_onehot_state_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.281ns  (logic 0.186ns (66.178%)  route 0.095ns (33.822%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y93          FDCE                         0.000     0.000 r  maq_est/FSM_onehot_state_reg[1]/C
+    SLICE_X1Y93          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  maq_est/FSM_onehot_state_reg[1]/Q
+                         net (fo=4, routed)           0.095     0.236    maq_est/MOTOR_OBUF[0]
+    SLICE_X0Y93          LUT6 (Prop_lut6_I5_O)        0.045     0.281 r  maq_est/FSM_onehot_state[0]_i_1/O
+                         net (fo=1, routed)           0.000     0.281    maq_est/FSM_onehot_state[0]_i_1_n_0
+    SLICE_X0Y93          FDPE                                         r  maq_est/FSM_onehot_state_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 deseado/BOTONES[0].sincronizador_I/sreg_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            deseado/BOTONES[0].sincronizador_I/SYNC_OUT_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.298ns  (logic 0.141ns (47.362%)  route 0.157ns (52.638%))
   Logic Levels:           1  (FDCE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y82          FDCE                         0.000     0.000 r  actual/BOTONES[0].sincronizador_I/sreg_reg[0]/C
-    SLICE_X0Y82          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  actual/BOTONES[0].sincronizador_I/sreg_reg[0]/Q
-                         net (fo=1, routed)           0.121     0.262    actual/BOTONES[0].sincronizador_I/p_1_in__2[1]
-    SLICE_X0Y83          FDCE                                         r  actual/BOTONES[0].sincronizador_I/sreg_reg[1]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 actual/BOTONES[1].sincronizador_I/sreg_reg[0]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            actual/BOTONES[1].sincronizador_I/sreg_reg[1]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.295ns  (logic 0.141ns (47.866%)  route 0.154ns (52.134%))
-  Logic Levels:           1  (FDCE=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X0Y87          FDCE                         0.000     0.000 r  actual/BOTONES[1].sincronizador_I/sreg_reg[0]/C
-    SLICE_X0Y87          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  actual/BOTONES[1].sincronizador_I/sreg_reg[0]/Q
-                         net (fo=1, routed)           0.154     0.295    actual/BOTONES[1].sincronizador_I/p_1_in__1[1]
-    SLICE_X0Y88          FDCE                                         r  actual/BOTONES[1].sincronizador_I/sreg_reg[1]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 actual/BOTONES[1].sincronizador_I/SYNC_OUT_reg/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            actual/ENC_BCD/OUTPUT_I_reg[0]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.309ns  (logic 0.186ns (60.146%)  route 0.123ns (39.854%))
-  Logic Levels:           2  (FDRE=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X3Y91          FDRE                         0.000     0.000 r  actual/BOTONES[1].sincronizador_I/SYNC_OUT_reg/C
-    SLICE_X3Y91          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  actual/BOTONES[1].sincronizador_I/SYNC_OUT_reg/Q
-                         net (fo=3, routed)           0.123     0.264    actual/ENC_BCD/OUTPUT_I_reg[1]_3
-    SLICE_X3Y92          LUT6 (Prop_lut6_I2_O)        0.045     0.309 r  actual/ENC_BCD/OUTPUT_I[0]_i_1/O
-                         net (fo=1, routed)           0.000     0.309    actual/ENC_BCD/OUTPUT_I[0]_i_1_n_0
-    SLICE_X3Y92          FDPE                                         r  actual/ENC_BCD/OUTPUT_I_reg[0]/D
+    SLICE_X0Y94          FDCE                         0.000     0.000 r  deseado/BOTONES[0].sincronizador_I/sreg_reg[1]/C
+    SLICE_X0Y94          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  deseado/BOTONES[0].sincronizador_I/sreg_reg[1]/Q
+                         net (fo=1, routed)           0.157     0.298    deseado/BOTONES[0].sincronizador_I/sreg_reg_n_0_[1]
+    SLICE_X2Y93          FDRE                                         r  deseado/BOTONES[0].sincronizador_I/SYNC_OUT_reg/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -1120,94 +1161,75 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 deseado/BOTONES[1].sincronizador_I/sreg_reg[0]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            deseado/BOTONES[1].sincronizador_I/sreg_reg[1]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.315ns  (logic 0.141ns (44.783%)  route 0.174ns (55.217%))
-  Logic Levels:           1  (FDCE=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X0Y93          FDCE                         0.000     0.000 r  deseado/BOTONES[1].sincronizador_I/sreg_reg[0]/C
-    SLICE_X0Y93          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  deseado/BOTONES[1].sincronizador_I/sreg_reg[0]/Q
-                         net (fo=1, routed)           0.174     0.315    deseado/BOTONES[1].sincronizador_I/p_1_in__5[1]
-    SLICE_X0Y93          FDCE                                         r  deseado/BOTONES[1].sincronizador_I/sreg_reg[1]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 actual/ENC_BCD/OUTPUT_I_reg[3]/C
-                            (rising edge-triggered cell FDPE)
-  Destination:            actual/ENC_BCD/OUTPUT_I_reg[3]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.321ns  (logic 0.186ns (57.996%)  route 0.135ns (42.004%))
-  Logic Levels:           2  (FDPE=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X3Y92          FDPE                         0.000     0.000 r  actual/ENC_BCD/OUTPUT_I_reg[3]/C
-    SLICE_X3Y92          FDPE (Prop_fdpe_C_Q)         0.141     0.141 r  actual/ENC_BCD/OUTPUT_I_reg[3]/Q
-                         net (fo=13, routed)          0.135     0.276    actual/ENC_BCD/OUTPUT_I_reg[3]_1
-    SLICE_X3Y92          LUT6 (Prop_lut6_I5_O)        0.045     0.321 r  actual/ENC_BCD/OUTPUT_I[3]_i_1/O
-                         net (fo=1, routed)           0.000     0.321    actual/ENC_BCD/OUTPUT_I[3]_i_1_n_0
-    SLICE_X3Y92          FDPE                                         r  actual/ENC_BCD/OUTPUT_I_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 deseado/BOTONES[0].sincronizador_I/SYNC_OUT_reg/C
+  Source:                 deseado/BOTONES[1].sincronizador_I/SYNC_OUT_reg/C
                             (rising edge-triggered cell FDRE)
   Destination:            deseado/ENC_BCD/OUTPUT_I_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.330ns  (logic 0.209ns (63.293%)  route 0.121ns (36.707%))
+  Data Path Delay:        0.313ns  (logic 0.209ns (66.728%)  route 0.104ns (33.272%))
   Logic Levels:           2  (FDRE=1 LUT6=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X2Y94          FDRE                         0.000     0.000 r  deseado/BOTONES[0].sincronizador_I/SYNC_OUT_reg/C
-    SLICE_X2Y94          FDRE (Prop_fdre_C_Q)         0.164     0.164 f  deseado/BOTONES[0].sincronizador_I/SYNC_OUT_reg/Q
-                         net (fo=2, routed)           0.121     0.285    deseado/ENC_BCD/OUTPUT_I_reg[1]_3
-    SLICE_X2Y93          LUT6 (Prop_lut6_I4_O)        0.045     0.330 r  deseado/ENC_BCD/OUTPUT_I[1]_i_1/O
-                         net (fo=1, routed)           0.000     0.330    deseado/ENC_BCD/OUTPUT_I[1]_i_1_n_0
-    SLICE_X2Y93          FDCE                                         r  deseado/ENC_BCD/OUTPUT_I_reg[1]/D
+    SLICE_X2Y93          FDRE                         0.000     0.000 r  deseado/BOTONES[1].sincronizador_I/SYNC_OUT_reg/C
+    SLICE_X2Y93          FDRE (Prop_fdre_C_Q)         0.164     0.164 f  deseado/BOTONES[1].sincronizador_I/SYNC_OUT_reg/Q
+                         net (fo=2, routed)           0.104     0.268    deseado/ENC_BCD/OUTPUT_I_reg[1]_2
+    SLICE_X1Y93          LUT6 (Prop_lut6_I3_O)        0.045     0.313 r  deseado/ENC_BCD/OUTPUT_I[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.313    deseado/ENC_BCD/OUTPUT_I[1]_i_1_n_0
+    SLICE_X1Y93          FDCE                                         r  deseado/ENC_BCD/OUTPUT_I_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 deseado/BOTONES[0].sincronizador_I/sreg_reg[1]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            deseado/BOTONES[0].sincronizador_I/SYNC_OUT_reg/D
+  Source:                 deseado/BOTONES[1].sincronizador_I/SYNC_OUT_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            deseado/ENC_BCD/OUTPUT_I_reg[0]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.337ns  (logic 0.141ns (41.844%)  route 0.196ns (58.156%))
+  Data Path Delay:        0.314ns  (logic 0.209ns (66.516%)  route 0.105ns (33.484%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y93          FDRE                         0.000     0.000 r  deseado/BOTONES[1].sincronizador_I/SYNC_OUT_reg/C
+    SLICE_X2Y93          FDRE (Prop_fdre_C_Q)         0.164     0.164 r  deseado/BOTONES[1].sincronizador_I/SYNC_OUT_reg/Q
+                         net (fo=2, routed)           0.105     0.269    deseado/ENC_BCD/OUTPUT_I_reg[1]_2
+    SLICE_X1Y93          LUT6 (Prop_lut6_I3_O)        0.045     0.314 r  deseado/ENC_BCD/OUTPUT_I[0]_i_1/O
+                         net (fo=1, routed)           0.000     0.314    deseado/ENC_BCD/OUTPUT_I[0]_i_1_n_0
+    SLICE_X1Y93          FDCE                                         r  deseado/ENC_BCD/OUTPUT_I_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 actual/BOTONES[1].sincronizador_I/sreg_reg[0]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            actual/BOTONES[1].sincronizador_I/sreg_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.318ns  (logic 0.141ns (44.296%)  route 0.177ns (55.704%))
   Logic Levels:           1  (FDCE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y98          FDCE                         0.000     0.000 r  deseado/BOTONES[0].sincronizador_I/sreg_reg[1]/C
-    SLICE_X0Y98          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  deseado/BOTONES[0].sincronizador_I/sreg_reg[1]/Q
-                         net (fo=1, routed)           0.196     0.337    deseado/BOTONES[0].sincronizador_I/sreg_reg_n_0_[1]
-    SLICE_X2Y94          FDRE                                         r  deseado/BOTONES[0].sincronizador_I/SYNC_OUT_reg/D
+    SLICE_X0Y86          FDCE                         0.000     0.000 r  actual/BOTONES[1].sincronizador_I/sreg_reg[0]/C
+    SLICE_X0Y86          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  actual/BOTONES[1].sincronizador_I/sreg_reg[0]/Q
+                         net (fo=1, routed)           0.177     0.318    actual/BOTONES[1].sincronizador_I/p_1_in__1[1]
+    SLICE_X0Y88          FDCE                                         r  actual/BOTONES[1].sincronizador_I/sreg_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 actual/BOTONES[3].sincronizador_I/SYNC_OUT_reg/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            actual/ENC_BCD/OUTPUT_I_reg[1]/D
+  Source:                 actual/BOTONES[0].sincronizador_I/sreg_reg[0]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            actual/BOTONES[0].sincronizador_I/sreg_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.340ns  (logic 0.186ns (54.666%)  route 0.154ns (45.334%))
-  Logic Levels:           2  (FDRE=1 LUT6=1)
+  Data Path Delay:        0.331ns  (logic 0.141ns (42.631%)  route 0.190ns (57.369%))
+  Logic Levels:           1  (FDCE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X3Y91          FDRE                         0.000     0.000 r  actual/BOTONES[3].sincronizador_I/SYNC_OUT_reg/C
-    SLICE_X3Y91          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  actual/BOTONES[3].sincronizador_I/SYNC_OUT_reg/Q
-                         net (fo=3, routed)           0.154     0.295    actual/ENC_BCD/SYNC_OUT
-    SLICE_X3Y92          LUT6 (Prop_lut6_I1_O)        0.045     0.340 r  actual/ENC_BCD/OUTPUT_I[1]_i_1/O
-                         net (fo=1, routed)           0.000     0.340    actual/ENC_BCD/OUTPUT_I[1]_i_1_n_0
-    SLICE_X3Y92          FDPE                                         r  actual/ENC_BCD/OUTPUT_I_reg[1]/D
+    SLICE_X0Y82          FDCE                         0.000     0.000 r  actual/BOTONES[0].sincronizador_I/sreg_reg[0]/C
+    SLICE_X0Y82          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  actual/BOTONES[0].sincronizador_I/sreg_reg[0]/Q
+                         net (fo=1, routed)           0.190     0.331    actual/BOTONES[0].sincronizador_I/p_1_in__2[1]
+    SLICE_X2Y82          FDCE                                         r  actual/BOTONES[0].sincronizador_I/sreg_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 
