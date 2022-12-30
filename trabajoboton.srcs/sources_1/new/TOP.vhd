@@ -13,7 +13,10 @@ use IEEE.NUMERIC_STD.ALL;
 entity TOP is
     generic(
         NUM_PISOS : positive := 4;       --numero de pisos del ascensor, incluye el bajo
-        NUM_CICLOS : positive := 32     --numero de ciclos a dejar para evitar el rebote
+        NUM_CICLOS : positive := 32;     --numero de ciclos a dejar para evitar el rebote
+        MODULO : positive := 5000;   --modulo de la cuenta
+        ANCHO : natural := 3         --ancho del contador
+        
     );
 
     port(
@@ -73,17 +76,21 @@ architecture Behavioral of TOP is
     );
 end component;
 
-component decoder IS
-
-    GENERIC(
-        RANGO_IN  : positive := 4;  --Rango del BCD
-        RANGO_OUT : positive := 7   --Rango de display de 7 segmentos
+component PTOP is
+    generic(
+        MODULO : positive := 5000;   --modulo de la cuenta
+        ANCHO : natural := 3         --ancho del contador
     );
-    PORT (
-        code : IN std_logic_vector(RANGO_IN - 1 DOWNTO 0);  --Codigo BCD
-        led : OUT std_logic_vector(RANGO_OUT -1 DOWNTO 0)   --Salida 7 segmentos
+    port(
+        RISTRA_DIGITOS : in std_logic_vector (31 downto 0); --8 digitos BC para el display
+        VSUALIZADOR : out std_logic_vector (7 downto 0); --encendido visualizador
+        SEGMENT : out std_logic_vector (6 downto 0); --segmento decodificado
+        
+        CLK : in std_logic; --reloj
+        RST_N : in std_logic    --reset
+    
     );
-END component;
+    end component;
 
     signal PA_DISTINTO_PD_I : std_logic;
     
@@ -93,6 +100,8 @@ END component;
     signal PA_MAYOR_PD_I : STD_LOGIC; -- PA > PD
     signal PA_MENOR_PD_I :  STD_LOGIC; -- PA < PD
     signal PA_IGUAL_PD_I : STD_LOGIC;  -- PA = PD
+    
+    signal RISTRA_DIGITOS : std_logic_vector (31 downto 0);
 
 
 begin
@@ -148,14 +157,22 @@ begin
     
     PA_DISTINTO_PD_I <= not PA_IGUAL_PD_I;
     
-    cidificador7seg: decoder
+    cidificador7seg: PTOP 
+    generic map(
+        MODULO => MODULO,   --modulo de la cuenta
+        ANCHO => ANCHO        --ancho del contador
+    )
+    port map(
+        RISTRA_DIGITOS => RISTRA_DIGITOS, --8 digitos BC para el display
+        VSUALIZADOR => VISUALIZADOR,
+        SEGMENT => SEGMENTO,
+        
+        CLK => CLK,
+        RST_N => RST_N    --reset
     
-    PORT map (
-        code => PA_BCD,  --Codigo BCD
-        led => SEGMENTO   --Salida 7 segmentos
     );
-    
-VISUALIZADOR <= "11111110";
+   
+RISTRA_DIGITOS <= "111111111111111111111111" & PD_BCD & PA_BCD;
 
 
 end Behavioral;

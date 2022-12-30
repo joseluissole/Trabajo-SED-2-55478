@@ -86,10 +86,15 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/BOTON2BCD.vhd
+  C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/CONTADOR.vhd
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/Comparador.vhd
+  C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/DECODER.vhd
+  C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/DESCONTADOR.vhd
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/Display.vhd
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/MAQ_ESTADOS.vhd
+  C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/MUX32.vhd
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/PRIOR_ENCODER.vhd
+  C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/PTOP.vhd
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/SYNCHRNZR.vhd
   C:/Users/sed/Downloads/TRABAJO_SED_3_B-secuecnial/trabajoboton.srcs/sources_1/new/TOP.vhd
 }

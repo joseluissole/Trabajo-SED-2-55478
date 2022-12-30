@@ -2,7 +2,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-ENTITY decoder IS
+ENTITY DECODER IS
 
     GENERIC(
         RANGO_IN  : positive := 4;  --Rango del BCD
@@ -12,9 +12,9 @@ ENTITY decoder IS
         code : IN std_logic_vector(RANGO_IN - 1 DOWNTO 0);  --Codigo BCD
         led : OUT std_logic_vector(RANGO_OUT -1 DOWNTO 0)   --Salida 7 segmentos
     );
-END ENTITY decoder;
+END ENTITY DECODER;
 
-ARCHITECTURE dataflow OF decoder IS
+ARCHITECTURE dataflow OF DECODER IS
 BEGIN
     WITH code SELECT
         led <= "0000001" WHEN "0000",   -- '0' EN DISPLAY
